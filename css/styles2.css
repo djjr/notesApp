@@ -1,0 +1,130 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #F2E2C4;
+    color: #261D11;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Ensure the body and html take full viewport height */
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Stacks children (header, iframe, footer) vertically */
+}
+
+.beige {background-color: #F2E2C4;}
+.yellow {background-color: #F2B805}
+.red {background-color: #A6290D}
+.black {background-color: #261D11}
+
+/* Style for unvisited links */
+a {
+    text-decoration: none;  /* Removes the underline */
+    color: #606060;         /* Subtle gray color for the link text */
+    transition: color 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for links */
+a:hover {
+    color: #404040;         /* Darker gray when hovered */
+}
+
+/* Style for visited links, if you want them to appear differently */
+a:visited {
+    color: #808080;         /* Lighter gray for visited links */
+}
+
+header {
+    background-color: #0477BF;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #F2E2C4;
+    text-align: left;
+    padding: 1rem 0 0 20;
+    flex-shrink: 0; /* Prevents header from shrinking */
+}
+
+header h1 {
+    margin: 0;
+    padding-left: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #F2E2C4;
+}
+
+nav ul {
+    padding-left: 20px;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #F2E2C4;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #F2B805;
+}
+nav a:visited {
+    color: #F2E2C4;
+}
+section {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+h2 {
+    border-bottom: 2px solid #D76D77;
+    padding-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #FFF;
+    text-align: center;
+    padding: 1rem 0 0 20;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    flex-shrink: 0; /* Prevents footer from shrinking */
+}
+
+iframe {
+    border: none;
+    flex: 1; /* Allows iframe to grow and occupy available space */
+    min-height: 0; /* Fixes a flexbox bug in some browsers */
+    z-index: 10;
+}
+
+
+
+/* Add padding to the article for better readability */
+article {
+    padding: 20px;
+}
+
+img.float-left {
+    float: left;
+    margin-right: 20px;
+}
+
+img.float-right {
+    float: right;
+    margin-left: 20px;
+}
+
+img.w200 {
+    width: 200px; /* Sets a fixed width */
+}

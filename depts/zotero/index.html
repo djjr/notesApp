@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Zotero Tags Viewer</title>
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    }
+
+    h1 {
+    color: #333;
+    }
+
+    .content {
+    display: flex;
+    width: 100%;
+    }
+
+    .tags-container {
+    border: 1px solid #ccc;
+    width: 25%;
+    padding: 10px;
+    word-break: break-word;
+    float: left;
+    }
+
+    .results-frame {
+    border: 1px solid #ccc;
+    width: 75%;
+    height: 90vh;
+    float: right;
+    }
+
+    .tag-results {
+    width: 70%;
+    height: 80vh;  /* Adjust height as needed */
+    border: 1px solid #ccc;
+    }
+
+    .tags-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.75em;
+    }
+
+    .tags-container li {
+    display: inline;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="tags-container">
+  <h1>Zotero Tags Viewer</h1>
+
+    <ul id="tags-list"></ul>
+  </div>
+
+  
+  <iframe id="results-frame" name="resultsFrame" class="results-frame"></iframe>
+  <script>
+    // Get the group ID from the URL parameters or use the default value
+    const urlParams = new URLSearchParams(window.location.search);
+    const groupID = urlParams.get('groupID') || '4573990'; // Replace with your default group ID
+
+    const tagsList = document.getElementById('tags-list');
+
+    // Function to URL encode a string
+    const urlEncode = str => encodeURIComponent(str);
+
+    // Function to create an anchor tag with the encoded tag as the href
+    const createAnchorTag = (tag) => {
+    const encodedTag = urlEncode(tag.tag);
+    const url = `https://innoeduvation.org/313/applets/zotero/index-20230515.html?groups=${groupID}&tag=${encodedTag}`;
+    const anchorTag = document.createElement('a');
+    anchorTag.href = url;
+    anchorTag.textContent = tag.tag;
+    
+    // Change the iframe's src attribute when the link is clicked
+    anchorTag.onclick = (event) => {
+        event.preventDefault();
+        document.getElementById('results-frame').src = url;
+    };
+
+    return anchorTag;
+    };
+
+
+    // Fetch all the tags from the Zotero API
+// Fetch all the tags from the Zotero API
+const fetchAllTags = async () => {
+  try {
+    let allTags = [];
+    let start = 0;
+    let hasMore = true;
+
+    while (hasMore) {
+      const response = await fetch(`https://api.zotero.org/groups/${groupID}/tags?start=${start}`);
+      const result = await response.json();
+
+      allTags = allTags.concat(result);
+
+      // If a page has fewer than 25 results, then there are no more pages
+      hasMore = result.length === 25;
+
+      start += 25;
+    }
+
+    // Sort all the tags alphabetically (case insensitive)
+    allTags.sort((a, b) => a.tag.toLowerCase().localeCompare(b.tag.toLowerCase()));
+
+    // Create a container div for the tags
+    const tagsContainer = document.createElement('div');
+
+    // Iterate over the tags and create anchor tags
+    allTags.forEach((tag, index) => {
+      const anchorTag = createAnchorTag(tag);
+      tagsContainer.appendChild(anchorTag);
+
+      // Add a spacer (span with &nbsp;) after each anchor tag, except for the last tag
+      if (index !== allTags.length - 1) {
+        const spacer = document.createElement('span');
+        spacer.innerHTML = '&nbsp;&nbsp;&nbsp;';
+        tagsContainer.appendChild(spacer);
+      }
+    });
+
+    // Append the container to the tagsList
+    tagsList.appendChild(tagsContainer);
+  } catch (error) {
+    console.error('Error:', error);
+  }
+};
+
+fetchAllTags();
+
+  </script>
+</body>
+</html>

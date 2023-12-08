@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="main">
+        <div class="bannerbox">
+            <img src="images/popupcurriculum.png" alt="Banner" class="banner">
+            <p id="taglines"></p>
+        </div>
+
+    <h3>What is the popUp Curriculum?</h3>
+</div>
+
+    <div class="card-container" id="card-container"></div>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

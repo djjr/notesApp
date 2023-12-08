@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions and Solutions</title>
+    <style>
+        .question-container {
+            margin-bottom: 20px;
+        }
+
+        .solution {
+            display: none;
+            margin-top: 10px;
+            background-color: #fff;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .tdcentered {
+            text-align: center;
+        }
+
+        .tdheader {
+            text-align: center;
+            background-color: lightgray;
+            font-weight: bold;
+        }
+        table, tr, td {
+            border: solid 1px #ccc;
+        }
+        .wikitable {
+            border: solid 1px;
+            border-collapse: collapse;
+
+        }
+    </style>
+    <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+</head>
+
+<body>
+
+    <div id="content"></div>
+<script src="data.js"></script>
+    <script>
+        function toggleSolution(el) {
+            const solutionDiv = el.parentNode.querySelector('.solution');
+            if (solutionDiv.style.display === 'block' || !solutionDiv.style.display) {
+                solutionDiv.style.display = 'none';
+            } else {
+                solutionDiv.style.display = 'block';
+            }
+        }
+
+
+        function renderQuestionsAndSolutions() {
+            const contentDiv = document.getElementById('content');
+            let html = '';
+
+            data.forEach(item => {
+                html += `
+                    <div class="question-container">
+                        <div class="question">${item.number}. ${item.question}</div>
+                        <button onclick="toggleSolution(this)">Show Solution</button>
+                        <div class="solution">${item.soln}</div>
+                    </div>
+                `;
+            });
+
+            contentDiv.innerHTML = html;
+        }
+
+        renderQuestionsAndSolutions();
+    </script>
+
+</body>
+
+</html>

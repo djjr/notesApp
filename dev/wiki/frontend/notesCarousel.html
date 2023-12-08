@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a New Note</title>
+    <link rel="stylesheet" href="https://unpkg.com/easymde/dist/easymde.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked@4.3.0/lib/marked.umd.min.js"></script>
+    <script src="https://unpkg.com/easymde/dist/easymde.min.js"></script>
+    <script src="config.js"></script>
+</head>
+
+<body>
+    <p>
+        This page will fetch notes that match a set of tags and show them in carousel format with an
+        edit button. The edit button will change the div displaying the note to an easyMDE window with
+        opportunity to edit content, title, and tags.
+    </p>
+    <p>
+        Suggested approach is to present tag and permit multiselection and then a button to display or
+        fetch. The content is loaded into a local array and this is then browsable in the carousel. Each
+        note is presented with an edit button and an "add tag" option. Clicking the edit button changes the
+        div to an editor. Clicking save updates the database if there have been any changes and reloads
+        notes array and "centers" the display on the new version of this note.</thead>
+    </p>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions and Solutions</title>
+    <style>
+        .question-container {
+            margin-bottom: 20px;
+        }
+
+        .solution {
+            display: none;
+            margin-top: 10px;
+            background-color: #fff;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .tdcentered {
+            text-align: center;
+        }
+
+        .tdheader {
+            text-align: center;
+            background-color: lightgray;
+            font-weight: bold;
+        }
+        table, tr, td {
+            border: solid 1px #ccc;
+        }
+        .wikitable {
+            border: solid 1px;
+            border-collapse: collapse;
+
+        }
+
+        .tags {
+        color: blue;
+        font-size: 70%;
+        cursor: pointer;
+        }
+        .tag {
+            text-decoration: underline;
+        }
+    </style>
+    <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+</head>
+<body>
+    <div>
+        <select id="tagSelector" multiple style="width: 200px; height: 100px;"></select>
+        <button onclick="renderQuestionsAndSolutions()">Retrieve Problems</button>
+    </div>
+    <div id="content"></div>
+    <script src="data.js"></script>
+    <script>
+        function toggleSolution(el) {
+            const solutionDiv = el.parentNode.querySelector('.solution');
+            if (solutionDiv.style.display === 'none' || !solutionDiv.style.display) {
+                solutionDiv.style.display = 'block';
+            } else {
+                solutionDiv.style.display = 'none';
+            }
+        }
+
+        function getUniqueTags() {
+            const allTags = data.flatMap(item => item.tags);
+            return Array.from(new Set(allTags)).sort();
+        }
+
+        function renderTagOptions() {
+            const tagSelector = document.getElementById('tagSelector');
+            const uniqueTags = getUniqueTags();
+            tagSelector.innerHTML = uniqueTags.map(tag => `<option value="${tag}">${tag}</option>`).join('');
+        }
+
+        function filterByTag(clickedTag) {
+        // Update the selection in the dropdown
+        const tagSelector = document.getElementById('tagSelector');
+        Array.from(tagSelector.options).forEach(option => {
+            option.selected = (option.value === clickedTag);
+        });
+
+        // Rerender the questions and solutions
+        renderQuestionsAndSolutions();
+    }
+
+    function renderQuestionsAndSolutions() {
+        const selectedTags = Array.from(document.getElementById('tagSelector').selectedOptions).map(option => option.value);
+        const contentDiv = document.getElementById('content');
+        let html = '';
+
+        data.filter(item => selectedTags.every(tag => item.tags.includes(tag))).forEach(item => {
+            // Formatting tags
+            const formattedTags = item.tags.map(tag => `<span class="tag" onclick="filterByTag('${tag}')">${tag}</span>`).join(', ');
+
+            html += `
+                <div class="question-container">
+                    <div class="question">
+                        ${item.number}. ${item.question} 
+                        <span class="tags">[${formattedTags}]</span>
+                    </div>
+                    <button onclick="toggleSolution(this)">Show Solution</button>
+                    <div class="solution">${item.soln}</div>
+                </div>
+            `;
+        });
+        contentDiv.innerHTML = html;
+        }
+
+        renderTagOptions();
+        //renderQuestionsAndSolutions();
+    </script>
+</body>
+</html>

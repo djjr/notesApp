@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Policy Modeling Study Optimization</title>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<style>
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+  }
+
+  .overlay {
+    fill: none;
+    pointer-events: all;
+  }
+
+  .feasible-region {
+    fill: lightgreen;
+    opacity: 0.5;
+  }
+
+  /* Styling for the lines */
+  .line-16hours { stroke: red; }
+  .line-ppol-geq-soc { stroke: blue; }
+  .line-ppol-geq-4 { stroke: green; }
+  .line-soc-leq-5 { stroke: orange; }
+  .line-ppol-leq-14 { stroke: purple; }
+
+  /* Additional styling can go here */
+</style>
+</head>
+<body>
+<script>
+  // Function to get URL parameters or default to initial values
+  function getParam(param, defaultValue) {
+    const params = new URLSearchParams(window.location.search);
+    return params.get(param) ? Number(params.get(param)) : defaultValue;
+  }
+
+  // Retrieve parameters from URL or default to the initial values
+  var totalHours = getParam('totalHours', 16);
+  var minPPOL = getParam('minPPOL', 4);
+  var maxSOC = getParam('maxSOC', 5);
+  var maxPPOL = getParam('maxPPOL', 14);
+
+  // Set up the dimensions of the diagram
+  var margin = {top: 20, right: 20, bottom: 30, left: 50},
+      width = 960 - margin.left - margin.right,
+      height = 500 - margin.top - margin.bottom;
+
+  // Create the SVG container and set its dimensions
+  var svg = d3.select("body").append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+  // Create scales for the x (SOCIOLOGY) and y (PPOL) axes
+  var x = d3.scaleLinear().domain([0, totalHours]).range([0, width]);
+  var y = d3.scaleLinear().domain([0, maxPPOL]).range([height, 0]);
+
+  // Define the vertices of the feasible region polygon
+//   var vertices = [
+//     [x(0), y(maxPPOL)], // Top-left intersection with PPOL axis
+//     [x(minPPOL), y(minPPOL)], // Minimum PPOL study group time
+//     [x(maxSOC), y(maxSOC)], // Intersection of SOC max and PPOL ≥ SOC
+//     [x(maxSOC), y(totalHours - maxSOC)], // Intersection of SOC max and total hours
+//     [x(0), y(totalHours)] // Bottom-left intersection with PPOL axis
+//   ];
+  var vertices = [
+    [x(0), y(maxPPOL)], // Intersection with PPOL axis at maxPPOL
+    [x(0), y(minPPOL)], // Intersection of PPOL study group constraint
+    [x(totalHours - minPPOL), y(minPPOL)], // Intersection of totalHours and PPOL study group constraint
+    [x(maxSOC), y(totalHours - maxSOC)], // Intersection of totalHours and SOC max constraint
+    [x(0), y(totalHours)] // Intersection with PPOL axis at totalHours
+  ];
+
+  // Draw the feasible region as a polygon
+  svg.append("polygon")
+      .data([vertices])
+      .attr("class", "feasible-region")
+      .attr("points", d => d.map(point => point.join(",")).join(" "));
+
+  // Define the lines based on the inequalities
+  // The total hours constraint
+  var lineTotalHours = d3.line()
+    .x(d => x(d))
+    .y(d => y(totalHours - d));
+
+  // The PPOL ≥ SOC constraint
+  var linePPOLGeqSOC = d3.line()
+    .x(d => x(d))
+    .y(d => y(d));
+
+  // The PPOL study group constraint
+  var linePPOLMin = d3.line()
+    .x(d => x(d))
+    .y(() => y(minPPOL));
+
+  // The SOCIOLOGY max constraint
+  var lineSOCMax = d3.line()
+    .x(() => x(maxSOC))
+    .y(d => y(d));
+
+  // The PPOL max constraint
+  var linePPOLMax = d3.line()
+    .x(d => x(d))
+    .y(() => y(maxPPOL));
+
+  // Draw the axes
+  svg.append("g")
+      .attr("transform", "translate(0," + height + ")")
+      .call(d3.axisBottom(x));
+
+  svg.append("g")
+      .call(d3.axisLeft(y));
+
+  // Add the lines to the SVG with color coding
+  svg.append("path")
+      .datum(d3.range(0, totalHours + 1))
+      .attr("class", "line line-16hours")
+      .attr("d", lineTotalHours);
+
+  svg.append("path")
+      .datum(d3.range(0, totalHours + 1))
+      .attr("class", "line line-ppol-geq-soc")
+      .attr("d", linePPOLGeqSOC);
+
+  svg.append("path")
+      .datum(d3.range(0, totalHours + 1))
+      .attr("class", "line line-ppol-geq-4")
+      .attr("d", linePPOLMin);
+
+  svg.append("path")
+      .datum(d3.range(0, totalHours + 1))
+      .attr("class", "line line-soc-leq-5")
+      .attr("d", lineSOCMax);
+
+  svg.append("path")
+      .datum(d3.range(0, totalHours + 1))
+      .attr("class", "line line-ppol-leq-14")
+      .attr("d", linePPOLMax);
+
+  // Additional code for interactivity would go here
+
+</script>
+</body>
+</html>

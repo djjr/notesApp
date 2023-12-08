@@ -1,0 +1,43 @@
+[[module CSS]]
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+.amatic {font-family: 'Amatic SC', cursive; color: #8F6C06; font-size: 1.5em;}
+.draw {border-image: url(http://djjr-courses.wikidot.com/local--files/test:drawbox/drawline2_8F6C06.png) 27 27 27 27 round round;}
+.page-title {font-family: 'Amatic SC', cursive; color: #8F6C06;}
+
+.borderimg {
+    /* You can also use border-top or border-bottom to target the side you want affected */
+    border: 5px solid transparent;
+    border-color: brown;
+    padding: 15px;
+    -webkit-border-image: url(http://djjr-courses.wikidot.com/local--files/test:drawbox/drawline2_8F6C06.png) 50 round; /* Safari 3.1-5 */
+    -o-border-image: url(http://djjr-courses.wikidot.com/local--files/test:drawbox/drawline2_8F6C06.png) 50 round; /* Opera 11-12.1 */
+    border-image: url(http://djjr-courses.wikidot.com/local--files/test:drawbox/boxbg_8F6C06.png) 27 27 27 27 round round;
+}
+/*
+main .content .page-title span{background-image: none; border-bottom: none;}
+main .content .page-header span{background-image: none;}
+
+main > .content .page-title{
+    font-size: 48px;
+    border-bottom: 0px solid;
+}
+
+main .main-content h1 {font-family: 'Amatic SC', cursive; color: #8F6C06; background-image: none;}
+main .main-content-wrap.col-md-12 .main-content h1 {font-family: 'Amatic SC', cursive; color: #8F6C06; background-image: none;}
+
+h2 {font-family: 'Amatic SC', cursive; color: #8F6C06;}
+h3 {font-family: 'Amatic SC', cursive; color: #8F6C06;} */
+
+@media print {
+  h1 {font-family: courier;}
+.noprint {display: none;}
+}
+
+// for debugging control - use debug=yes|no in include statements //
+
+.yes {display: inline; color: green; }
+.no {display: none;}
+
+
+
+[[/module]]

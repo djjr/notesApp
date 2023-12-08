@@ -1,0 +1,7 @@
+{"title": "Text2Flowchart Juvenile Facilty",
+"content": problem-type: '3'
+question: 'Use STEPWISE REFINEMENT TO evolve a flowchart for the following protocol. (a) Record youth name and address. Check in system to see if already there. If there, pull up record and verify information. If not, create new record and ask for information. When done, send record to orientation staff, give youth a number and instruct to wait until number is called. (b) Once stage three in the treatment regimen is completed, clients are not eligible for the next stage in treatment until they have had three consecutive clean weekly drug tests. If they have one failed test they are given a warning. Two failed tests in a row and they have to meet with a counselor. Three failed tests and they are out of the program.'
+solution: "This \"system\" sorts clients into three categories – either you are between steps 3 and 4 (working on drug tests), you are ready to do step 4, or you are out of the program. We need a black box that will sort clients into one of two categories: on to step four or out of program.\n\n
+
+flowchart-p0016-juvenile-protocol-a.gif
+\nThe main test for being out of the program is failing three tests. Otherwise you are still in until you pass three in a row. So, in English it might be \"while you haven't failed thrice, keep testing until you get three in a row clean.\"\n\n

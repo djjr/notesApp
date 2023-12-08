@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MadLibs Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Sane Cons Generator*</h1>
+    <p>Tell a story that can end up on the front page of the Blog and Email.</p>
+    <p><em>Instructions:</em> Type text of MadLib. For blanks, type a grammatical hint/instruction inside double square brackets (optionally include a field size after a comma). Start with [[headline]] if you want to include a headline.</p>
+    <div id="inputSection">
+        <textarea id="madlibTemplate" placeholder="Enter your template here..."></textarea><br />
+        <button id="produceMadLibButton">Produce Mad Lib</button>
+        <button id="sampleTemplateButton">Load Sample Template</button>
+        <button id="gameModeButton">Play It Like a Game</button>
+    </div>
+    <br /><br />
+    <div id="formSection"></div>
+    <br /><br />
+    <div id="resultSection">
+        <div id="banner"></div>
+        <div id="headline"></div>
+        <div id="result"></div>
+    </div>
+<div><hr><p><sup>*</sup>Created in collaboration with ChatGPT in 13 exchanges.</p></div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Converter</title>
+    <style>
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 300px;
+            padding: 10px;
+        }
+
+        #output {
+            width: 100%;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 20px;
+            white-space: pre-wrap; /* To keep the format of the pasted/converted text */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Paste your data here:</h2>
+        <textarea id="inputData"></textarea>
+        <br>
+        <button onclick="convertData()">Convert</button>
+        <div id="output"></div>
+    </div>
+
+    <script>
+        function convertData() {
+            let text = document.getElementById('inputData').value;
+
+            // Remove lines starting with [[include
+            text = text.split('\n').filter(line => !line.startsWith('[[include')).join('\n');
+
+
+            prop_num0 = "'},<NL><TAB><TAB>{<NL><TAB><TAB><TAB>'number': '";
+            prop_quest = "',<NL><TAB><TAB><TAB>'question': '";
+            prop_soln = "',<NL><TAB><TAB><TAB>'soln': '";
+
+            //take any existing HTML tags and replace brackets with their corresponding HTML entities &lt; and &gt;
+            text = text.replace(/<(.*?)>/gms, '&lt;$1&gt;');
+
+            //First escape all single quote characters
+            text = text.replace(/'/g, "\\'")
+
+            //convert wiki headings to html tags
+            text = text.replace(/^(\+{1,6})\s(.+)$/gm, (match, pluses, content) => {
+                const level = pluses.length; 
+                return `<h${level}>${content}</h${level}>`;
+            });
+
+            text = text.replace(/^>(.*?)(?:\n|$)/gm, '<blockquote>$1</blockquote>');
+
+            //**[[size larger]][[[q:0002|Q2]]][[/size]]** 
+            text = text.replace(/\*\*\[\[size larger\]\]\[\[\[q:\d+\| *(.*?)\]\]\]\[\[\/size\]\]\*\*/gi, prop_num0 + "$1" + prop_quest);
+
+            //**[[size larger]][[[q:0002|Q2]]][[/size]]** 
+            text = text.replace(/\[\[size larger\]\]\*\*\[\[\[q:(\d+)\| ?(.*?)\]\]\](.*?)\*\*\[\[\/size\]\]/gi, prop_num0 + "$1" + prop_quest);
+
+            //**[[size larger]][[[q:0027|Q27]]][[/size]].**
+            //**[[size larger]][[[q:0028|Q28]]].[[/size]]** 
+            text = text.replace(/\*\*\[\[size larger\]\]\[\[\[q:\d+\| *(.*?)\]\]\]\.?\[\[\/size\]\]\.?\*\*/gi, prop_num0 + "$1" + prop_quest);   
+
+            // Replace **[[[q:0004| Q4]]].** pattern
+            text = text.replace(/\*\*\[\[\[q:\d+\| *(.*?)\]\]\]\.\*\*/gi, prop_num0 + "$1" + prop_quest);
+
+            // Also pick up the cases where the q:0004 does not have a vertical line and display text.
+            text = text.replace(/\*\*\[\[\[q:(\d+)\]\]\]\.\*\*/gi, prop_num0 + "$1" + prop_quest);
+
+
+            // Replace [[iftags _showsolutions]] [[collapsible show="+ Show Solution" hide="- Hide Solution"]] with SOLUTION
+            text = text.replace(/\[\[iftags _showsolutions\]\]\n\[\[collapsible show="\+ Show Solution" hide="- Hide Solution"\]\]/gi, prop_soln + "<h3>SOLUTION</h3>\n");
+
+            // Replace [[iftags _showsolutions]] [[collapsible show="+ Show solutions" hide="- Hide solutions"]] with SOLUTION
+            text = text.replace(/\[\[iftags _showsolutions\]\]\n\[\[collapsible show="\+ Show solutions" hide="- Hide solutions"\]\]/gi, prop_soln + "<h3>SOLUTION</h3>\n");
+
+            // Replace [[image]] with full URL
+            // First replace %3A with :
+            text = text.replace(/\%3A/gi, ":");
+            //text = text.replace(/\[\[=?image (\/?\w+:[\w\/\.\-\=\%]+)( width=\"\d\d\d\"| size=\"small\"| size=\"medium\")?\]\]/gi, "<br /><img src=\"https://djjr-courses.wdfiles.com/local--files/$1\"><br />\n");
+
+            text = text.replace(/\[\[=?image (\/?\w+:[\w\.\-\=\%]+?)\/([\w\.\-\=\%]+?)( width=\"\d\d\d\"| size=\"small\"| size=\"medium\")?\]\]/gi, "<br /><img src=\"images/$2\"><br />\n");
+
+            //text = text.replace(/\[\[image ([\w+:\d+\/[^]]+)\]\]/gi, "$1");
+            //[[=image /soc180%3Anodes-and-edges/sampleNetworks01.gif]]
+            //[[=image soc116:images/hayek-boat-diagram.png width="500"]]
+            //[[=image ppol225:images-stockflow/p121-chart-data.png size="small"]]
+
+            //omit centering commands
+            text = text.replace(/\[\[\/?=\]\]/g,'');
+
+            // Replace [[file]] with full URL
+            //[[file /q:0027/chapter01-q0027-01.xlsx| citations]], [[file /q:0027/chapter01-q0027-02-bib.xlsx|    bibliographic]], [[file /q:0027/chapter01-q0027-02-cocitation.xlsx| cocitation]]
+            text = text.replace(/\[\[file (\/?\w+:[\w\/\.\-\%^\|^\]]+) *\| *\w*\]\]/gi, "\nhttps://djjr-courses.wdfiles.com/local--files$1\n");
+
+            // delete [div class="admins-only"... 
+            text = text.replace(/\[\[div class="admins-only"\]\]\n\[\[\/div\]\]\n\[\[\/iftags\]\]/gi, "");
+
+
+            // Remove [[/iftags]]
+            text = text.replace(/\[\[\/iftags\]{1,2}/gi, '');
+
+            // Remove [[/collapsible]]
+            text = text.replace(/\[\[\/collapsible\]\]/gi, '');
+
+            // Remove ##green|
+            text = text.replace(/##green\|/gi, '');
+            text = text.replace(/\[\[span style=\"color:green; font-family:courier;\"\]\]/gi, '');
+            text = text.replace(/\[\[\/span\]\]/gi, '');
+            // Remove ##
+            text = text.replace(/##/gi, '');
+
+            //[[cell style="text-align: center;"]] => <td>
+            text = text.replace(/\[\[cell (style=\"[\w\- :;%]+\")\]\]/gi, "<td $1>"); 
+            text = text.replace(/\[\[cell\]\]/gi, "<td>"); 
+            text = text.replace(/\[\[\/cell\]\]/gi, "</td>");
+            text = text.replace(/\[\[row (style=\"[\w\- :;]+\")\]\]/gi, "<tr $1>"); 
+            text = text.replace(/\[\[row\]\]/gi, "<tr>"); 
+            text = text.replace(/\[\[\/row\]\]/gi, "</tr>");
+            //[[table style="color:green; font-family:courier;"]]
+            text = text.replace(/\[\[table (style=\"[\w\- :;%]+\")\]\]/gi, "<table $1 class=\"wikitable\">"); 
+            text = text.replace(/\[\[table\]\]/gi, "<table>"); 
+            text = text.replace(/\[\[\/table\]\]/gi, "</table>");
+
+            //convert MathJax markup
+            dollarsigns1 = '$$';
+            dollarsigns2 = '$$$$';
+            //display math
+            text = text.replace(/\[\[math\]\]([\s\S]*?)\[\[\/math\]\]/ig, '\\n' + dollarsigns2 + '$1' + dollarsigns2);
+            //inline math [[$ n $]]
+            text = text.replace(/\[\[\$ ([\s\S]*?) \$\]\]/ig, '\\\\(' + '$1' + '\\\\)');
+            //fix /times so it doesn't look like <tab>imes
+            text = text.replace(/\\times/ig, '\\\\times');
+            text = text.replace(/ x /ig, '\\\\times');
+
+
+            //convert naive wiki math to mathjax (incompletely, but it helps)
+            text = text.replace(/\,\,(.*?)\,\,/ig, '_\{$1\}');
+
+            function markdownToHTMLTable(md) {
+                const lines = md.split('\n').filter(line => line.trim() !== '');  // Filter out empty lines
+                let rows = [];
+                for (let i = 0; i < lines.length; i++) {
+                    const columns = lines[i].split('||').filter(col => col.trim() !== '');  // Filter out empty columns
+                    let row = '<tr>';
+                    for (const column of columns) {
+                        row += `<td>${column.trim()}</td>`;
+                    }
+                    row += '</tr>';
+                    rows.push(row);
+                }
+                return `<table class="wikitable">\n${rows.join('\n')}\n</table>`;
+            }
+
+            text = text.replace(/(^\|\|.*?$\n?)+/gm, match => {
+                return markdownToHTMLTable(match);
+            });
+
+            function markdownToHTMLList(md) {
+                const lines = md.split('\n').filter(line => line.trim() !== '');  // Filter out empty lines
+                let items = [];
+                for (let i = 0; i < lines.length; i++) {
+                    const item = lines[i].trim().substring(2); // Remove '* ' from the start of the line
+                    items.push(`<li>${item}</li>`);
+                }
+                return `<ul>\n${items.join('\n')}\n</ul>`;
+            }
+
+            text = text.replace(/(^\* .*$\n?)+/gm, match => {
+                return markdownToHTMLList(match);
+            });
+
+            function markdownToHTMLOList(md) {
+                const lines = md.split('\n').filter(line => line.trim() !== '');  // Filter out empty lines
+                let items = [];
+                for (let i = 0; i < lines.length; i++) {
+                    const item = lines[i].trim().substring(2); // Remove '* ' from the start of the line
+                    items.push(`<li>${item}</li>`);
+                }
+                return `<ol>\n${items.join('\n')}\n</ol>`;
+            }
+
+            text = text.replace(/(^\# .*$\n?)+/gm, match => {
+                return markdownToHTMLOList(match);
+            });
+
+            //convert anchors/links not already processed
+            text = text.replace(/\[(http[^\s]+) ([^\]]+)\]/g, '<a href="$1" target="_blank">$2</a>');
+
+            //wikidot table formatting details
+            //<td>= => centered text <td class="tdcentered">
+            //<td>~ => heading <td class="tdheader">
+            text = text.replace(/<td>= /ig, '<td class="tdcentered">');
+            text = text.replace(/<td>~ /ig, '<td class="tdheader">');
+
+            //small bits of cleanup
+            text = text.replace(/<td>= ?<br \/>/gi, '<td><br />');
+                //@@[@@
+                //@@]@@
+                //[!--and activities and institutional functionings of--]
+            text = text.replace(/\[!--(.*?)--\]/gi, '[$1]');
+            // text = text.replace(/^<(.*?)(?:\n|$)/gm, '<blockquote>$1</blockquote>');
+            //    {{text}} is fixed font (<pre>)
+            text = text.replace(/\{\{(.*?)\}\}/gm, '<pre>$1</pre>');
+            // get rid of leftover size tags
+            text = text.replace(/\[\[\/?size ?.*?\]\]/gm, '');
+
+            //finally, remove new lines (leaving only text newlines)
+            text = text.replace(/\n/g, '');
+            text = text.replace(/<NL>/g, '\n');
+            text = text.replace(/<TAB>/g, '\t');
+
+            document.getElementById('output').innerText = text;
+            //document.getElementById('output').innerHTML = text;
+        }
+    </script>
+</body>
+
+</html>

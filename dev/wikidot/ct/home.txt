@@ -1,0 +1,23 @@
+[[include ct:css]]
+
+[[collapsible show="+ Show course description and syllabus boilerplate" hide="- Hide course description and syllabus boilerplate" hideLocation="both"]]
+[[include ct:inf1339-syllabus-ryan-2018]]
+[[/collapsible]]
+[[include ct:syllabi]]
+
+[[div class="admins-only"]]
+[[div class="noprint" style="float: right;"]]
+[[module newPage button="New Child Page" category="ct" parent="." template="template:CT-TagFooter"]]
+[[[hcd:u-of-t-hcd-ucisd|Jump to HCD Course]]] | [[[main:notes|Go to NOTES]]]
+[[/div]]
+[[/div]]
+
+[[div]]
+
+[[div class="admins-only"]]
+[[include ct:instructor-workspace]]
+[[/div]]
+
+----
+++++ Subpages
+[[module pageTree showRoot="yes"]]

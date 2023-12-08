@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#note-form {
+    margin-bottom: 5px;
+}
+
+#notes-list {
+    margin-top: 20px;
+}
+
+#existing-tags {
+    margin-bottom: 10px;
+}
+
+.tag {
+    background-color: #f1f1f1;
+    padding: 5px;
+    margin: 2px;
+    font-size: smaller;
+    cursor: pointer;
+    display: inline-block;
+}

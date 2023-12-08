@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transit Maps</title>
+    <style>
+        #mapDisplay {
+            width: 100%;
+            height: 80vh;
+            border: 1px solid #000;
+            margin-top: 20px;
+        }
+        .mapButton {
+            margin: 5px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button class="mapButton" onclick="showMap('http://www.jugcerovic.com/files/europe-bus-maps-london-rome.jpg')">London</button>
+    <button class="mapButton" onclick="showMap('http://www.jugcerovic.com/files/europe-bus-maps-london-rome.jpg')">Rome</button>
+    <button class="mapButton" onclick="showMap('http://www.jugcerovic.com/files/europe-bus-maps-copenhagen-munich.jpg')">Copenhagen</button>
+    <button class="mapButton" onclick="showMap('http://www.jugcerovic.com/files/europe-bus-maps-copenhagen-munich.jpg')">Munich</button>
+
+    <div id="mapDisplay"></div>
+
+    <script>
+        function showMap(mapUrl) {
+            document.getElementById('mapDisplay').innerHTML = '<img src="' + mapUrl + '" alt="Transit Map" style="width:100%;height:100%;">';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,901 @@
+[[module css]]
+.doctext {font-family: serif; background-color: #FFFAF0; color: #303030; margin: auto; text-align: justify; width: 75%; padding: 20px;}
+.table-thin-grey {border: solid; border-width: 0.5px; border-color: grey; text-align: center; vertical-align: top; font-size: 1.1em;}
+.cellwidth10 {width: 14%;}
+.cellwidth20 {width: 16%;}
+.cellwidth80 {width: 80%;}
+.columnhead {font-weight: regular; background-color: silver;}
+.rowhead {text-align: left; font-weight: regular; background-color: silver;}
+.smallprint {font-size: 0.75em;}
+[[/module]]
+[[div class="doctext"]]
+
+++++ Course Description
+
+This course will examine the basic ideas of computational thinking. In particular it will focus on principled thought processes, approaches and principles that guide computational analyses, from problem formulation all the way to effective and efficient problem solving. It will contain an introduction to algorithm building and their complexity, basic data structures used in computational solutions as well as the use of necessary tools to tackle large-scale problems in a variety of domains. The course will also discuss the application of computational thinking in different areas such as the humanities, social sciences and the arts, potentially looking into the impact it may have on them. Finally, it will serve as a necessary preamble for students who will follow a more technical career, especially in the area of Information Systems and Applied Data Science.
+
+++++ Program Learning Outcomes
+
+[https://ischool.utoronto.ca/areas-of-study/master-of-information/ Program-level outcomes for the Master of Information (MI) program at the University of Toronto] include the following: 
+
+# Students understand and are conversant with fundamental concepts, theories, practices, and the diverse horizons of information disciplines, and can respond to changing information practices and needs of society. (INFO)
+# Students develop knowledge and values appropriate to their future exercise of economic, cultural, and/or social leadership, and thereby provide leadership in defining the social responsibility of information professionals to provide information services for all, regardless of age, educational level, or social, cultural, or ethnic background. (VALUES)
+# Students develop the ability to contribute through research and publication, to the continuous expansion and critical assessment of the body of knowledge underlying the information and archives sciences. (CONTRIBUTE)
+# Students develop an understanding of the development of theory concerning information, where it is found, and how it is used. (THEORY)
+# Students develop an understanding of the application of new technological developments to the preservation and communication of information, and in the identification of the impact of such developments on society. (SOCIETY)
+# Students continue in life-long intellectual growth beyond graduation. (LIFE)
+
+
++++++ Course Objectives
+
+The purpose of this course is to convey, in a manner that is accessible to students coming from a wide variety of intellectual backgrounds and useful to students destined for a wide variety of further avenues of study, a set of intellectual reflexes and styles of thought and a repertoire of practical skills drawn from, and deployed in, computational science.  The course is NOT intended as "computer science 101" or "a first course in programming" or "introduction to data processing."  
+
++++++ Course Learning Outcomes
+
+This course introduces students to a style of thinking that yields problem solutions that can be programmed, are predictably reliable, involve careful and exhaustive consideration of problem and solution spaces, and can be implemented at high speed and high volume. Although this usually means solutions that are carried out by machines, the application of this style of thinking is more generally applicable. 
+
+The goal, then, will be to inculcate an "algorithmic" style of thinking: the deliberate decomposition of large and complex problems into a set of nested subproblems, the construction of solutions in terms of sequence, repetition, and contingency, the recognition and exploitation of pattern, and the inclination to defer detail, automate, and modularize.
+
+Upon successful completion of this course you will have enhanced your capacity to
+
+[[module listPages category="ct-outcomes" tags="_reflex" separate="no" order="_sort_order"]]
+# %%form_raw{brief_description}%% (%%form_raw{mnemonic}%%)
+[[/module]]
+
+The relationship of these course outcomes to the program outcomes is summarized in the table below.
+
+[[div style="width: 90%; margin: auto;"]]
+[[table class="table-thin-grey"]]
+[[row class="table-thin-grey cellwidth20"]]
+[[cell]]
+ 
+[[/cell]]
+[[cell class="table-thin-grey cellwidth10 columnhead"]]
+INFO
+[[/cell]]
+[[cell class="table-thin-grey cellwidth10 columnhead"]]
+VALUES
+[[/cell]]
+[[cell class="table-thin-grey cellwidth10 columnhead"]]
+CONTRIBUTE
+[[/cell]]
+[[cell class="table-thin-grey cellwidth10 columnhead"]]
+THEORY
+[[/cell]]
+[[cell class="table-thin-grey cellwidth10 columnhead"]]
+SOCIETY
+[[/cell]]
+[[cell class="table-thin-grey cellwidth10 columnhead"]]
+LIFE
+[[/cell]]
+[[/row]]
+
+[[row class="table-thin-grey"]]
+[[cell class="table-thin-grey cellwidth20 rowhead"]]
+THINK
+[[/cell]]
+[[cell class="table-thin-grey"]]
+[[span class="fa fa-check fa-1x"]]@<&nbsp;>@[[/span]]
+[[/cell]]
+[[cell class="table-thin-grey"]]
+[[span class="fa fa-check fa-1x"]]@<&nbsp;>@[[/span]]
+[[/cell]]
+[[cell class="table-thin-grey"]]
+[[span class="fa fa-check fa-1x"]]@<&nbsp;>@[[/span]]
+
+[[/cell]]
+[[cell class="table-thin-grey"]]
+ 
+[[/cell]]
+[[cell class="table-thin-grey"]]
+ 
+[[/cell]]
+[[cell class="table-thin-grey"]]
+[[span class="fa fa-check fa-1x"]]@<&nbsp;>@[[/span]]
+[[/cell]]
+[[/row]]
+
+
+[[row class="table-thin-grey"]]
+[[cell class="table-thin-grey cellwidth20 rowhead"]]
+SLOW
+[[/cell]]
+[[cell class="table-thin-grey"]]
+[[span class="fa fa-check fa-1x"]]@<&nbsp;>@[[/span]]
+[[/cell]]
+[[cell class="table-thin-grey"]]
+[[span class="fa fa-check fa-1x"]]@<&nbsp;>@[[/span]]
+[[/cell]]
+[[cell class="table-thin-grey"]]
+[[span class="fa fa-check fa-1x"]]@<&nbsp;>@[[/span]]
+[[/cell]]
+[[cell class="table-thin-grey"]]
+ 
+[[/cell]]
+[[cell class="table-thin-grey"]]
+ 
+[[/cell]]
+[[cell class="table-thin-grey"]]
+[[span class="fa fa-check fa-1x"]]@<&nbsp;>@[[/span]]
+[[/cell]]
+[[/row]]
+
+
+[[row class="table-thin-grey"]]
+[[cell class="table-thin-grey cellwidth20 rowhead"]]
+DECOMPOSITION
+[[/cell]]
+[[cell class="table-thin-grey"]]
+[[span class="fa fa-check fa-1x"]]@<&nbsp;>@[[/span]]
+[[/cell]]
+[[cell class="table-thin-grey"]]
+ 
+[[/cell]]
+[[cell class="table-thin-grey"]]
+[[span class="fa fa-check fa-1x"]]@<&nbsp;>@[[/span]]
+[[/cell]]
+[[cell class="table-thin-grey"]]
+ 
+[[/cell]]
+[[cell class="table-thin-grey"]]
+ 
+[[/cell]]
+[[cell class="table-thin-grey"]]
+ 
+[[/cell]]
+[[/row]]
+
+
+[[row class="table-thin-grey"]]
+[[cell class="table-thin-grey cellwidth20 rowhead"]]
+PATTERN
+[[/cell]]
+[[cell class="table-thin-grey"]]
+[[span class="fa fa-check fa-1x"]]@<&nbsp;>@[[/span]]
+[[/cell]]
+[[cell class="table-thin-grey"]]
+ 
+[[/cell]]
+[[cell class="table-thin-grey"]]
+[[span class="fa fa-check fa-1x"]]@<&nbsp;>@[[/span]]
+[[/cell]]
+[[cell class="table-thin-grey"]]
+ 
+[[/cell]]
+[[cell class="table-thin-grey"]]
+ 
+[[/cell]]
+[[cell class="table-thin-grey"]]
+ 
+[[/cell]]
+[[/row]]
+
+
+[[row class="table-thin-grey"]]
+[[cell class="table-thin-grey cellwidth20 rowhead"]]
+ABSTRACTION
+[[/cell]]
+[[cell class="table-thin-grey"]]
+[[span class="fa fa-check fa-1x"]]@<&nbsp;>@[[/span]]
+[[/cell]]
+[[cell class="table-thin-grey"]]
+ 
+[[/cell]]
+[[cell class="table-thin-grey"]]
+[[span class="fa fa-check fa-1x"]]@<&nbsp;>@[[/span]]
+[[/cell]]
+[[cell class="table-thin-grey"]]
+ 
+[[/cell]]
+[[cell class="table-thin-grey"]]
+ 
+[[/cell]]
+[[cell class="table-thin-grey"]]
+ 
+[[/cell]]
+[[/row]]
+
+
+[[row class="table-thin-grey"]]
+[[cell class="table-thin-grey cellwidth20 rowhead"]]
+MODULARITY
+[[/cell]]
+[[cell class="table-thin-grey"]]
+[[span class="fa fa-check fa-1x"]]@<&nbsp;>@[[/span]]
+[[/cell]]
+[[cell class="table-thin-grey"]]
+ 
+[[/cell]]
+[[cell class="table-thin-grey"]]
+[[span class="fa fa-check fa-1x"]]@<&nbsp;>@[[/span]]
+[[/cell]]
+[[cell class="table-thin-grey"]]
+ 
+[[/cell]]
+[[cell class="table-thin-grey"]]
+ 
+[[/cell]]
+[[cell class="table-thin-grey"]]
+ 
+[[/cell]]
+[[/row]]
+
+
+[[row class="table-thin-grey"]]
+[[cell class="table-thin-grey cellwidth20 rowhead"]]
+DATA
+[[/cell]]
+[[cell class="table-thin-grey"]]
+[[span class="fa fa-check fa-1x"]]@<&nbsp;>@[[/span]]
+[[/cell]]
+[[cell class="table-thin-grey"]]
+ 
+[[/cell]]
+[[cell class="table-thin-grey"]]
+[[span class="fa fa-check fa-1x"]]@<&nbsp;>@[[/span]]
+[[/cell]]
+[[cell class="table-thin-grey"]]
+ 
+[[/cell]]
+[[cell class="table-thin-grey"]]
+ 
+[[/cell]]
+[[cell class="table-thin-grey"]]
+ 
+[[/cell]]
+[[/row]]
+
+
+[[row class="table-thin-grey"]]
+[[cell class="table-thin-grey cellwidth20 rowhead"]]
+COMPLEXITY
+[[/cell]]
+[[cell class="table-thin-grey"]]
+[[span class="fa fa-check fa-1x"]]@<&nbsp;>@[[/span]]
+[[/cell]]
+[[cell class="table-thin-grey"]]
+ 
+[[/cell]]
+[[cell class="table-thin-grey"]]
+[[span class="fa fa-check fa-1x"]]@<&nbsp;>@[[/span]]
+[[/cell]]
+[[cell class="table-thin-grey"]]
+[[span class="fa fa-check fa-1x"]]@<&nbsp;>@[[/span]]
+[[/cell]]
+[[cell class="table-thin-grey"]]
+ 
+[[/cell]]
+[[cell class="table-thin-grey"]]
+ 
+[[/cell]]
+[[/row]]
+
+
+[[row class="table-thin-grey"]]
+[[cell class="table-thin-grey cellwidth20 rowhead"]]
+APPLY
+[[/cell]]
+[[cell class="table-thin-grey"]]
+[[span class="fa fa-check fa-1x"]]@<&nbsp;>@[[/span]]
+[[/cell]]
+[[cell class="table-thin-grey"]]
+[[span class="fa fa-check fa-1x"]]@<&nbsp;>@[[/span]]
+[[/cell]]
+[[cell class="table-thin-grey"]]
+[[span class="fa fa-check fa-1x"]]@<&nbsp;>@[[/span]]
+[[/cell]]
+[[cell class="table-thin-grey"]]
+ 
+[[/cell]]
+[[cell class="table-thin-grey"]]
+[[span class="fa fa-check fa-1x"]]@<&nbsp;>@[[/span]]
+[[/cell]]
+[[cell class="table-thin-grey"]]
+[[span class="fa fa-check fa-1x"]]@<&nbsp;>@[[/span]]
+[[/cell]]
+[[/row]]
+
+
+[[row class="table-thin-grey"]]
+[[cell class="table-thin-grey cellwidth20 rowhead"]]
+TECH
+[[/cell]]
+[[cell class="table-thin-grey"]]
+[[span class="fa fa-check fa-1x"]]@<&nbsp;>@[[/span]]
+[[/cell]]
+[[cell class="table-thin-grey"]]
+[[span class="fa fa-check fa-1x"]]@<&nbsp;>@[[/span]]
+[[/cell]]
+[[cell class="table-thin-grey"]]
+[[span class="fa fa-check fa-1x"]]@<&nbsp;>@[[/span]]
+[[/cell]]
+[[cell class="table-thin-grey"]]
+ 
+[[/cell]]
+[[cell class="table-thin-grey"]]
+[[span class="fa fa-check fa-1x"]]@<&nbsp;>@[[/span]]
+[[/cell]]
+[[cell class="table-thin-grey"]]
+[[span class="fa fa-check fa-1x"]]@<&nbsp;>@[[/span]]
+[[/cell]]
+[[/row]]
+
+[[/table]]
+
+[[/div]]
+
+++++ Instructional Agenda
+
+Each week, students will engage with text and other media introducing a topic and work one or more preparatory problems based on this material PRIOR to each class session.  Approximately one third of each class session will be devoted to lecture/review of this material in a "flipped class" format (that is, students are assumed to have already heard "lecture" and attempted problems). The middle third will be an interactive workshop or simulation, and the final hour will be review and motivation of the next week's topic.
+
+About one half of each week's 6-8 hours of "homework" will be an opportunity to demonstrate competence on the topic of the previous week and about half will be preparation for the topic of the coming week.  The former will be submitted as graded assignments.
+
++++++ Assignments, Activities and Course Learning Outcomes
+
+Each course assignment and activity will be an opportunity to practice or demonstrate mastery of one or more of the learning outcomes described above. The tables below summarize the relationship between assignments, activities, and learning outcomes.
+
+
+[[div style="width: 90%; margin: auto;"]]
+[[table class="table-thin-grey"]]
+[[row class="table-thin-grey cellwidth20"]]
+[[cell]]
+ 
+[[/cell]]
+[[cell colspan="10" class="table-thin-grey cellwidth08 smallprint"]]
+ASSIGNMENT
+[[/cell]]
+[[/row]]
+[[row class="table-thin-grey cellwidth20"]]
+[[cell]]
+Outcome
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08"]]
+01
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08"]]
+02
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08"]]
+03
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08"]]
+04
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08"]]
+05
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08"]]
+06
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08"]]
+07
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08"]]
+08
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08"]]
+09
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08"]]
+10
+[[/cell]]
+[[/row]]
+
+
+[[row class="table-thin-grey"]]
+[[cell class="table-thin-grey cellwidth20 rowhead"]]
+THINK
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A01
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A02
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A03
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A04
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A05
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A06
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A07
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A08
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A09
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A10
+[[/cell]]
+[[/row]]
+
+
+[[row class="table-thin-grey"]]
+[[cell class="table-thin-grey cellwidth20 rowhead"]]
+SLOW
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A01
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A02
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A03
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A04
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A05
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A06
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A07
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A08
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A09
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A10
+[[/cell]][[/row]]
+
+
+[[row class="table-thin-grey"]]
+[[cell class="table-thin-grey cellwidth20 rowhead"]]
+DECOMPOSITION
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A01
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A02
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A03
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A04
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A05
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A06
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A07
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A08
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A09
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A10
+[[/cell]]
+[[/row]]
+
+
+[[row class="table-thin-grey"]]
+[[cell class="table-thin-grey cellwidth20 rowhead"]]
+PATTERN
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A01
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A02
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A03
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A04
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A05
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A06
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A07
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A08
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A09
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A10
+[[/cell]]
+[[/row]]
+
+
+[[row class="table-thin-grey"]]
+[[cell class="table-thin-grey cellwidth20 rowhead"]]
+ABSTRACTION
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A01
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A02
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A03
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A04
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A05
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A06
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A07
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A08
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A09
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A10
+[[/cell]]
+[[/row]]
+
+
+[[row class="table-thin-grey"]]
+[[cell class="table-thin-grey cellwidth20 rowhead"]]
+MODULARITY
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A01
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A02
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A03
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A04
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A05
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A06
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A07
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A08
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A09
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A10
+[[/cell]]
+[[/row]]
+
+
+[[row class="table-thin-grey"]]
+[[cell class="table-thin-grey cellwidth20 rowhead"]]
+DATA
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A01
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A02
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A03
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A04
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A05
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A06
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A07
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A08
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A09
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A10
+[[/cell]]
+[[/row]]
+
+
+[[row class="table-thin-grey"]]
+[[cell class="table-thin-grey cellwidth20 rowhead"]]
+COMPLEXITY
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A01
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A02
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A03
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A04
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A05
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A06
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A07
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A08
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A09
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A10
+[[/cell]]
+[[/row]]
+
+
+[[row class="table-thin-grey"]]
+[[cell class="table-thin-grey cellwidth20 rowhead"]]
+APPLY
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A01
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A02
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A03
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A04
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A05
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A06
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A07
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A08
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A09
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A10
+[[/cell]]
+[[/row]]
+
+
+[[row class="table-thin-grey"]]
+[[cell class="table-thin-grey cellwidth20 rowhead"]]
+TECH
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A01
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A02
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A03
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A04
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A05
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A06
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A07
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A08
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A09
+[[/cell]]
+[[cell class="table-thin-grey cellwidth08 smallprint"]]
+A10
+[[/cell]]
+[[/row]]
+
+[[/table]]
+[[/div]]
+
+----
+
+[[div style="width: 90%; margin: auto;"]]
+[[table class="table-thin-grey"]]
+[[row class="table-thin-grey cellwidth20"]]
+[[cell]]
+Outcome
+[[/cell]]
+[[cell class="table-thin-grey columnhead" style="width: 500px;"]]
+Where does it show up in assignments?
+[[/cell]]
+[[/row]]
+
+[[row class="table-thin-grey"]]
+[[cell class="table-thin-grey cellwidth20 rowhead"]]
+THINK
+[[/cell]]
+[[cell class="table-thin-grey cellwidth80"]]
+Critical thinking, understood as a careful, systematic, robust, analytical mental reflex is practiced throughout the course. Examples include ...
+
+
+[[/cell]]
+[[/row]]
+
+
+[[row class="table-thin-grey"]]
+[[cell class="table-thin-grey cellwidth20 rowhead"]]
+SLOW
+[[/cell]]
+[[cell class="table-thin-grey cellwidth80"]]
+-
+-
+-
+-
+[[/cell]]
+[[/row]]
+
+
+[[row class="table-thin-grey"]]
+[[cell class="table-thin-grey cellwidth20 rowhead"]]
+DECOMPOSITION
+[[/cell]]
+[[cell class="table-thin-grey cellwidth80"]]
+-
+-
+-
+-
+[[/cell]]
+[[/row]]
+
+
+[[row class="table-thin-grey"]]
+[[cell class="table-thin-grey cellwidth20 rowhead"]]
+PATTERN
+[[/cell]]
+[[cell class="table-thin-grey cellwidth80"]]
+-
+-
+-
+-
+[[/cell]]
+[[/row]]
+
+
+[[row class="table-thin-grey"]]
+[[cell class="table-thin-grey cellwidth20 rowhead"]]
+ABSTRACTION
+[[/cell]]
+[[cell class="table-thin-grey cellwidth80"]]
+-
+-
+-
+-
+[[/cell]]
+[[/row]]
+
+
+[[row class="table-thin-grey"]]
+[[cell class="table-thin-grey cellwidth20 rowhead"]]
+MODULARITY
+[[/cell]]
+[[cell class="table-thin-grey cellwidth80"]]
+-
+-
+-
+-
+[[/cell]]
+[[/row]]
+
+
+[[row class="table-thin-grey"]]
+[[cell class="table-thin-grey cellwidth20 rowhead"]]
+DATA
+[[/cell]]
+[[cell class="table-thin-grey cellwidth80"]]
+-
+-
+-
+-
+[[/cell]]
+[[/row]]
+
+
+[[row class="table-thin-grey"]]
+[[cell class="table-thin-grey cellwidth20 rowhead"]]
+COMPLEXITY
+[[/cell]]
+[[cell class="table-thin-grey cellwidth80"]]
+-
+-
+-
+-
+[[/cell]]
+[[/row]]
+
+
+[[row class="table-thin-grey"]]
+[[cell class="table-thin-grey cellwidth20 rowhead"]]
+APPLY
+[[/cell]]
+[[cell class="table-thin-grey cellwidth80"]]
+-
+-
+-
+-
+[[/cell]]
+[[/row]]
+
+
+[[row class="table-thin-grey"]]
+[[cell class="table-thin-grey cellwidth20 rowhead"]]
+TECH
+[[/cell]]
+[[cell class="table-thin-grey cellwidth80" style="width:80%"]]
+-
+-
+-
+-
+[[/cell]]
+[[/row]]
+
+[[/table]]
+[[/div]]
+
+[[include boilerplate:toronto-ischool gradingbreakdown=ct:inf1339-grading-breakdown-2018]]
+[[/div]]

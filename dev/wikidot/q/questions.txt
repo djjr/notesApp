@@ -1,0 +1,1382 @@
+Q0001. In connection with a program that provides alternatives for youth who have a run in with the criminal justice system, a colleague mentions that the program could be more effective if there were an easy way to predict who might benefit from the alternative program. The data suggests that about 75% of the youth in Ourtown are "good kids" who would benefit from the alternative program and 25% are "bad kids" who will not. Your supervisor also says you should come up with some more acceptable terms than "good" and "bad." It turns out that when a kid is, in fact, "bad," the test gets it right 90% of the time, wrong 10%. But when the kid is, in fact, "good," the test says "bad" 30% of the time.12. Sketch an event tree that captures this and then flip the tree to evaluate the test and provide guidance on how to interpret its results.
+
+Q0002. Sketch, anew, the decision tree for the embassy party described in the text book.
+"The officer in charge of a United States Embassy recreation program has decided to replenish the employees club funds by arranging a dinner. It rains nine days out of ten at the post and he must decide whether to hold the dinner indoors or out. An enclosed pavilion is available but uncomfortable, and past experience has shown turnout to be low at indoor functions, resulting in a 60 per cent chance of gaining $100 from a dinner held in the pavilion and a 40 per cent chance of losing $20. On the other hand, an outdoor dinner could be expected to earn $500 unless it rains, in which case the dinner would lose about $10" (Stokey & Zeckhauser 1977, 202).
+
+Q0003. What is the expected value of a two dice toss if the payoff is whatever comes up on the dice, in dollars? Sketch this as a decision tree with just chance nodes.
+
+Q0004. Along with the alternative arrest program, a town is considering a mix of extra community policing, after school programs and evening youth programs as a part of their comprehensive efforts.Proposals are on the table for three interventions, each of which can be implemented at different levels. Costs and benefits have been calculated by our crack accounting team and are shown in table form and chart form.
+
+
+
+
+Q0005. The community is also trying to create a neighborhood resident association. Ten members are recruited each month through posters put up in the community. In addition, each member typically recruits 1 new member every five months (that is, about 0.2 new members per member per month). And finally, attrition seems to run at about 40% per month.
+What are the "rates"? What are the "amounts"?
+Write the difference equation in general form (Pn+1=aPn + b)
+Label the diagram below as fully as you can.
+
+
+What is the equilibrium value? Is it a stable or unstable equilibrium? How can you tell?
+Label this chart as fully as possible and then explain what it shows.
+
+
+Q0006. It's the end of the semester and it's time to optimize. I have a sociology final exam and a public policy final exam on the same day and I can only allocate 16 hours total to exam preparation.I estimate that if I do not study at all, I'll get C- in public policy and a C+ in sociology. But, experience has shown that studying pays off. In sociology, each hour of study raises my grade by 1/3 (0.33) of a letter grade (C- to C, for example). In public policy, the payoffs are not as quick: each 2 hours yields 1/3 of a letter grade (0.167 grade per hour).Thus, 3 hours of sociology study would take me from C+ to B+
+C	> 1 hour >	B-	> 1 hour >	B	> 1 hour >	B+
+Our plans are subject to a number of constraints:
+There is a four hour public policy study session planned with the professor and it would be unwise and impolitic not to attend. Thus, PPOL hours has to be at least 4.
+Since the top grade is A, sociology will top out at 5 study hours since these will take me from C+…B-…B…B+…A-…A and in public policy my max is correspondingly 14 with each 2 hours taking me one grade of the seven steps from C- to A.
+Total study hours must be 16 or less.
+Since I am a public policy major, I feel strongly that I have to study more for PPOL than for SOCIOLOGY
+I translate these into five inequalities
+(Only 16 hours ) PPOL = -SOC + 16
+(More PPOL than SOCIOLOGY) PPOL ≥ SOC
+(PPOL Study Group) PPOL ≥ 4
+(SOCIOLOGY max) SOC ≤ 5
+(PPOL max) PPOL ≤ 14
+I want to know how to divide my study time so as to maximize my grades. Let's start with a typical Excel layout for a simple LP problem.
+
+
+
+Identify the lines in this chart, indicate the feasible set, and find the optimal value of the variables and the resulting value of the objective function.
+Q0007. . Blank
+Q0008. . Blank
+Q0009. . Blank
+Q0010. It is plausible to assume that the higher the ticket for speeding the fewer people will speed (assuming, for the moment, that there is a fixed likelihood of getting caught). Suppose the following curve represents how we expect drivers react (in the aggregate) to the size of speeding tickets.
+
+Which point (A, B, C, D) on the graph reflects the fact that some people will take their chances and speed no matter how high the fines are?
+Q0011. “Zero tolerance” is a popular cry these days, but does it always make sense? It is certainly a powerful symbolic statement, but it presents problems. Consider the diagram below and discuss the idea of zero tolerance in terms of marginal costs and benefits.
+
+Q0012. Erikson writes “…the very expression ‘he is a thief’ or ‘he is an addict’ seems to provide at once a description of his position in society and a profile of his character.” How is this relevant for understanding one of the main points of the Rosenhan article?
+Q0013. Even the worst "deviant" is mostly a conformer. Explain what this means and what it’s relevance is fora theory of social control.
+Q0013. Even the worst "deviant" is mostly a conformer. Explain what this means and what it’s relevance is fora theory of social control.
+Q0014. Fill in the focus column of the table below and try to find an example of each in your file. Write a sentence or two explaining how the example illustrates the focus of this style of social control.
+Style	Focus	Example
+Penal
+Compensatory
+Conciliatory
+Therapeutic
+Reform
+Prevention
+Q0015. Write a few paragraphs (< 400 words) explaining what makes these two situations a pair.By the late 1630s and 1640s the population of Massachusetts Bay was no longer just the original “true believer” settlers. Some of the disputes that arose at this time were around the question of who is “really” a Puritan, whether people who aren’t “saved” should be voting members and so on.and“Political correctness” became an issue in the 1980s and 1990s ten to twenty years after the major social value shifts which occurred in the late 1960s around issues of race, gender, and politics. People became increasingly concerned about appearing to be on the right side of various debates even when they didn’t wholeheartedly agree with a given position.
+Q0016. In some countries (and in some parts of this country) bus queues are more orderly and more common than in others. In other words, in some places people actually form a nice neat line starting at the spot where the bus will pull up so that people can board in exactly the order they arrived at the stop. What’s a common phrase for the norm used in such cases? Under what kinds of conditions would you expect strict queuing vs. more nonchalant “standing around”? Can you express the plusses and minuses in terms of deadweight loss and transaction costs?
+Q0017. Coser described several theorists whose work looked at "social control from the inside." What's the "technical term" for "social control from the inside"? Name three of these theorists and provide some identifying information (e.g., "Tongan psychotherapist who wrote in 1920s").
+Q0018. Deviance has multiple functions. Give a examples of deviation as (1) a pressure release valve; (2) innovation.
+Q0018. Deviance has multiple functions. Give a examples of deviation as (1) a pressure release valve; (2) innovation.
+Q0019. Explain what Durkheim meant when he wrote that crime is a normal rather than a pathological condition of a society using, as an example, a political group which very carefully screens members to be sure that they agree with all the attitudes that the group stands for so that the group is quite homogeneous. Would Durkheim expect deviance to arise in this group? How so? What kind?
+Q0020. Explain what is meant by "social control as a dependent variable."
+Q0021. Coser combines the insight that sometimes deviance is functional (as well as harmful) with the insight that groups don’t always reject rule breakers to form a typology of four social control scenarios. Label the rows and columns of the 2x2 table to the right with the appropriate values.
+A	B
+C	D
+Q0022. What does Donald Black mean by “corporate space”? In what sense is "corporateness" a variable? Give an example of a conflict in which one party has “high” corporateness and the other has “low” corporateness.
+Q0023. Both Donald Black and Robert Ellickson take care to distinguish between first, second, and third party social control. Most of this course has focused on one particular type of third party control – informal control through social norms. Using marriage/married life as an example, briefly demonstrate that you understand that control varies from personal ethics (first party, self control), promisee enforced contracts (second party), and the three types of third party control (organizational rules, law, and social norms) by describing ways each might come up in association with marriage, married relationships, etc..
+Q0024. Donald Black described 6 styles of social control – penal, conciliatory, therapeutic, compensatory, prevention, and reform. Show that you understand what these are and how they fit into this course by considering the different styles of social control that might be employed in conflicts that could emerge between employee and employer or in the workplace in general..
+Q0025. . Use NodeXL to reproduce the organizational chart below. Take note of the appearance of the network with various layout options. Try changing the type to "directed" in the chart panel of the NodeXL ribbon. What do you say about organizational charts as networks from examining the different layouts?
+
+
+President	VP1
+President	VP2
+VP1	Mgr1
+VP1	Mgr2
+VP2	Staff1
+Mgr2	Staff2
+Mgr2	Staff3
+Mgr2	Staff4
+Q0026. . Amir likes Bashir. Chastity is liked by Danica. Chastity likes Ellen. Amir likes Danica and Ellen. Franke likes everyone. Gillian likes Danica. Ellen likes Bashir. Sketch this directed network.
+
+Q27. Consider the imaginary bibliographies shown below for 7 classic works of sociology.
+Aron, Raymond. 1967. //Les Étapes de la pensée sociologique//
+Bourdieu, Pierre. 1972. //Esquisse d'une théorie de la pratique, précédé de trois études d'ethnologie kabyle// (Outline of a Theory of Practice)
+Crozier, Michel. 1964. //The Bureaucratic Phenomenon//
+Durkheim, Emile. 1912. //Elementary Forms of the Religious Life//
+Erikson, Kai. 1967. //Wayward Puritans//
+Frazier, E. Franklin. 1955. //Bourgeoisie noire//
+Geiger, Theodore. 1963. //Demokratie ohne Dogma: Die Gesellschaft zwischen Pathos und Niichternheit//.
+**Aron 1967**CrozierDurkheimFrazierGeiger	**Bourdieu 1972**AronCrozierDurkheimFrazierGeiger	**Crozier 1964**DurkheimGeiger	**Durkheim 1912**	**Erikson 1967**AronDurkheimFrazierGeiger	**Frazier 1955**Durkheim	**Geiger 1963**DurkheimFrazier
+(a) Sketch the directed network of citations. (b) For each pair of authors count up how many times they cite the same other author.[[collapsible show="+ Click to show sample data table" hide="- Hide"]]
+Author 1	Author 2	Shared Bibliographic Entries
+Aron	Bourdieu
+Aron	Crozier
+Aron	Durkheim
+Aron	Erikson
+Aron	Frazier
+Aron	Geiger
+Bourdieu	Crozier
+Bourdieu	Durkheim
+Bourdieu	Erikson
+Bourdieu	Frazier
+Bourdieu	Geiger
+Crozier	Durkheim
+Crozier	Erikson
+Crozier	Frazier
+Crozier	Geiger
+Durkheim	Erikson
+Durkheim	Frazier
+Durkheim	Geiger
+Erikson	Frazier
+Erikson	Geiger
+Frazier	Geiger
+(c) Next, for each pair of authors, count how many books cite both of them. For example, Crozier and Durkheim are cited by Aron, Bourdieu, and Erikson so the count would be 3.[[collapsible show="+ Click to show sample data table" hide="- Hide"]]
+Author 1	Author 2	Times Cited Together
+Aron	Bourdieu
+Aron	Crozier
+Aron	Durkheim
+Aron	Erikson
+Aron	Frazier
+Aron	Geiger
+Bourdieu	Crozier
+Bourdieu	Durkheim
+Bourdieu	Erikson
+Bourdieu	Frazier
+Bourdieu	Geiger
+Crozier	Durkheim
+Crozier	Erikson
+Crozier	Frazier
+Crozier	Geiger
+Durkheim	Erikson
+Durkheim	Frazier
+Durkheim	Geiger
+Erikson	Frazier
+Erikson	Geiger
+Frazier	Geiger
+
+Q28. Consider the three networks in the figure below. For each one, calculate the ratio of actual number of edges to the most maximum number of edges possible (assuming the graphs are simple).
+
+
+Q29. Consider the series below showing the maximum number of edges (**m**) possible in networks with different numbers of vertices (**n**). Come up with a general formula for m in terms of n (that is, for a network with n vertices, what is the maximum number of edges -- assuming no self-edges and no multi-edges?).
+
+Q0030. Write out your responses to the following.
+Lists
+# Name at least ten areas of human, social, natural phenomena that have been explored by network researchers.
+Identify/describe three networks you have encountered this week.
+Name at least five academic disciplines in which the study of networks has become a big deal.
+Meta
+# Newman, et al. mention "theoretical" work, "empirical" work, and modeling as activities associated with network science. What do you understand by each of these?
+Hansen, et al. (and to a lesser extent other authors here) suggest some grandiose assessments of network science's place in the history of science. Newman et al. hint at some tensions between the kind of data social scientists collect and the tools they have for analyzing them and the kind of data used in the "new science of networks" and the tools brought to the task by physicists and computer scientists. Can you zero in on the passages and identify some of the issues?
+In sections 1.6-8, Hansen et al. describe applications of social media to public problems, crowdsourcing, and problems of engagement, mentioning, eventually, the term "sociotechnical systems." Meditate a bit on the dual answers this suggests to the question "how can I use my degree in sociology (or whatever your major is)?" -- either studying how technology changes the world or being actively involved in designing things that can change the world.
+Real World
+# From how many realms do your facebook friends come? Estimate the macro-structure of your facebook network just based on thinking about it. How does it show the different social circles you are a member of? How does it show your different "sides"? How does it show your personal biography? How big do you think the different clusters are? Can you think of people who link the different clusters together?
+Q0031. Demonstrate basic familiarity with email, wikis, Twitter, Facebook, newsgroups, listserves.
+Q0032. In addition to replicating the material in the text, we'll have a "and now try it with this" exercise. Self test at end. Can I : enter vertices and display graph? select an edge ? move the graph plane around? switch graph type between directed and undirected? change data and update graph? move vertices around "manually"? set vertex colors and sizes? use the autofill tool? add vertex labels? add tool tips? save a layout? save a data file?
+Q0033. Practice Gephi exercises.[[=image http://djjr-courses.wikidot.com/local--files/soc180:images/djjrfb2009.jpg width="450"]][[=image http://djjr-courses.wikidot.com/local--files/soc180:images/djrFB2012.gif width="450"]]
+Q0034. Write out the data for the undirected network below in node list, edge list and full matrix format.[[ Q0035. A researcher asks a respondent, Maria, to list her six closest friends. She says A, B, C, D, E, and F. The researcher then asks which of these friends have you had dinner with in the last week? A, C, D. Which ones have you texted today? A, B, D, F. Which ones did you know before you came to this school? C, D. On whose wall have you posted in the last week? D, E, F.Show how this information would be recorded in your field notes.
+Q0036. Consider the graph matrix below
+A	B	C	D	E
+A	-	0	1	0	1
+B	0	-	0	1	1
+C	0	1	-	1	1
+D	0	0	1	-	0
+E	0	1	1	1	-
+We use 
+n
+ for the number of vertices. What is 
+n
+ here?
+What is 
+s
+u
+m
+n
+i
+=
+1
+A
+i
+4
+?
+What is 
+s
+u
+m
+n
+j
+=
+1
+A
+3
+j
+?
+s
+u
+m
+n
+i
+=
+1
+A
+i
+4
+Q0037. Centrality Problems
+Q0038. Homophily Problems
+Q0039. Cohesive subgroups problems
+Q0040. Structural equivalence problems
+Q0041. TEXT
+Q0041. TEXT
+Q0043. Based on your reading of Erikson, Becker, et al., write a short essay addressing one of the following.
+A 50 year old social scientist says "when I was in college, there was no date rape." Explain what a sociologist would mean by this.
+Consider the comments below about the experience of a patient in a mental hospital.
+Is the medical clarification of heretofore "invisible" disabilities an unqualified good?
+Q0043. Based on your reading of Erikson, Becker, et al., write a short essay addressing one of the following.
+A 50 year old social scientist says "when I was in college, there was no date rape." Explain what a sociologist would mean by this.
+Consider the comments below about the experience of a patient in a mental hospital.
+Is the medical clarification of heretofore "invisible" disabilities an unqualified good?
+Q0044. Media analysis of SOPA wars.
+Q0045. Essay QuestionThe thinkers and theories we have briefly visited have taken a number of basic starting points: people basically good, bad, mixed; people never change; a small defect defines the entire person; biology is destiny. What’s your take on human nature? What kind of a thing is a person for the purposes of thinking about social control? Which readings or thinkers do you feel you line up with? Which ones do you seem to reject?
+Q0046. Play with Yasiv's Amazon Recommendation Visualizer. After you have played with it for a bit, carry out some specific "analyses" (we use the term loosely here).Select a book -- my example will be //The Fountainhead// by Ayn Rand, a favorite of libertarians and right wingers. Jostle the network around until you get a nice layout that has settled down. You might want to zoom in or out (mouse wheel if you have one).Copy screen image to clipboard with alt-F14 or alt-PrtScn, open a Word document and paste. Crop the picture (Picture Tools>Format>Crop), unselect it, reselect it and stretch to fill page.Examine clusters. Now select the picture and Cut it (control-X) and then Insert>Shapes>New Drawing Canvas, expand the canvas to be page-sized, and paste the picture. Then use the circle tool to draw circles around the identifiable clusters.
+
+Now let's create a new drawing canvas and sketch this network of clusters.
+
+And then we will examine the books qualitatively -- back on the web interface -- to come up with coarse descriptions of the clusters.
+
+Finally, we inquire as to what connections the inter-cluster edges represent, like this:
+
+And ueber-finally, let's prepare this network for data entry in NodeXL
+Vertex1	Vertex2
+creativity	innovation
+innovation	Pirsig-education
+innovation	Rand-novels
+Rand-novels	Rand-videos-etc
+Rand-novels	Rand-philosophy
+Enter Data into NodeXL
+Start on the vertices tab and enter vertex 1 in column A, vertex 2 in column B.
+Click on refresh graph.
+Moving nodes and graph.
+Set layout to none.
+Vertex labels, vertex size. Refresh.
+Add edge labels for an edge or two. Refresh.
+Vertex label position.
+Copy to clipboard. Paste into writeup document.
+
+
+Suggestions
+The hot book in higher education, //Academically Adrift.//The Real Mitt Romney]Steve Jobs' biographyMoneyball by Michael LewisEasy Riders, Raging Bulls: How the Sex-Drugs-and-Rock 'N' Roll Generation Saved HollywoodCaro Emerald's album Scenes from the Cutting Room FloorOmnivores DilemmaFast Food NationCity: Urbanism and Its EndPresident Obama's Audacity of HopeThe Art of Computer Programming by Donald KnuthC ProgrammingThe Future of the Internet and How to Stop It
+Q0047. Use NodeXL to visualize the following networks**Node List**{{A, B, C, EB, A, C, FC, A, DD, B, E, FE, B, FF, A, D, E}}**Edge List**{{A, BA, CA, EB, AC, AC, B,C, DD, BD, ED, FE, FF, BF, CF, D}}**Full Matrix**
+@@  @@A B C D E F
+A - 1 0 0 0 1
+B   - 0 0 1 1
+C 	- 1 1 1
+D   	- 1 0
+E     	- 0
+F       	-
+Q0048. Convert the information below - data on four organizations, listing the members of their boards of directors - into a network data format and then use a network visualization program to show the 2 mode network laid out nicely with nodes labeled.
+Acme Association	Boothwyn Foundation	The Cannalo Organization	Dynamic Educational Consulting
+Allen	Allen	Barb	Chris
+Barb	Ethan	Chris	Dante
+Chris	Fran	Ethan	Ethan
+Dante	Gent	Fran	Kelly
+Harri	Ishtar	Lori
+Jack	Miguel
+Q0049. Convert this 2-mode data into 1-mode data
+Flavor	Who Likes It
+Chocolate	Abe, Bertha, Cyndra, Dalia
+Vanilla	Abe, Cyndra, Eve, Faisel, Gerd
+Strawberry	Bertha, Cyndra, Hettie, Iolantha
+Pistachio	Cyndra, Dalia, Gerd, Hettie, Iolantha
+Q0050. What kind of network data might emerge from: tweets, retweets, hashtags? Assume we have powerful access to the Twitter stream (meaning we can grab all the tweets in a given time frame, all the tweets by a set of users, all the tweets that mention a hashtag or a user, etc. And assume we have access to the API and so can take a user name and get a list of who she follows or who follows her.Describe five different networks we might construct from this data.
+Q0051. To **transpose** a matrix we simply swap its rows and columns:
+{{A B CD E FG H I}}	> > > >	{{A D GB E HC F I}}
+or
+{{A B CD E F}}	> > > >	{{A DB EC F}}
+If the matrix is called 
+M
+ then we write the transpose of M as 
+t
+r
+(
+M
+)
+.Transpose these three matrices[[cell style="width: 200px; vertical-align: middle;"]]B
+A	C
+{{A B C DD E F G}}	{{0 1 0 21 0 3 10 3 0 42 1 4 0}}	{{1 1 00 1 11 0 1}}
+Q0052. If necessary, review the Wikipedia page "matrix multiplication." Then practice with the following
+A =
+{{a bc de f}}		
+B =
+{{e f gh i j}}		
+C =
+{{1 1 1 00 1 0 1}}		
+D =
+{{1 11 11 01 0}}
+What is (1) AxB (2) CxD (3) AxC (4) DxB (5) BxC
+Q0053. Practice constructing network survey instrument ("by hand"), administering and recording data.
+Sketch out (paper and pencil mode) a brief network questionnaire that includes
+# Respondent name and a few demographics (e.g., sex and age) # List of R's "confidantes"
+For each confidante we want to collect a bit of demographic info (e.g., sex and age)
+For each confidante we want to know whether R has particular activity tie (e.g., have you had dinner in the last week).
+Construct a grid that will let you record R's answers to whether for each pair of confidantes she has Xd with the two.
+Construct a grid that will let you record R's assessment of whether a particular relationship exists between each pair of confidantes.
+Q0054. Use the data you generated in [[[q:0053|Q53]]] to produce simple visualizations of these networks in NodeXL and import these into a Word document to report your results.
+Q0055. Consider this adjacency matrix. Following standard conventions, calculate in- and out-degree for each vertex.
+A	B	C	D	E
+A	-	0	1	0	1
+B	0	-	0	1	1
+C	0	1	-	1	1
+D	0	0	1	-	0
+E	0	1	1	1	-
+Q0056.
+Go to NameGenWeb and select output in the form of a GraphML file. You may have to sign into to Facebook to make this work. When the program comes back and says "Thank you for waiting. Your network is now available" you can click and save or right click the link and save the file (to a directory where you will be doing your work). If you click the button you will see a .graphml.XML file that looks like this which you can Save as...:
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+<key id="uid" for="node" attr.name="uid" attr.type="double"/>
+<key id="sex" for="node" attr.name="sex" attr.type="string"/>
+<key id="pic" for="node" attr.name="pic" attr.type="string"/>
+<graph id="G" edgedefault="undirected">
+<node id="name of a friend">
+<data key="uid">219655</data>
+<data key="sex">female</data>
+<data key="pic">http://profile.ak.fbcdn.net/hprofile-ak-snc4/174207_219655_1563807427_s.jpg</data>
+</node>
+etc.
+* If you right click you will save a .graphml file. Either file can be opened by NodeXL using **
+File>Import GraphML file...
+**
+In the Vertices worksheet, set the shape to 3 (disk). Double-click lower right corner of cell to auto-fill down.
+Use Graph Metrics to compute all metrics except In- and Out-degree.
+Use Autofill Columns to set vertex size to degree. Adjust sizes in Autofill Columns > Vertex Size Options as you like.
+Use Groups>Find Clusters (Girvan-Newman) to create groups of vertices.
+Under Layout Options (in Graph window at bottom of layout selection pull-down) select "Layout each of the graphs groups in its own box and ..."
+For layout type try Harel-Koren[[footnote]] See Wikipedia: Force Based Algorithms. Also [[/footnote]
+Use Dynamic filters to drop "leaves" or "pendants" by setting degree to greater than or equal to 2
+To figure out what your clusters are, click on sample nodes. NodeXL will highlight rows in the vertices worksheet.
+Click on Graph Metrics>Average Overall Metrics. Look on the Overall Metrics worksheet to find
+* Number of connected components * Number of single vertex components * Maximum geodesic distance * Average geodesic distance (the "degrees of separation" in your ego network) * How many nodes does your network have? How many edges? What is the number of possible edges? What is the ratio of actual edges to possible edges? How does this compare to the graph density calculated by NodeXL?
+Q0057. Facebook Ego Network with Gephi
+Q0058. Consider these examples of claimsmaking...
+Q0059. Consider the following things[[footnote]] Examples come from Borgatti, Stephen P. 2005. "Centrality and network flow." //Social Networks 27// (2005) 55–71 [[/footnote]] that can flow or move on a network:Used booksMoneySmilesGossipTaught knowledgeMooching friends/relativesEmailAttitudesWorkers (flowing among jobs)InfectionPackagesGreetingsTips/how-to-infoHelp/favors/acts of kindnessCategorize these in terms of four characteristics:
+The mechanics of diffusion: does diffusion occur via replication (copy mechanism) or transfer (move mechanism)?
+(applicable only to replication-based flows) Is the duplication is one at a time (serial), like giving a paperback to a friend, or simultaneous (parallel), like a radio broadcast.
+Does the traffic flow deliberately or blindly/randomly?
+Does the traffic revisit places it's already been? That is, is the flow on paths (no node repeats), trails (no edge repeats), or walks (visiting nodes and edges perhaps repeatedly).
+Q0060. Use NodeXL to compute betweenness, closeness, and Eigenvector centralities of the network shown below ([[file centrality-example-04.xlsx| Excel file here]]). Label the vertices with these.
+Rearrange the edges so as to get the largest value for betweenness centrality for vertex A
+Rearrange the edges so as to get the largest value for closeness centrality for vertex A
+Rearrange to get largest Eigenvector centrality
+
+
+Q0061. Donald Black wrote of two ways that social control can be a variable. Answer three questions about this:
+In what sense can SC be a variable? What does that mean?
+What kinds of questions do we ask when we look at social control as an independent variable?
+What kinds of questions do we ask when we look at social control as a DEPENDENT variable?
+Q0062. Using the course page on [[Corporate Persons]] as your jumping off point, search for information on the current state of the "overturn citizens united" or "anti-corporate person" campaign in each of your states. The first installment of the assignment is a very quick overview of each state.You might include
+Name and party of current governor
+Makeup of state legislature
+Party makeup of congressional delegation
+Weblinks to any Occupy organizations in the state?
+Do any of the national efforts appear to have a base in the state?
+Is there a homegrown effort.
+In all cases, document as much as you can with URLS, etc.
+NLA	West Virginia (WV)	Wisconsin (WI)	Wyoming (WY)
+ANB	Alabama (AL)	Pennsylvania (PA)	Vermont (VT)
+REB	Illinois (IL)	Maryland (MD)	Massachusetts (MA)
+RKB	Rhode Island (RI)	Washington D.C (DC)	South Carolina (SC)
+VGB	Georgia (GA)	New Hampshire (NH)	New Jersey (NJ)
+AJC	Connecticut (CT)	Virginia (VA)	Washington (WA)
+KAD	Montana (MT)	New York (NY)	North Carolina (NC)
+AGO	Indiana (IN)	Iowa (IA)	Missouri (MO)
+MTI	Alaska (AK)	North Dakota (ND)	Ohio (OH)
+CAM	Arizona (AZ)	Arkansas (AR)	Texas (TX)
+AEM	Utah (UT)	Oklahoma (OK)	Oregon (OR)
+NRR	Colorado (CO)	Delaware (DE)	Florida (FL)
+DJR	South Dakota (SD)	Tennessee (TN)	Nebraska (NE)
+DNS	Minnesota (MN)	Kansas (KS)	Kentucky (KY)
+LJT	Michigan (MI)	New Mexico (NM)	Nevada (NV)
+CEW	Hawaii (HI)	Idaho (ID)	California (CA)
+PYW	Louisiana (LA)	Maine (ME)	Mississippi (MS)
+Reference Material
+[[[soc180:occupy-data-project-ows-sites|Occupy Sites]]][[file NYTimes%20on%20CitizensUnitedDecision20100121.pdf| NYTimes on CU Decision]] 21 Jan 2010ACLU Amicus BriefClick HERE to edit our googledoc or you can do it in the window below (though that might be a bit klunky).----
+Q0063. Imagine a 10\times10 square grid. Each cell can be empty...
+Q0064. We'll use data on early 20th century Scottish industries to investigate interlocking directorates.
+(From Pajek data online) This dataset contains the corporate interlocks in Scotland in the beginning of the twentieth century (1904-5). In the nineteenth century, the industrial revolution brought Scotland railways and industrialization, especially heavy industry and textile industry. The amount of capital needed for these large scale undertakings exceeded the means of private families, so joint stock companies were established, which could raise the required capital. Joint stock companies are owned by the shareholders, who are represented by a board of directors. This opens up the possibility of interlocking directorates. By the end of the nineteenth century, joint stock companies had become the predominant form of business enterprise at the expense of private family businesses. Families, however, still exercised control through ownership and directorships.
+The data are taken from the book The Anatomy of Scottish Capital by John Scott and Michael Hughes. It lists the (136) multiple directors of the 108 largest joint stock companies in Scotland in 1904-5: 64 non-financial firms, 8 banks, 14 insurance companies, and 22 investment and property companies (Scotland.net). In this dataset, which was compiled from the Appendix of Scott & Hughes' book, note that two multiple directors (W.S. Fraser and C.D. Menzies) are affiliated with just one board so they are not multiple directors in the strict sense.
+The companies are classified according to industry type: 1 - oil & mining, 2 - railway, 3 - engineering & steel, 4 - electricity & chemicals, 5 - domestic products, 6 - banks, 7 - insurance, and 8 - investment. In addition, there is a vector specifying the total capital or deposits of the firms in 1,000 pound sterling.
+References
+John Scott & Michael Hughes, The anatomy of Scottish capital: Scottish companies and Scottish capital, 1900-1979 (London: Croom Helm, 1980).
+W. de Nooy, A. Mrvar, & V. Batagelj, Exploratory Social Network Analysis with Pajek (Cambridge: Cambridge University Press, 2004), Chapter 5.
+History
+Original authors: are John Paul Scott (1949) (scottj@essex.ac.uk, University of Essex) & Michael Hughes (1947, University of Lancaster in 1980, not listed now).
+Data compiled into Pajek data files by W. de Nooy, 2001
+Use NodeXL to visualize this data. The data is in three network datasets: a bipartite network of people and companies (edges represent a person being a director of a company); a network of people (the edges are co-membership in companies); and a network of companies (edges are sharing a director).Task 1: Create a preliminary two mode visualization that shows people as small circles and companies as larger squares. Try different layouts (including manually assisted) and produce the best visualization you can (in a reasonable amount of time). Can you color the companies by industry? Are there individuals who appear to be bridges between industries? Or who appear to be kingpins in a particular industry?Task 2: Do a quick exploration of the people by people network. Try different visualizations. Calculate graph metrics. It might clarify the visualization if you use dynamic filtering to discard barely connected individuals. Change node size by graph metric. Can you identify a class of apparently important people? Try clustering.Task 3: Now look at company by company network. Cluster, color, explore. How much do network clusters follow industry? Are there cluster bridging companies? Are you surprised at what they are.Turn in short paper that shows your explorations.The data is in the following Excel files.[[module files]]
+Q0065. Consider the document, "Plagiarism: Deterrence, Detection and Prevention" (a teaching manual for economics and business) by Jeremy B. Williams as an artifact. How would you classify the strategies for plagiarism prevention that it describes?
+Q0066. The chart below could easily figure in an argument that the death penalty does not deter murder. It shows that since 1990 the murder rate per 100,000 population has been higher in states WITH the death penalty than in those without it.What is an obvious "correlation is not causation" counter-argument?
+
+Q0067. Work through the first half of chapter 7 of the NodeXL book using the [[file http://djjr-courses.wikidot.com/local--files/soc180:data/Senate_Raw.xlsx|senate data]].Let's see if we can find some structure within either or both of the parties. The last exercise the text book suggests -- changing the edge filtering threshold (basically eliminating edges below some threshold so that we only count it as a similarity edge if, say, two senators vote together 75% of the time) -- let's us see some variation.But what if we look only at Republican-Republican edges?=VLOOKUP([@[Vertex 1]],Vertices[[Vertex]:[Party]],28)&"-"&VLOOKUP([@[Vertex 2]],Vertices[[Vertex]:[Party]],28)
+Q0068. STUDENTS AND CLASSES[[MODULE FILES]]
+Q0069. Define "coordination" and give five examples of coordination problems that you dealt with today.
+Q0070. If social order equals coordination and cooperation, provide some illustrations that support the authors' contention that "the problem of social order underlies questions of central concern to sociologists in substantive areas as diverse as crime and deviance, social movements, organizations, politics, religion, international relations, and the family" (xiii.1). Use this an opportunity to show you can distinguish cooperation and coordination and in general "get" the course. Perhaps add a category or two of your own.
+Q0071. Consider this little bit of logic that describes a tourist's thinking process (taken from the title of a 1970s movie): “if it’s Tuesday, this must be Belgium. Otherwise, I have no idea where we are.” Sketch a flowchart that represents this flow of thought.
+Q0072. Sketch a flowchart that represents this bit of logic: “if you are a woman then if you are over 40 you should have this test no matter what but if either parent had diabetes women should have the test no matter what. Men only need to take the test if they are overweight.”
+Q0073. Sketch a flowchart that represents this bit of logic: “if cell E$3 is greater than cell G$12 then value is G$12; otherwise, value is G$12-E$3.”
+Q0074. Sketch a flowchart that represents this bit of logic: “if the balance is less than the minimum alternative payment then just pay the balance, otherwise, pay the minimum alternative payment.”
+Q0075. Sketch a flowchart that represents this bit of logic: “If you can get a direct flight for under $1500 take it unless it leaves from SFO before 9 am. Otherwise, see if anything is available on frequent flier miles no matter what the routing. If you can’t find anything, use Expedia to find the cheapest flight out of OAK.”
+Q0076. Sketch a flowchart that represents this bit of logic: If I have anything that is due tomorrow then if I am acing the class already and if I have some money I’ll go out drinking by myself (since all my friends will be busy), but if I don’t have any money I’ll stay home and watch reruns on cable. If, on the other hand, I’m not acing this class, I’ll stay home and study. If I don’t have anything due tomorrow, then if I have some money I’ll see if some friends are around and if so I’ll party with them. Otherwise, I’ll drink alone. If I don’ t have any money I’ll just stay home and watch reruns on cable.
+Q0077. Draw a flow charts that represents "Do A until B" and "While B do A. Then do C".
+Q0078. Sketch a flow chart that represents the following writing protocol: (1) Edit your essay until it is perfect. (2) While the essay still needs work, edit your essay.
+Q0079. Use stepwise refinement to create a flow chart for this set of instructions: Do A and then B. If C, then while E do F and after that do G, otherwise do H. Do I.
+Q0080. If A: until B do C and then, do D if E, otherwise do F while G. Otherwise if H, then if I do J else do K. Do L.
+Q0081. Is a picture worth 548 words? Convert the Rock County, Wisconsin "Drug Court Flow Chart" from text form to diagram form.
+District Attorney and Defense Attorney present to Judge in assigned Criminal Court a completed Rock County Drug Court Contract and a copy of the defendant’s criminal history (either NCIC Report or CCAP Record of Convictions).
+Criminal Court Judge determines the defendant may be eligible for Drug Court so the matter is continued for two (2) weeks before the same court. Judge orders defendant to attend an initial screening at the offices of the Rock County Community RECAP Program, 303 W. Court Street, Janesville, WI on the following Tuesday.
+Court Attendant for the Criminal Court will then immediately photocopy the completed Drug Court Contract, the defendant’s criminal record (either NCIC or CCAP), and the criminal complaint in the present matter and place them in an envelope and put it in the mailbox of the Community RECAP Program that is located in the Courthouse mailroom.
+The Court Attendant will daily FAX a list of the defendants referred the Community RECAP Program, providing the defendant’s name, date of birth, and case number. This will be FAXed daily to (608)743-1759 to provide that office with a list of the defendants they should expect the following Tuesday for the initial screening.
+Upon completion of the initial screening the Community RECAP office will FAX to the Criminal Court a document indicating the completion of the initial screening and whether the defendant is qualified for the Drug Court. If the defendant is eligible, the Community RECAP office will provide the defendant with an appointment date (scheduled after his next scheduled return to the Criminal court) for completion of the intake process and to complete a full assessment of the defendants needs. The defendant will also be scheduled with an initial date for first appearance at Drug Court. This information will also be contained in the FAX sent to the Criminal court.
+After the initial screening, the defendant returns to the Criminal Court. If the Community RECAP FAX (from #5 above) has been received by the court and it indicates that the defendant is eligible for the Drug Court, then the Criminal Court will take the plea to the original charge but will withhold a finding of guilt. The Court will then order the clerk to place the file in status “Deferred Pending”, continue bond and order the defendant to the Drug Court appearance indicated on that FAX.
+The Court Attendant will then photocopy the following documents, place them in an envelope, and forward them to Judge John Roethe of the Drug Court as these documents will constitute the Drug Court file:
+# Criminal complaint, # Completed Drug Court Contract, # NCIC or CCAP criminal history of the defendant, # Community RECAP Program FAX indicating the completion of the initial screening and initial date for first appearance before the Drug Court.
+The matter will not return to the Criminal Court until the defendant either successfully completes the program or is removed from the program. If the defendant successfully completed the program the court will implement the agreement outlined in the Drug Court Contract. If for any reason the defendant fails to complete the program the defendant’s original plea will be perfected the entry of a finding of guilt and the matter will proceed to sentencing on the original charge.
+Q0082. Flow chart the following protocols. (a) Record youth name and address. Check in system to see if already there. If there, pull up record and verify information. If not, create new record and ask for information. When done, send record to orientation staff, give youth a number and instruct to wait until number is called. (b) Once stage three in the treatment regimen is completed, clients are not eligible for the next stage in treatment until they have had three consecutive clean weekly drug tests. If they have one failed test they are given a warning. Two failed tests in a row and they have to meet with a counselor. Three failed tests and they are out of the program.
+Q0083. Weimer & Vining (1989) characterize policy problems in terms of market failure and government failure. Any given problem, they suggest, can be placed in one of four categories: (1) market AND government failure; (2) government works (policy corrects for market failure); (3) market works; (4) government failure to correct for market failure. Their suggested strategy is to start by asking whether there is a market failure and then whether there is government failure. Using the two conditionals, "Is there evidence of market failure?" and "Is there evidence of government failure?" construct a flowchart that would permit you to classify any given situation into one of the four aforementioned categories.
+Q0084. If the weather is nice, plant a garden. Otherwise paint the office. For the garden, make a decision between flowers and vegetables. If you go for vegetables, buy compost, seeds, and stakes; till the soil, and hook up the irrigation. If it's flowers this year, go to the garden store and if they have 4 inch plants buy enough for the plot and plant them. If they don't then get flats of smaller plants and bring them home and let them get acclimated for a week and then plant them next week. To till the soil, if the ox is healthy, do it with the animal plow, otherwise get out the rototiller.
+Q0085. A regimen consists of three mandatory sessions, followed by an optional weekend retreat and then, monthly sessions until standard test indicates absence of symptoms.
+Q0086. Sort clients into four categories promising, troubling, recalcitrant, hopeless on the basis of two tests which can be passed or failed.
+Q0087. Sketch a flow chart to represent the following scenario. The Alameda County Waste Management Authority (ACWMA) has decided to spend some money on a public relations campaign to increase the level of composting ("green bin") recylcing. Data on hand says that current levels are 4 kg per household of four per week. The plan is to spend $10,000 on advertising each month until the level has gone over 6 kg per week for four weeks in a row.Prefatory concern – what does 4 kg / household of 4 / week mean? The amount of compost likely depends on the number of people in a household. We don't want to get the numbers wrong by failing to take this into account. So, in our data collection, we double the number for households of 2, halve it for households of 8, etc. Why not just express it as "kg/person/week"? That would work fine mathematically. Perhaps the PR folks had wanted to focus on households (and families) so as to induce a greater sense of collective responsibility.
+Q0088. Convert the following statement to “pseudo-Excel” formulas (follow the example to see what we mean by that).Example. "If it is Tuesday, this must be Belgium, otherwise it is France" would become something like
+= if(day="Tuesday","Belgium","France")
+If the calculated payment (CALC_PMT) is less than the alternative monthly minimum payment (ALT_MIN_PMT) then the payment is the alternative monthly payment otherwise it is the calculated payment.
+Q0089. Convert the following statement to “pseudo-Excel” formulas (follow the example to see what we mean by that).Example. "If it is Tuesday, this must be Belgium, otherwise it is France" would become something like
+= if(day="Tuesday","Belgium","France")
+If the current balance (BAL) is less than the calculated payment then pay the balance off, otherwise, pay the calculated payment.
+Q0090. Convert the following statement to “pseudo-Excel” formulas (follow the example to see what we mean by that).Example. "If it is Tuesday, this must be Belgium, otherwise it is France" would become something like
+= if(day="Tuesday","Belgium","France")
+If the calculated payment is less than the alternative minimum monthly payment then pay the alternative monthly minimum unless it is more than the remaining balance in which case just pay the balance off. Otherwise pay the calculated payment.
+Q0091. Sketch flow chart that captures logic of the following process.Organization consists of intake personnel, counselors, followup social workers, and clerical staff.When a new client contacts the organization intake personnel determine which of four types of case it is by asking two questions. If a client is returning having already been "typed" she is sent to the appropriate waiting room. Types 1 and 3 are referred to counselor A, type 2 to counselor B, type 4 to counselor C.Client goes to waiting room until counselor is free. Sessions take 1 hour so the wait can be long. If more than one person waiting client is advised to go away and come back later.In session, if the client is over 18 they get treatment protocol 1 otherwise they get treatment protocol 2.
+Q0092. What is wrong with the decision tree here? I need to decide whether to work at home or go down to Stanford today. At home, because of distractions, I work at about 75% efficiency. If I go to my research office at Stanford I work at 100% efficiency. If I work at home I will get 8 hours to work. If I decide to drive down to Stanford, I will get 8 hours minus driving time to work. The normal drive is 60 minutes each way. But about 20% of the time it is extra light and the round trip takes just 90 minutes. About 30% of the time, though, traffic is awful and round trip is 180 minutes. I made a decision tree to figure out where I should work if I am trying to maximize my output, but I did something wrong. Fix the tree and tell me what I should do.[[=image https://djjr-courses.wdfiles.com/local--files/ppol225:images/decision-tree-problems-01.gif]]
+Q0093. A new device at your favorite big box store costs $200. It has a one year guarantee from the manufacturer. The cashier offers you a special deal on a three year replacement warranty (assume it's good, will be honored, etc.) -- $40. You estimate that the chances of the device failing during second and third years is 25% and that the price of replacement by then will be $150. Should you buy the service plan? What are the parameters of this decision model?
+Q0094. Assuming you are self-interested, what makes more sense: buy a $1.00 lottery ticket with a 1 in five million chance of winning a million dollars, buying a twenty dollar raffle ticket for a local fundraiser with a 1 in 2500 chance of winning a $500 jackpot, or playing a $1 stake game of rock-scissors-paper with the person next to you.
+Q0095. You never know what the weather is going to be around here. Somedays you need a sweater and some days you need sunglasses. The smart person, they say, always brings both. But suppose there is a definite hassle involved in bringing either (e.g., you ride a bike and space is tight). Sketch a decision tree that takes into account a cost to bringing either and a cost to not having either when you need them and the possibility that on a given day you might need one, the other, or both. Use plausible numbers of your own choice.
+Q0096. A college enrolls two types of students. Full-pay students pay $40K tuition and half-pay students pay $20K. At present the school spends $1 million per year to recruit 200 students about 75% of whom are half-pay and 25% full-pay. A consultant submits a proposal to shift resources around and use GIS to target recruitment at zip codes that are more likely to yield full-pay students. She says there is a 75% chance that the results will be a slightly smaller class (190) but one with 40% full-pay and 60% half-pay. Unfortunately there is also a risk things won't turn out so well. There's a 25% chance that enrollment will drop to 170 and only 30% will be full pay. Use a decision tree to advise the college as to its best course of action.
+Q0097. There's an idea in philosophy called "Pascal's Wager" that describes a way of thinking about the existence of god. It goes like this. I have a choice to believe or not believe. And there is a chance that god exists and a chance that there is no god. If I believe and there is a god, I have a chance at eternal salvation. If I don't believe but there is a god, I suffer eternal damnation. If I do believe and it turns out there is no god, I will feel a bit of a chump, but the atheists can feel smug if opposite is the case. Sketch this situation as a decision tree. Should you believe in god?
+Q0098. Sketch the decision tree for the following scenario. I want to buy a used car. The car I am looking at is being offered at $4000. The seller says it is in good shape all around. I look it over and agree, but you never know for sure. Suppose there is a 10% chance that it is a total dog and that buying it will be a $2000 mistake. I know a mechanic who will give it a very thorough inspection, for a price. If my assumptions are correct, what's the most I should pay my mechanic?
+Q0099. We want to apply for a home equity line of credit. The bank says it has to know what your house is worth (It has to be worth a certain amount over what we still owe on the mortgage to get a loan at a good rate). A loan at a bad rate will cost $10,000 more than a loan at a good rate. We think there is a 60:40 chance that our house is in fact worth enough to get a good rate. We have a choice between a cheap appraisal ($100) and an expensive appraisal ($1000). A cheap appraisal, we have learned, has a 40% chance of correctly valuing a property. An expensive appraisal is right 70% of the time. Draw a decision tree that will help us figure out what to do.
+Q0100. How much would you be willing to pay for a forecast that would resolve the contingency in [[[q:0095|problem 95]]]?
+Q0101. If the farmer plants early and the spring is warm, she can get a 20% increase in her harvest. But if she plants early and there's a late frost she can lose 50% of her harvest. Historically, these late frosts happen one year in four (25% of the time). Use a decision tree to determine how much she would be willing to invest in a perfect forecast.
+Q0102. Kids these days! Of those who get into trouble, it turns out, about 30% are "real trouble-makers" who need some help. The other 70% are normal adolescents who will age out of their trouble-making under normal care. A social worker friend introduces you to a test that you can give to kids who are referred to you to determine which category they are in. Research has suggested the test is 75% accurate. Use tree flipping to describe what to make of the test's results.
+Q0103. Suppose we are running a program to which we want to accept only individuals in the top 25% of the population (on some measurable trait). Unfortunately, our test for measuring the trait is only 80% accurate. Draw event tree and flip to show what kind of faith we can have in the test results. Which test result appears more worthy of taking at face value? Which group would you be inclined to develop a second test for?
+Q0104. House gets another case. There's this funny rash. We won't say where it appears, but it's a funny rash. In 1% of the cases, it means something really, really bad -- anxoreisis. Fortunately, there's a test. Unfortunately, it's not a perfect test. Fortunately, it's a pretty good test. Unfortunately, it is wrong 2% of the time. Work it out.
+Q0105. Following on [[[q:0104| problem 104]]], suppose the test is not painless or without its own risks. Suppose the "cost" of the test is 5. And suppose the treatment is also not so nice and the cost of the treatment is 15. But if you have the disease and you are not treated, the results are nasty : 50. Do we have enough information to recommend a course of action? What should we do?
+Q0106. She may love you or she may not. It turns out there is a 40% chance she does. You decide to use the buttercup test to find out (hold a buttercup under chin and see if it reflects yellow). The test is 90% accurate. Draw tree and flip to determine what conclusions we can draw from positive and negative buttercup test results.
+Q0107. Our neighborhood association has a ten member board. Each year it plans to add four members. Write the difference equations that describe the size of the board (S) each year.
+Q0108. You are a small non-profit. Your sole funder says that each year it will double what you have as your balance at the end of the year. Each year you project spending 20,000 for programs. Ignore interest. Write difference equations describing your balance (B).What special situations can you imagine we might get into? What, for example, happens if B_{0}=$32,000? What happens if it is 50,000? 40,000?
+Q0109. Each year the feral cat population grows by 3%. Let C_{n} be the number of cats n years from now. Assume there are presently 350. Write a difference equation that describes the cat population from year to year.
+Q0110. Each year the feral cat population grows by 3%. Let C_{n} be the number of cats n years from now. Assume there are presently 350. Suppose that each year we catch and euthanize or place in homes 20 cats. Write the equations for this situation.
+Q0111. Let's say we have a 2 year graduate program. The first year class is growing at a rapid rate 5% per year. Between the first and second years, 25% of the students change their minds or get jobs and leave the program. Among the second years, 10% leave before graduation. The program currently has 20 first year and 12 second year. Write difference equations to describe population in future years.
+Q0112. Sketch a causal loop diagram representing this logic:Being sad...
+...makes you frown...
+...which makes people avoid you...
+...which makes you lonely...
+...which makes you sad...
+Q0113. Sketch a causal loop diagram for this system (be sure to label each link and the overall loop). Comment on the long term equilibrium of this system.
+Being happy...
+# ...makes you to smile... # ...makes people approach you... # ...makes you feel social... # ...makes you happy...
+Q0114. A totalitarian country that prohibits migration has a birth rate **b** and a death rate **d**. How does the population change from one year to the next?We can interpret "birth rate" or "death rate" in two ways -- as a rate, for example, deaths per 100 people -- or as an absolute number, for example, 5 people per year. In general, we will mean the former.Let 
+P
+i
+ be the population in year **i**. Write an expression for the population in year i+1. If the population in a given year is 100 and birth rate, b, is 5% and the death rate, d, is 6%, write out the population for the next 5 years.
+Q0115. There are no births in a Shaker community, only **R** recruits per year. The death rate is **d**. What is the difference equation that describes this situation?
+Q0116. The Eastville School Committee is agrees to an annual $200 per year salary increase for each Eastville teacher. Express this as a difference equation.
+Q0117. The Westtown School committee is more generous. It agrees to a 5.5% cost-of-living increase per year, plus a one time only $200 adjustment for past sins of omission. Express this as a difference equation.
+Q0118. The Westtown School committee is more generous. It agrees to a 5.5% cost-of-living increase per year, plus a one time only $200 adjustment for past sins of omission. How much would it be worth to teachers if the one time adjustment were made before the first COLA rather than after.
+Q0119. Mills public policy program recruits **R** new students each fall. In the spring 0.0G (i.e., G%) students graduate. At the end of a typical year 0.0L (i.e., L%) of active students leave for personal or other reasons. Express the current student population, **P**, in terms of these figures.
+Q0120. My bathtub fills at 10 gallons per minute. It has a leak, though, whereby it loses 10% of it's volume per minute. It's a neat rectangular tub in which each 10 gallons is 2 inches of depth. How does it behave over time?
+Q0121. Consider a "leaky" reservoir. Current volume 1,200 million gallons. Inflow 200 million gallons per month. Consumption 150 million gallons per month. Leakage 5% of current volume per month.
+Draw a stock and flow diagram of the situation.
+Draw a causal loop diagram showing the relationship between reservoir volume and the net in/out flow.
+Identify amount(s) and rate(s).
+Write the difference equation in the form 
+P
+n
++
+1
+=
+a
+×
+P
+n
++
+b
+.
+Calculate the expected equilibrium.
+Set up Excel model.
+Chart reservoir volume vs. time.
+Q0122. The most basic opportunity cost incurred when undertaking a project is the simple value of investing the money instead of spending it. A first step toward figuring out what that cost is is understanding compound interest. Show what happens to $1000 if the annual interest rate is 5%.
+Q0123. --Suppose I am sitting on $20,000 and I am trying to figure out whether or not to use it to buy a car. I have a very limited life and have determined that if I buy the car I will have to pay $800 insurance and about 10 cents per mile to operate it and I drive 2500 miles per year. If I own a car I'll drive rather than take the bus on approximately 300 local commutes (saving $1000 and 150 hours net). My time is worth $50 per hour. An alternative would be to put the $20,000 into an investment vehicle (so to speak) that would pay me 7.5% annually.--
+Q0124. On the grid below ......draw the line 
+y
+=
+2
+x
++
+1
+ ...shade the area for 
+x
+>
+5
+ and the area for 
+y
+<
+3
+...shade the area for y >= 2x + 1
+
+Q0125. Write an equation for the line passing through the points (3,2) and (0,5).
+Q0126. Why do people scream into cell phones? Answer in terms of feedback.
+Q0127. Consider the singles bar scene. Develop a model along the lines of the market for lemons (Wikipedia), that would suggest that information asymmetries could possibly kill the scene. What institutional interventions prevent this from happening?.
+Q0128. Consider the act of filling up a bathtub for a baby (or yourself!). You have a faucet that you can turn more towards hot or toward cold. List out the flows, the stocks, the sources of information, the "valves," and the rules that govern the valves in this system.
+Q0129. Draw a stock and flow diagram for filling up a bathtub for a baby (or yourself!). You have a faucet that you can turn more towards hot or toward cold. Be sure to show the flows, the stocks, the sources of information, the "valves," and the rules that govern the valves in this system.
+Q0130. In a "bathtub problem," why don't we include the water company or the sewer system to be stocks?
+Q0131. Draw a causal loop diagram that illustrates the process of feeling hungry, eating, becoming satisfied, stopping, getting hungry again.
+Q0132. Create both a causal loop and a stock and flow diagram for a thermostat, heater, and house. The house is a stock of air. When its temperature goes below some threshold, hot air is added. All along though, hot air is subtracted (or cold air is added) through leaky windows and the like. But the temperature does not change immediately upon introduction of the hot air. What are the challenges of modeling this phenomenon discretely and how can we solve them?
+Q0133. College is a more or less four year endeavor but students come and go on different schedules. Sketch a stock and flow model that shows freshwomen applicants coming from the cloud, admitted students from applicants, and freshwomen from the admittees. Then freshwomen become sophomores, mostly, but there is some attrition. And so on through the other years. Sketch a stock and flow diagram that follows students through four years and think up some variables that might affect the flows between the different years. For this problem, you should try wearing the hat of an academic administrator who is interested in the problems of "retention" and "degree completion."
+Q0134. Consider a system for a flu vaccine clinic. People arrive at some random or fixed rate and queue up. Our first station (F) has to get them to fill out a form, sign some papers, etc. After this they get in the line for the actual shots (at station V). We have a fixed number of staff whom we will divide between the two stations, depending on the size of the queues. Draw the stock and flow diagram for the system and write the equations for Q1, Q2, F and V.
+Q0135. Walk us through this diagram[[=image http://www.systemdynamics.org/DL-IntroSysDyn/feed10.gif]](http://www.systemdynamics.org/DL-IntroSysDyn/feed10.gif)
+Q0136. Write out the difference equation that represents the following scenario and the first five terms of the corresponding sequence given the stated starting value.
+Membership in a club goes up by 4 people each year. At year one it has 21 members.
+A community's population increases by 4% each year. At year one it is 350.
+A swimming pool, currently containing 100,000 gallons of water, is leaking at the rate of 2% per day but is being filled at the rate of 1,000 gallons per day.
+A retirement account which stands at $120,000 earns 3% interest annually. The owner needs to withdraw $1500 per month to pay for eldercare.
+For each of these, graph P_{n} vs. time.For each of these, graph P_{n+1} vs. P_{n}
+Q0137. Derive the equation for the equilibrium value of a difference equation from a formula that shows how P_{n+1} relates to P_{n}.
+Q0138. Suggest rewrite of the following text:
+For example, Goffman uses front to distinguish and label the different parts of front as he sets a scene that consist of three components by using setting, appearance, and manner. In which an actor has the ability to choose his stage and props, as well as the costume he would wear in front of his audience (p.22-24).
+Q0139. Wordsmith the following passage from the first paragraph of a paper about Erving Goffman's //Presentation of Self in Everyday Life.//
+In //Presentation of Self//, Erving Goffman states that a front is "that part of the individual's performance which regularly functions in a general and fixed fashion to define the situation for those who observe the performance" (p.22). In other words, you need to have an image of how you want people to see you at a certain point in time.
+Q0140. Identify and fix the main problem in the following passages.
+In which an actor has the ability to choose his stage and props, as well as the costume he would wear in front of his audience (p.22-24).
+I believe by using the above example is an illustration of the “front” by describing the clinic as the social setting and the lobby as the stage for the performers.
+Q0141. Wordsmith the following
+When the performer is playing her role as society expects her to it is called idealization. Goffman’s definition of idealization is “when the individual presents himself towards others, his performance will tend to incorporate and exemplify the officially accredited values of the society, more so in fact, than does his behavior as a whole” (p.35).
+Q0142. Improve this sentence from a paper on Goffman
+Many things can create a distraction during a performance, which is an example of maintenance of expressive control.
+Q0143. Wordsmith this opening sentence:
+I will discuss some of the concepts discussed by Erving Goffman in his book //The Presentation of Self in Everyday Life,// which he elaborates face to face interactions, and the different roles that everyone takes in presenting themselves.
+Q0144. Wordsmith this passage
+In the second chapter of his book Goffman elaborates on the concept of teams. He refers to “team performance” as “teams” and it is “to refer to any set of individuals who co-operate in staging a single routine” (Goffman, 1959, 79). In other words Goffman’s concept of a team is a group of people that are adhering and working towards the same goal.
+Q0145. Wordsmith:
+There are different types of secrets, in this situation the secret is a dark secret which has to be kept from the audience forever. “These consist of facts about a team which it knows and conceals and which are incompatible with the image of self that the team attempts to maintain before its audience” (Goffman, 1959, p. 141).
+Q0146. Tweak:
+Although there are many components to his theory of performativity, in this essay I will focus on the use of “fronts” and “dramatic realization” in face-to-face interactions – two concepts from his first chapter (Goffman 22, 30).
+Q0147. Identify and fix problems of diction in these examples.
+Q0147. Edit these sentences.
+Yet, what is unique about the flight attendant’s setting is that it actually follows their performance.
+When an individual inhabits the social role of airline attendant, their ability to successfully convey to their audience the validity of their performance also relies the use of a personal front (i.e. the second component of Goffman’s understanding of front).
+Additionally, because some flight attendant-to-passenger interactions are not necessarily specific to this relationship (i.e. “hello’s” and “good-byes”), it is necessary for the flight attendant to enhance their communication as to confirm and reaffirm the role (Goffman 30).
+Q0149. Diction, etc.
+Individuals seek perpetual information about how they present themselves in their current social position and how to meaningfully readjust themselves based on their circumstances. Goffman illustrates this presentation adjustment by stating that people engage in “… performance which regularly functions in a general and fixed fashion to define the situation for those who observe the performance” (p.22).
+Goffmans argues that the front is made up of two main parts: the setting and the personal front.
+Goffman writes that a part of an individual’s performance is established in the “front”. This includes the setting, appearance of self, and manner.
+Goffman describes the necessity for a player to believe in the part one is playing.
+Q0150. Consider this passage and draft explication[[footnote]] Problem 150 based on collaboration of PT and DR. [[/footnote]]. Work through it and suggest how you might improve it.
+Text	Explication
+In "The Production of Consciousness," Marx (1845-1846) writes,“Men can be distinguished from the animals by consciousness, by religion, or by whatever one wants. They begin to distinguish themselves from the animals as soon as they begin to produce their means of life, a step which is determined by their physical organisation. In producing their means of life they indirectly produce their material life itself” (46).	In other words, Marx is saying that the difference between a human being and an animal is that human beings have consciousness and work and contribute to production that allow them to produce their means of life; therefore, work is essential to humans’ interactions.
+Q0151. A cinema has a marquee with lots and lots of light bulbs. In any given week 1% of the light bulbs burn out. Unfortunately, between being busy and being sloppy, replacement is a little bit sporadic. Of all the bulbs that are burnt out, about 95% get replaced each week. Draw the state diagram for this system.
+Q0152. Translate this description into a state diagram. A population consists of people who play it safe, and daredevils. From year to year, most (97%) safe-players stay that way, but 2% turn into daredevils. About 1% of the safe-players die each year. By contrast, 10% of daredevils die each year and another 10%, seeing that, switch to playing it safe. All the other daredevils stick with the program.Label each of the states in as //transient// or //absorbing//.
+Q0153. A criminologist and an activist decide to collaborate on a project designed to reduce prison population. In the spirit of starting simple, they identify 4 states in which people can find themselves: never imprisoned; incarcerated; on parole; post-parole. The period of time in their analysis will be one year. Suppose 70% of the population has never been incarcerated. Each year 2% of these people are imprisoned. Of those currently incarcerated, 20% are released each year onto parole. Average parole is 5 years so that a person on parole has a 20% chance of finishing parole. Those on parole have a 10% chance of finding themselves back in prison in any given year. Individuals who are post parole have a 4% chance of returning to prison in any given year. Draw a state diagram and matrix representing this information.
+Q0154. Suppose a given housing market has a 10% turnover rate each year. How many houses will typically be in the first, second, third, etc. year of their mortgage at any given time? Assume 10 year mortgages to keep things simple. Draw the diagram that would be the first step in solving this problem.
+Q0155. Suppose 25% of the mortgages written in the first years of this century were subprime (meaning the borrowers were not very credit-worthy) and all were 5 year adjustable such that after the fifth year the monthly payments would go way up. In the market in question there is approximately 5% turnover housing each year. The housing stock in the market consists of one million units. Research has shown that 33 1/3% of subprime adjustable mortgages go into default under current conditions when they go past their five year mark (and these conditions are expected to continue for some time) when they adjust.
+Q0156. A state corrections system has established a new drug treatment facility for first offenders. The center has a capacity of 1000.Inmates may leave the facility in either of two ways. In any period, there is a 10 percent probability that an inmate will be judged rehabilitated, in which case s/he will be released at the beginning of the following period.. There is also a 5 percent chance that an inmate will escape during each period. Rehabilitated addicts have a 20 percent chance of relapsing in each period; escapees have a 10 percent chance of being recaptured each period. Both recidivists and recaptured escapees are returned to the facility and have priority over new offenders.QuestionsIf it operates at full capacity, how many of the original inmates will be resident at the facility 10 periods later?How many new offenders can be admitted during each of the next 2 periods?What happens if we modify the model to allow for a small possibility of death or a change in the probability of relapse?
+Q0157. Sketch the transition matrix that corresponds to the following diagram
+
+Q0158. Suppose the following statements are true about the local housing market.
+On a month to month basis, 90% of mortgage payments are on time, 10% are late or missed.
+Of all the late/missed payments, 25% are back on track the following month. 65% are late again. 10% go into default.
+Of all mortgages in default in a given month, 20% have a work-out and return to good standing. 70% remain in default and 10% move into foreclosure.
+Of all houses in foreclosure each month, the banks manage to get 20% back on the market and resold.
+Draw the transition diagram and write out the transition matrix.
+Q0159. Implement the model from problem [[[q:0158|158]]] using [[file q:0159/p0159-markov-foreclosure-excel.xlsx | this Excel spreadsheet]].
+Q0160. Comment on and improve upon the following text explication
+Text	Explication
+In ‘Genesis and the Development of a Scientific Fact’, Fleck refers to language as a key form of interaction. He writes, “Thoughts pass from one individual to another, each time a little transformed, for each individual can attach to them somewhat different associations” (55).	That is, thoughts that are submitted through language can inspire new and different meanings once shared through spoken word.
+Q0161. Comment on and improve upon the following text explication
+Text	Explication
+“Whether an individual construes (language) as truth or error, understands it correctly or not, a set of findings meander throughout the community, becoming polished, transformed, reinforced or attenuated, while influencing other findings, concept formation, opinions, and habits of thought” (56).	blue|Thus, Fleck argues, language creates thought collectives. A thought collective is defined as a community of persons mutually exchanging ideas or maintaining intellectual interaction. Fleck believes that through the use of language, human’s form thought collectives with others whom they wish to share ideas with. With a sense of shared meaning evolves a sense of coordination.
+Q0161. Comment on and improve upon the following text explication
+Text	Explication
+“Whether an individual construes (language) as truth or error, understands it correctly or not, a set of findings meander throughout the community, becoming polished, transformed, reinforced or attenuated, while influencing other findings, concept formation, opinions, and habits of thought” (56).	blue|Thus, Fleck argues, language creates thought collectives. A thought collective is defined as a community of persons mutually exchanging ideas or maintaining intellectual interaction. Fleck believes that through the use of language, human’s form thought collectives with others whom they wish to share ideas with. With a sense of shared meaning evolves a sense of coordination.
+Q0163. Work through this passage by Durkheim:
+...it is with the people of his clan that he has most in common, and it is the influence of this group that he feels most immediately, and so it is also this influence, more than any other, that was bound to find expression in religious symbols” (55).
+Can you make any connections to Mead's generalized other? Or the generic idea of having some of our mental content being social?
+Q0164. Sketch a flowchart that represents the logic of setting up a Schelling "tipping model":To Create Schelling Model
+Set up the model.
+Run the model until everyone is content to stay where they are.
+To Set Up
+Start with an NxN grid.
+Identify a number of type A residents and a number of type B residents such that A+B is less than N^^2^^.
+Randomly place As and Bs on grid.
+To Run the Model
+For each resident, evaluate move/stay choices
+For each resident, find new location for all those that choose move.
+To Evaluate choice
+Identify the resident
+Count all neighbors
+Count similars
+Compute ratio
+If larger than threshold, mark as stay, otherwise mark as move
+To Move
+Select a random square
+If empty, move there. Otherwise try again.
+Q0165. What's the difference between an "equation-based model" and an "agent model"? What are some other synonyms we might hear for these terms?
+Q0166. Consider a one dimensional cellular automata that looks like this:
+Generation 1	0	0	0	0	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0
+Generation 2
+Show what the next few generations would look like subject to "rule 93":
+Rule 93Q0	0	0	0	0	1	0	1	0	0	1	1	1	0	0	1	0	1	1	1	0	1	1	1Q0	1	0	1	1	1	0	1
+Q0167. Suppose we have a diffusion process in which all susceptibles who are in contact with an infected in a given time period become infected in the next time period. On the grids below color in squares to indicate what happens over the first six time periods beginning with one infected. Then fill in the table and chart the data.
+
+
+
+
+
+Q0168. Suppose we have a diffusion process in which susceptibles who are in contact with an infected in a given time period have a 50% chance of becoming infected in the next time period. Now play the “game” again except this time flip a coin each time (or use a random number chart for probabilities other than 50:50) to see whether neighbors become infected or not. Note: You might not want to play all the way out to time period 5! On the grids below color in squares to indicate what happens over the first six time periods beginning with one infected. Then fill in the table and chart the data.
+
+
+
+
+
+Q0169. Consider the 12 block neighborhood bounded by parks on the north and south and major thoroughfares on the east and west. Green houses are supporting Obama, purple houses Romney.
+
+Using the facing blocks delineated by the red dashed lines as units (it yields 15 of them), calculate the index of dissimilarity.
+Q0170. Suppose you have a population of one hundred persons. It is divided into five categories of willingness to join a protest all of which depend on people's expectations of how many others will appear at the protest. The thresholds range from very low (I'll go if anyone else is going) to the very high (I won't go unless basically everybody else is going).Assume the population is divided among these categories as follows:
+Challenge of Recruiting	Very Easy	Easy	Average	Hard	Very Hard
+Participation Threshold	1	10	40	60	99
+Number at this threshold	10	20	40	20	10
+a. If news reports suggest that 15 people will show up, how many actually will? b. If last week saw participation of 41 and this is widely reported so that everyone knows, how many will come out this week? And then next week? And after that?c. What if 91 came last week?
+Q0171. A common phrase to describe processes in which people engage in imitative behavior is "bandwagon effect." Explain the appropriateness of this metaphor.
+Q0172. Consider this data on the thresholds in a population. Draw a frequency histogram and cumulative frequency diagram. If news reports suggest participation will be at 20 people, how many people's threshold is met or exceeded? How about if the number is 70?
+
+Q0173. Consider this data on the thresholds in a population. Draw a frequency histogram and cumulative frequency diagram. If news reports suggest participation will be at 20 people, how many people's threshold is met or exceeded? How about if the number is 70?
+
+Q0174. Consider this data on the thresholds in a population. Draw a frequency histogram and cumulative frequency diagram. How does this system behave when the expected number is 10? 20? 50? 60? 90?[[=image http://djjr-courses.wikidot.com/local--files/ppol225:images/p0174-table-a.gif]]
+Q0175. Consider this data on the thresholds in a population. Draw a frequency histogram and cumulative frequency diagram. Plot the cumulative distribution on a chart with a 45 degree line.
+
+Q0176. Which of the cumulative frequency distributions below corresponds to this frequency distribution
+
+A.
+
+B.
+
+C.
+
+D.
+
+E.
+
+Q0177. Which of the cumulative frequency distributions below corresponds to this frequency distribution
+
+A.
+
+B.
+
+C.
+
+D.
+
+E.
+
+Q0178. Which of the cumulative frequency distributions below corresponds to this frequency distribution
+
+A.
+
+B.
+
+C.
+
+D.
+
+E.
+
+Q0179. Which of the cumulative frequency distributions below corresponds to this frequency distribution
+
+A.
+
+B.
+
+C.
+
+D.
+
+E.
+
+Q0180. Which of the cumulative frequency distributions below corresponds to this frequency distribution
+
+A.
+
+B.
+
+C.
+
+D.
+
+E.
+
+Q0181. Which threshold frequency distribution corresponds to the following description:This population is divided between those who are very easily persuaded to participate - they will jump on bandwagon readily - and people who are very reticent to join a movement, with relatively few people in between.
+A.
+
+B.
+
+C.
+
+D.
+
+E.
+
+Q0182. Which threshold frequency distribution corresponds to the following description:
+The community has a few people who will join no matter what, a few more who will join if some others have joined, still more who will join if a goodly number are on board and so on all the way up to a hesitant few but even they will join if it appears everyone else has.
+A.
+
+B.
+
+C.
+
+D.
+
+E.
+
+Q0183. In the election between candidate A and candidate B, for voter\timesit comes down to what the candidate will do for the elderly. The election is a toss-up and it may well come down to X's vote. Research indicates that candidate A is quite likely (75% chance) to do 4 things for the elderly but may only end up doing one thing (25% chance). Candidate B, on the other hand, is very unlikely to do 4 things (10%) but is 90% likely to do 2 things. For whom should\timesvote if this is the deciding issue.
+Q0184. A campaign director is flying blind. Two tossup states both have 20 electoral votes. All current information is that the chances of winning in each is 50:50. Draw the event tree that describes the possible election outcomes.Our campaign director has the opportunity to do one last ad buy of $1 million. Research and experience have shown that an ad buy in a right state where a significant portion of the electorate is still open minded could shift the odds of winning to 60/40. How do we know? We've done lots of audience research that shows how particular electorates respond to this ad's approach. But doing the ad buy in the wrong state (one where folks have really made up their minds) will have no effect on the outcome. What we don't know is which, if either, of these states is the best fit for this type of campaigning.Draw this decision tree.Now suppose there is a poll she could do to find out whether state A or state B is the more promising state for the new ad. There is a 50% chance the poll says state A and a 50% chance it says state B. If it says state A then you do the ad buy there and you are certain to increase your chances while things in B stay the same. And vice versa.What is the value of the information the poll can provide, in electoral votes?
+Q0185. Sketch a causal loop diagram for these two systems (be sure to label each link and the overall loop). Comment on the long term equilibrium of this system.
+Being pro candidate X...
+# ...makes you give money... # ...makes the campaign send you emails... # ...makes you want to go to a rally... # ...makes pro candidate X...
+Being pro candidate X...
+# ...makes you give money... # ...makes the campaign send you emails... # ...makes you get fed up with the campaign... # ...makes you a little sour on candidate X...
+Not hearing much from the campaign...
+# ...makes you miss your candidate # ...makes you feel more pro candidate X
+Q0186. Our neighborhood Obama for America committee is an active one. It's so active that it wears people out. Over the course of the campaign it tends to recruit 4 new people every week but it also loses about 10% of its membership due to fatigue each week. The committee began in June with 6 members. Write the difference equations that describe the size of the committee (S) each week. What's the long term prognosis?
+Q0187. The diagram below represents a candidate's shifting weekly position on abortion. Treating this as a Markov model (where each transition is independent of previous sequence of states), show us what the transition matrix would look like. What do we call the state that would represent a candidate's final position on an issue? Using this diagram, what prediction can you make about what this candidate's position would be if he were to be elected?
+
+Q0188. "Women's issues" have been talked about a lot in the 2012 presidential campaigns. One issue has been the hiring of women in leadership positions in society. Draw a causal loop diagram to represent the following relationships.The more "gender bias" the fewer qualified women there will be.More qualified women means more women in positions of power.The more women in power, the less "gender bias" in society.Assuming we start with social bias and not many women in positions of power, how is this system likely to behave?Now let's modify things a bit. Let's suppose we solve the "supply" problem and break the link between bias and the number of qualified women and that the latter grows significantly. We change our model slightly:Societal bias produces social blindness to existence of qualified women.This social blindness means fewer women will be in the pool that is considered for positions of power.The fewer women in the pool, the fewer end up in positions of power.And, as before, the more (fewer) women in power, the less (more) "gender bias" in society.Draw this causal model.Now let's add another causal relation: the fewer women in positions of power, the more NGOs emerge to promote women's participation in government, etc. The NGOs hit on a strategy called that the men in power call "binders of women" -- whereby they do the legwork needed to show the men the qualified women that their bias made them blind to.Add the NGOs and the binders to our causal model. Identify a balancing loop that might portend the achievement of improved gender diversity in positions of power.
+Q0189. Our campaign wants to hold a giant rally the Sunday before the election. Many voters are fired up, many are tired. Some think we can win, others not so sure. Suppose the ready-to-jump-on-the-bandwagon threshold distribution is shown below. The numbers here mean how many people are willing to come to the rally given different levels of expected participation.Analyze this information and describe the direction our organizing strategy should go. What should we expect? How much intervention could produce how much of a desired result. Assume that our current research suggests about 40 people are currently planning on going to next week's event.
+Threshold	CountQ0	12
+10	3
+20	4
+30	5
+40	6
+50	9
+60	13
+70	17
+80	19
+90	6
+100	0
+Q0190. An eager campaign volunteer wants to think rationally about where to put her time. She does her research about phone-banking and canvassing and discovers the following.A full shift (calling hundreds!) at phone banking has a 10% chance of producing 20 votes and a 60% chance of producing 2 votes, 10% chance of producing no votes and a 20% chance of losing 2 votes. Canvassing, by comparison, has a 20% chance of producing 8 votes, 30% chance of producing 4 votes, and a 50% chance of producing no votes. Other things being equal, which would be a better use of her time?
+Q0191. A voter has an objective function which is to minimize the difference between her positions on two issues and those of the candidates. Here positions can be described as a 3 on issue A and an 8 on issue B. Candidate 1 has positions -2 and 9 while candidate 2 has positions 4 and 4. For whom will the voter cast her ballot?
+Q0192. A student wants to maximize her GPA. Three of her courses are required 3 credit courses and she estimates she will get a B in each. She has a choice between an easier 3 credit course that she can definitely get an A in and a slightly harder 4 credit course in which she expects a B+. What will she do?
+Q0193. In "Cosmos & Taxis" Friedrich von Hayek distinguishes two kinds of order. What does he call them? What are some synonyms for his terms? Demonstrate your understanding of the difference by giving examples of social order of each type.
+Q0194. Who wrote about the "invisible hand" and what does it mean for us?
+Q0195. Complete or paraphrase the passage that begins "It is not from the beneficence of the baker...." Who said it? In what context? What does it mean?
+Q0196. Explain this table:[[=image http://djjr-courses.wikidot.com/local--files/soc116:images/PD-table-Axelrod.gif size="medium"]]
+Q0197. Explain and give an example of a //dominant strategy// in a prisoner's dilemma game.
+Q0198. What is "tit-for-tat" and why, according to Robert Axelrod, is it so effective?
+Q0199. In the November 2012 general elections some sitting members of congress and the senate failed in their re-election effort and some opted not to run for re-election. After the election we describe those who are still in office but won't be in January as "lame ducks." Drawing on theoretical ideas and empirical ideas in the work of Robert Axelrod, make some predictions of how the dynamics of voting and deal making might be different during a lame duck session.
+Q0200. One of the most important concepts coming out of market, rational choice, and game theory models is "equilibrium." What do we mean by an equilibrium in game theory? Give an example and explain what we would mean if we said "get caught in a bad equilibrium."
+Q0201. (1) Explain what 'the allegory of the dying seminar' was in Thomas Schelling's work. (2) What (incorrect) conclusion about human behavior might observers draw from the dying seminar? (3) What other examples of this phenomenon does Schelling offer? (4) What generic phenomenon are these all examples of?
+Q0202. (a) Set up the issue of whether to use the metric system or the English system of weights and measures as a coordination game. (b) Identify any equilibria and whether they are efficient or not. (c) If we are in the English/English cell, describe both players' motivations to unilaterally switch to metric. (d) what if we were in the metric/English cell?
+Q0203. Group these examples of coordination games and explain.
+do we store the ketchup in the fridge or in the cabinet?
+smokers should marry smokers and non-smokers should marry non-smokers
+cat people and dog people and dating
+people's sense of what constitutes rudeness
+infidelity is never OK, infidelity is OK in certain circumstances
+Erring on the side of caution; nothing ventured, nothing gained
+Every woman for herself; Let's work as a team.
+Q0204. Suppose the agents in a population have four behaviors - W, X, Y, Z - and that each behavior is either present or absent. When two agents meet they may have all the same behaviors, none of the same behaviors, or 1 or 2 behaviors in common. Suppose the probability of interaction is proportional to their similarity. IF they do interact, they flip a coin and who ever wins gets imitated by the other agent.In the grid below, determine the probability of interaction between each pair of neighbors (assume no diagonal interaction for now)
+A _
+1110 ||= B _ 1010 ||= C _ 0010 ||= D _ 1001 ||
+E _Q0000 ||= F _ 1111 ||= G _ 1001 ||= H _ 1011 ||
+I _
+1000 ||= J _ 1000 ||= K _ 1110 ||= L _ 0000 ||
+M _Q0010 ||= N _ 1100 ||= O _ 0100 ||= P _ 0111 ||
+Q0205. Suppose the agents in a population have four behaviors - W, X, Y, Z - and that each behavior is either present or absent. When two agents meet they may have all the same behaviors, none of the same behaviors, or 1 or 2 behaviors in common. Suppose the probability of interaction is proportional to their similarity. IF they do interact, they flip a coin and who ever wins gets imitated by the other agent.Use the two random number tables below (the left table for doing a Monte Carlo simulation of whether interaction occurs and the left table to determine which agent is the leader and which is the follower) to work out the next state n the grid below, determine the probability of interaction between each pair of neighbors (assume no diagonal interaction for now)
+69	72	43	97	87	0	0	0	1	1
+37	86	35	23	41	1	1	0	0	1
+88	36	94	60	60	1	1	1	0	0
+84	26	3	87	12	0	0	1	1	0
+8	10	56	52	29	1	1	1	0	0
+26	5	30	15	58	0	1	1	1	1
+95	3	95	18	69	0	0	1	0	0
+71	42	55	64	21	0	0	1	1	0
+68	75	90	19	64	0	0	1	1	0
+75	13	77	1	89	0	0	0	0	0
+A _1110	B _ 1010	C _ 0010	D _ 1001
+E _0000	F _ 1111	G _ 1001	H _ 1011
+I _1000	J _ 1000	K _ 1110	L _ 0000
+M _0010	N _ 1100	O _ 0100	P _ 0111
+Q0206. Suppose the agents in a population have four behaviors - W, X, Y, Z - and that each behavior is either present or absent. Further suppose that there is some pressure toward consistency such that having a "don't do" behavior next to a "do do" behavior is uncomfortable and so agents have some internal urge to change their behavior to be more consistent.Let's say that a behavior that is the only one of its type (a 0 among three 1s, for example) has a 50 percent chance of switching to make the set fully consistent. Each behavior that's one of an even split (e.g., a 0 in a 0011 agent) has a 10% chance of switching. We can put it this way: there is a 10% chance the first behavior changes, 10% the second, etc. and 60% chance no change happens.Use the two random number table below to work out the next state n the grid below, determine the probability of interaction between each pair of neighbors (assume no diagonal interaction for now). For 50% chance use "random number above 50 = change, below 50 = stay." For the 10% chances, 0<10 is change first, 10<20 change 2, etc.
+69	72	43	97	87
+37	86	35	23	41
+88	36	94	60	60
+84	26	3	87	12
+8	10	56	52	29
+26	5	30	15	58
+95	3	95	18	69
+71	42	55	64	21
+68	75	90	19	64
+75	13	77	1	89
+A _1110	B _ 1010	C _ 0010	D _ 1001
+E _0000	F _ 1111	G _ 1001	H _ 1011
+Q0207. Convert the following logic into a set of step-by-step instructions in a manner that uses stepwise refinement.To execute coordination we proceed as follows. Each agent will consider in turn its north, east, south, and west neighbors. First the agent determines whether interaction will take place at all based on similarity. Then, if they do interact, they flip a coin to decide who is the leader and who is the follower. Then the follower copies the traits of the leader. And then onto the next neighbor if there is one.We can incorporate the following design decisions into our model: (1) neighbors who have already interacted in a given round do not do so again; (2) an agent can change multiple times during a given round; (3) all interactions are with the agent's current state.
+Q0208. Explicate and comment:> One of our main contentions will be that very complex orders, comprising more particular facts than any brain could ascertain or manipulate, can be brought about only through forces inducing the formation of spontaneous orders (Hayek 1976: 143.5).
+Q0209. Explicate and comment.
+The distinction of this kind of order from one which has been made by somebody putting the elements of a set in their places or directing their movements is indispensable for any understanding of the processes of society as well as for all social policy. There are several terms available for describing each kind of order. The made order which we have already referred to as an exogenous order or an arrangement may again be described as a construction, an artificial order or, especially where we have to deal with a directed social order, as an organization. The grown order, on the other hand, which we have referred to as a self-generating or endogenous order, is in English mosts conveniently described as a spontaneous order (Hayek 1976: 142.1-3).
+Q0210. Explicate and comment:
+This means that, though the use of spontaneous ordering forces enables us to induce the formation of an order of such a degree of complexity (namely comprising elements of such numbers, diversity and variety of conditions) as we could never master intellectually, or deliberately arrange, we will have less power over the details of such an order than we would of one which we produce by arrangement. In the case of spontaneous orders we may, by determining some of the factors which shape them, determine their abstract features, but we will have to leave the particulars to circumstances which we do not know. Thus, by relying on the spontaneously ordering forces, we can extend the scope or range of the order which we may induce to form, precisely because its particular manifestation will depend on many more circumstances than can be known to us-and in the case of a social order, because such an order will utilize the separate knowledge of all its several members, without this knowledge ever being concentrated in a single mind, or being subject to those processes of deliberate coordination and adaptation which a mind performs (Hayek 1976: 145.5-7).
+Q0211. Explicate and comment:
+To put this differently: in a social order the particular circumstances to which each individual will react will be those known to him. But the individual responses to particular circumstances will result in an overall order only if the individuals obey such rules as will produce and order. Even a very limited similarity in their behavior may be sufficient if the rules which they all obey are such as to produce an order. Such an order will always constitute an adaptation to the multitude of circumstances which are known to all the members of that society taken together but which are not known as a whole to any one person (Hayek 1976: 147.7).
+Q0212. Explicate and comment:
+In any group of men of more than the smallest size, collaboration will always rest both on spontaneous order as well as on deliberate organization. There is no doubt that for many limited tasks organization is the most powerful method of effective co-ordination because it enables us to adapt the resulting order much more fully to our wishes, while where, because of the complexity of the circumstances to be taken into account, we must rely on the forces making for a spontaneous order, our power over the particular contents of this order is necessarily restricted.
+That the two kinds of order will regularly coexist in every society of any degree of complexity does not mean, however, that we can combine them in any manner we like. What in fact we find in all free societies is that, although groups of men will join in organizations for the achievement of some particular ends, the co-ordination of the activities of all these separate organizations, as well as of the separate individuals, is brought about by the forces making for a spontaneous order. The family, the farm, the plant, the firm, the corporation and the various associations, and all the public institutions including government, are organizations which in turn are integrated into a more comprehensive spontaneous order (Hayek 1976: 149.5-7).
+Q0213. Explicate and comment:
+What the general argument against 'interference' thus amounts to is that, although we can endeavor to improve a spontaneous order by revising the general rules on which it rests, and can supplement its results by the efforts of various organizations, we cannot improve the results by specific commands that deprive its members of the possibility of using their knowledge for their purposes (Hayek 1976:153.1).
+Q0214. Explicate and comment:
+Akerlof generalized this model to a number of markets in which there is unequal information on the two sides - insurance companies know less than you do, usually, about whether you are accident prone, or susceptible to hereditary diseases, or are contemplating suicide. Life insurance rates for sixty-five-year-olds must allow for a large fraction who are not long for this world. And those who know they are healthy and have a family history of longevity and are exposed to few risks have to pay the same premium as the poorer risks; life insurance being unattractive [to them] at that price, few of them buys it. The average life expectancy of the customers goes down, the rates go up further, and the bargain now looks poor even to those of normal life expectancy. And so forth.
+.... It is akin to, and sometimes coincides with, those situations in which the below average, or the above average, withdraw or won't join, causing some potential market or institution to unravel. Because people vary and because averages matter, there may be no sustainable critical mass; and the unraveling behavior, or initial failure to get the activity going at all, has much the appearance of a critical mass that is almost but not quite achieved (Schelling 1978: 159.5-7).
+Q0215. Explicate and comment:
+The division of labour, from which so many advantages are derived, is not originally the effect of any human wisdom, which foresees and intends that general opulence to which it gives occasion. It is the necessary, though very slow and gradual consequence of a certain propensity in human nature which has in view no such extensive utility; the propensity to truck, barter, and exchange one thing for another (Smith 1776: 171.8).
+Q0216. Explicate and comment:
+But man has almost constant occasion for the help of his brethern, and it is in vain for him to expect it from their benevolence only. He will be more likley to prevail if he can interest their self-love in his favor, and show them that it is for their own advantage to do for him what he requires of them. Whoever offers to another a bargain of any kind, proposes to do this. Give me that which I want, and you shall have this which you want, is the meaning of every such offer; and it is in this manner that we obtain from one another the far greater part of those offices which we stand in need of. It is not from the benevolence of the butcher, the brewer, or the baker that we expect our dinner, but from their regard to their own interest. We address ourselves, not to their humanity but to their self-love, and never talk to them of our own necessities but of their advantages (Smith 1776: 172.5).
+Q0217. Sociologists and anthropologists gripe endlessly about rational actor models, failing, over and over again, to understand that they are MODELS, not descriptions. Explicate and comment on this passage to show that you understand what the value of a model like prisoner's dilemma is for social theory.
+The Cooperation Theory that is presented...is based upon an investigation of individuals who pursue their own self-interest without the aid of a central authority to force them to cooperate with each other. The reason for assuming self-interest is that it allows an examination of the difficult case in which cooperation is not completely based upon a concern for others or upon the welfare of the group as a whole. It must, however, be stressed that this assumption is actually much less restrictive than it appears. ... So the assumption of self interest is really just an assumption that concern for others does not completely solve the problem of when to cooperate with them and when not to (Axelrod 1984: 177.2).
+Q0218. Explicate and comment:
+The result was another victory for TIT FOR TAT! The analysis of the data from these tournaments reveals four properties which tend to make a decision rule successful: avoidance of unnecessary conflict by cooperating as long as the other player does, provocability in the face of an uncalled for defection by the other, forgiveness after responding to a provocation, and clarity of behavior so that the other player can adapt to your pattern of action.
+These results from the tournaments demonstrate that under suitable conditions, cooperation can indeed emerge in a world of egoists without central authority (Axelrod 1984: 184.5).
+Q0219. Translate the following into inequalities.
+I can only I spend as much cash as in my wallet on dinner, dessert, drinks, and a tip and I really want to have dinner and drinks though I might pass on dessert.
+You are managing a youth shelter. Kids present with an array of personal challenges, each of which require different levels of attention from your staff. Clients with issue A require 4 hours of attention per week. Issue B, about 2 hours, C requires 16, and D 7. Your budget allows you to staff 75 hours per week.
+Breakfast is some eggs, some pancakes, some bacon. You have to have at least twice as many pancakes as eggs. You can't have fewer than 2 strips of bacon.
+Q0220. What is the objective function in each of the following situations?
+What is the largest volume box I can make by folding a piece of cardboard that is A inches by B inches?
+Pancakes cost $1 each, eggs are 1.50, and blintzes are 2. Pancakes have 200 calories, eggs 125 and blintzes 450. What combination gives me the most calories for 5 dollars?
+What's the cheapest 1000 calorie daily diet?
+I have information on the level of AOD demand reduction we can expect from public awareness campaigns, DARE visits to public schools, increased treatment slots, and increases in after care. I know the cost of each type program and I have a limited budget. What mix of programs should I institute to have the biggest effect on demand?
+Q0221. For each of the problems described below, say whether it is best thought of as an analog to diet, transport, activity, or assignment as outlined above.
+S&Z problem #1 Incinerators DIET TRANSPORT ACTIVITY ASSIGNMENT
+S&Z problem #2 Police Shifts DIET TRANSPORT ACTIVITY ASSIGNMENT
+S&Z problem #3 Hospitals and disasters DIET TRANSPORT ACTIVITY ASSIGNMENT
+S&Z problem #4 Electricity generation and pollution DIET TRANSPORT ACTIVITY ASSIGNMENT
+S&Z text example – transit maintenance DIET TRANSPORT ACTIVITY ASSIGNMENT
+Q0222. Write out the sample problems on pp 190-2 with explanatory solutions.
+Q0223. A non-profit supplier of after-school materials has orders for 600 copies from San Francisco and 400 copies from Sacramento. The organization has 700 copies in a warehouse in Novato and 800 copies in a warehouse in Lodi. It costs $5 to ship a text from Novato to San Francisco, but it costs $10 to ship it to Sacramento. It costs $15 to ship from Lodi to San Francisco, but it costs $4 to ship it from Lodi to Sacramento. How many copies should the organization ship from each warehouse to San Francisco and Sacramento to fill the order at the least cost? [http://www.sonoma.edu/users/w/wilsonst/Courses/Math_131/lp/default.html]
+Q0224. You are working for an agricultural cooperative which is helping local farmers figure out how to optimize the mixture of crops they plant. A typical farmer has 10 acres to plant in wheat and rye. She has to plant at least 7 acres. However, she has only the equivalent of $1200 to spend and each acre of wheat costs $200 to plant and each acre of rye costs $100 to plant. Moreover, the farmer has to get the planting done in 12 hours and it takes an hour to plant an acre of wheat and 2 hours to plant an acre of rye. If the expected profit is $500 per acre of wheat and $300 per acre of rye how many acres of each should be planted to maximize profits? (From Steve Wilson)
+Q0225. Your are the supervisor at a new after-school program. The program will serve 100 boys and 100 girls. Activities will include chess, games, and crafts. Materials, supervision, and the like have been priced out at $2/person for chess, $10/person for games, and $5 for crafts. Space needs are such that we can get 8 chess players at a table, 4 games players, or 2 crafters. The center has 50 tables. Solid research has shown that activity preferences among this population of children is somewhat gender specific. Boys and girls like chess the same but games are 70% girls and 30% boys while crafts tend to be 30% girls and 70% boys. What is the most economical division of activities subject to these constraints?
+Q0226. "You have $12,000 to invest, and three different funds from which to choose. The municipal bond fund has a 7% return, the local bank's CDs have an 8% return, and the high-risk account has an expected (hoped-for) 12% return. To minimize risk, you decide not to invest any more than $2,000 in the high-risk account. For tax reasons, you need to invest at least three times as much in the municipal bonds as in the bank CDs. Assuming the year-end yields are as expected, what are the optimal investment amounts?" (From PurpleMath.com)
+Q0227. A gold processor has two sources of gold ore, source A and source B. In order to kep his plant running, at least three tons of ore must be processed each day. Ore from source A costs $20 per ton to process, and ore from source B costs $10 per ton to process. Costs must be kept to less than $80 per day. Moreover, Federal Regulations require that the amount of ore from source B cannot exceed twice the amount of ore from source A. If ore from source A yields 2 oz. of gold per ton, and ore from source B yields 3 oz. of gold per ton, how many tons of ore from both sources must be processed each day to maximize the amount of gold extracted subject to the above constraints? (From Steve Wilson)
+Q0228. A school is preparing a trip for 400 students. The company who is providing the transportation has 10 buses of 50 seats each and 8 buses of 40 seats, but only has 9 drivers available. The rental cost for a large bus is $800 and $600 for the small bus. Calculate how many buses of each type should be used for the trip for the least possible cost. (From VITutor)
+Q0229. Bob builds tool sheds. He uses 10 sheets of dry wall and 15 studs for a small shed and 15 sheets of dry wall and 45 studs for a large shed. He has available 60 sheets of dry wall and 135 studs. If Bob makes $390 profit on a small shed and $520 on a large shed, how many of each type of building should Bob build to maximize his profit? (From solution here)
+Q0230. A store wants to liquidate 200 of its shirts and 100 pairs of pants from last season. They have decided to put together two offers, A and B. Offer A is a package of one shirt and a pair of pants which will sell for $30. Offer B is a package of three shirts and a pair of pants, which will sell for $50. The store does not want to sell less than 20 packages of Offer A and less than 10 of Offer B. How many packages of each do they have to sell to maximize the money generated from the promotion? (From VITutor)
+Q0231. A transport company has two types of trucks, Type A and Type B. Type A has a refrigerated capacity of 20 m3 and a non-refrigerated capacity of 40 m3 while Type B has the same overall volume with equal sections for refrigerated and non-refrigerated stock. A grocer needs to hire trucks for the transport of 3,000 m3 of refrigerated stock and 4 000 m3 of non-refrigerated stock. The cost per kilometer of a Type A is $30, and $40 for Type B. How many trucks of each type should the grocer rent to achieve the minimum total cost?AlternativelyA school district has two types of lower division schools, type A and type B. Type A school buildings have capacity for 200 little kids and 400 big kids. Type B buildings have capacity for 300 little kids and 300 big kids. Next year the district expects enrollments of 3000 little kids and 4000 big kids. Type A buildings cost 30,000 per year to maintain while type B buildings cost 40,000. What mix of school buildings will allow the district to handle the expected enrollment at the lowest maintenance cost? (From VITutor)
+Q0232. //Durkheim lived in an age when the role and existence of “god” as ultimate source of right and rule and order was under question. Rather than choose between “the human” and “the divine” Durkheim stared religion in the face, so to speak, and showed how what we think of as divine/sacred is in fact human (social). How do the following passages convey Durkheim’s theory of the special power of social norms and his idea about society as god and the notion that the individual, with norms and values of society internalized, can be a source of social order?//
+**Durkheim, “Collective Representations” from //Elementary Forms//**
+“An individual or collective subject is said to inspire respect when the representation that expresses it in consciousness has such power that it calls forth or inhibits conduct automatically, irrespective of any utilitarian calculation of helpful or harmful results” (50.8).
+“The ways of acting to which society is strongly enough attached to impose them on its members are for that reason marked with a distinguishing sign that calls forth respect” (51.1).
+“Because social pressure makes itself felt through mental channels, it was bound to give men the idea that outside him there are one or several powers, moral yet mighty, to which he was subject” (52.1).
+“In the midst of an assembly that becomes worked up, we become capable of feelings and conduct of which we are incapable when left to our individual resources” (52.5).
+Q0233. //Hobbes sees social order as impossible without hierarchy. Address both the question of coordination and cooperation (to see the cooperation here, we might think about Adam Smith’s notion of bartering as a means by which two actors can both get what they want) as you explain how Hobbes gets from his assumptions about human nature to the need for a “Leviathan” if human-kind is to achieve social order.//
+**Hobbes, from "Leviathan"**
+“So that in the first place I put for a general inclination of all mankind a perpetual and restless desire of power after power, that ceaseth only in death. And the cause of this is not always that a man hopes for a more intensive delight than he has already attained to, or that he cannot be content with a moderate power; but because he cannot assure the power and means to live well which he hath present, without the acquisition of more” (89).
+“Hereby it is manifest that, during the time men live without a common power to keep them all in awe, they are in that condition which is called war, and such a war as is of every man against every man” (93).
+“In such condition there is no place for industry, because the fruit thereof is uncertain, and consequently no culture of the earth, no navigation nor use of the commodities that may be imported by sea, no commodious building, no instruments of moving and removing such things as require much force, no knowledge of the face of the earth; no account of time, no arts, no letters, no society, and, which is worst of all, continual fear and danger of violent death, and the life of man solitary, poor, nasty, brutish, and short” (93-4).
+“If a covenant be made wherein neither of the parties perform presently but trust one another, in the condition of mere nature, which is a condition of war of every man against every man, upon any reasonable suspicion, it is void; but, if there be a common power set over them both with right and force sufficient to compel performance, it is not void” (97).
+Q0234. //Hayek is sometimes taken to be saying that the modern world throws up problems that are too complex to be handled by planning and policy making. Some things can be handled that way, but big and complex things cannot. What are the differences between the two types of order and the limitations and possibilities Hayek suggests each has and how does he get from there to social order?//
+Q0234. //Hayek is sometimes taken to be saying that the modern world throws up problems that are too complex to be handled by planning and policy making. Some things can be handled that way, but big and complex things cannot. What are the differences between the two types of order and the limitations and possibilities Hayek suggests each has and how does he get from there to social order?//
+Q0236. In a prisoner’s dilemma game, the rational thing for both players is to defect. This makes mutual defection an equilibrium, though it is not a preferred one (the collective would be better off with another outcome). In other words, in a single game of prisoner’s dilemma, cooperation is “impossible.” But cooperation does happen in the world. Demonstrate your understanding of Axelrod's ideas by describing the mechanism and conditions under which this can happen without assuming anything “social” about the agents.
+
+Explain how this works and how it adds to or modifies Smith’s and Hayek’s story about how markets can be a source of social order. 
+Q0237. //In "The Emperor's Dilemma," Centola, Willer, and Macy talk about “the popular enforcement of unpopular norms.” What does that mean? Why is it a puzzle? What is (are) the mechanism(s) that they think explains it?//
+**Centola, Willer, and Macy “The Emperor's Dilemma"**
+“Naked emperors are easy to find but hard to explain. It is easy to explain why people comply with unpopular norms—they fear social sanctions. And it is easy to explain why people pressure others to behave the way they want them to behave. But why pressure others to do the opposite? Why would people publicly enforce a norm that they secretly wish would go away? (278)
+“One hypothesis is that very few would actually enforce the norm, but no one knows this. If people estimate the willingness to enforce based on the willingness to comply, and they comply based on the false belief that others will enforce, they become trapped in pluralistic ignorance—an equilibrium in which few people would actually enforce the norm but no one realizes this. However, this equilibrium can be extremely fragile. As in the Andersen story [The Emperor’s New Clothes], all that is needed is a single child to laugh at the emperor and the spell will be broken (278).
+“A more robust explanation is that most people really will enforce the norm, and for the same reason that they comply—social pressure from others in the group, for whom mere compliance is not enough. To the true believer, it is not sufficient that others go to the right art galleries, display the right body jewelry, purchase the right sports car, or support the right wing. They must do it for the right reason. Zealots believe that it is better not to comply at all than to do so simply to affirm social status (Kuran 1995a, p. 62). Such compliance lasts only so long as behavior can be monitored and social pressure is sufficient to induce acquiescence (Hechter 1987). Thus, true believers reserve special contempt for imposters. Those who comply for the wrong reason must worry about being exposed as counterfeit (278-9).
+“The hypothesized anxiety is supported by research on the ‘illusion of transparency’ (Gilovich, Savitsky, and Medvec 1998). This refers to a tendency to overestimate the ability of others to monitor our internal states… (279).
+“Applied to the emperor’s dilemma, the ‘illusion of transparency’ suggests that those who admire the emperor out of a desire for social approval fear that their posturing will be apparent to others. They then look for some way to confirm their sincerity. Enforcing the norm provides a low cost way to fake sincerity, to signal that one complies—not as an opportunist seeking approval—but as a true believer” (279).
+
+
+Q0238. [[f>image soc116:images/fehr-gintis-results-01.gif width="300"]]Fehr and Gintis describe experiments using a "public goods game." In the regular game, players tended to free-ride more and more as the game progresses. These results suggest that the sociological idea that people do the right thing because they are socialized to care about others is naive. Most people do not act in a “pro-social” manner. They free-ride.When punishment is permitted, players punish free-riders even at a cost. Public goods increase as free-riding drops. Results like this defy the economic idea of people as selfish maximizers. They also suggest that hierarchy (surveillance/punishment) need not be centralized.In the light of these results and the rest of the course, how do you think individual internalization of social values/norms, hierarchy, decentralized market interaction, and groups combine to create social order?
+Q0239. I need to take a certification exam this year. The exam cost is $200. There is a prep course for the exam, but I don't know if I need it or not. It costs $300 and if one takes it, one is certain to pass the exam. If I do not take the prep course there is a 50% chance of passing and a 50% chance of failing in which case I'd have to take the prep course anyway and then retake the test (total cost = prep course + twice the exam fee). Should I take the prep course??
+Q0240. This is an event tree problem, that is, there are no choices to be made. Work out the probabilities of each of the final outcomes. _
+There is a 72% chance that candidate A will win the presidency over candidate B. There is a 55% chance that candidate A's party will win control of the senate and a 30% chance that his party will win control of the house.
+Q0241. If my new study method works, I should earn a 98 on the test. If it does not work, I will get a 79. Research suggests that there is a 75% chance it works. What is the expected value of my grade?
+**A.**	87.5	**B.**	93.25	**C.**	95.5	**D.**	79	**E.**	98
+Q0242. Draw a flowchart that represents the following protocol for enjoying a Saturday afternoon.
+If it is sunny, go to the beach. If it is not sunny go to the movies.
+If you go to the beach, if you are by yourself, take an umbrella and a good book. If you are with friends, take a bottle of wine and some nice cheese.
+If you go to the movies alone, buy a monster popcorn and sit right up front. If you go with friends, be more restrained with the snacks and sit midway back.
+Have a nice dinner afterwards.
+Q0243. Consider the following instructions for funding your NGO and then draw a flow chart representing this logic _
+Write the grant. Find a funder. Submit the grant. Wait to see if it is funded. If it is funded, start the project. Otherwise go back to finding a funder.
+Q0244. This question extends [[[q:0243|problem 243]]]. You've learned the following things during your professional training. Represent this information as a three level stepwise refinement. _
+# Preparing to write a grant consists of identifying a need and putting together a logic model that shows what new inputs are needed to generate desired outcomes
+# Finding a funder requires identifying a list of funders, looking up the kinds of projects they are funding, and finding matches for your project
+# Writing a grant involves (1) preparing to write the grant; (2) finding template appropriate to particular funders; (3) producing drafts and reviewing with staff
+# Draft and review protocols vary, but one you like is to produce a draft, post it on Google docs for the team to comment on, send a prodding email to team members every few days until it looks like there are no more comments on that draft, make revisions and repeat this process until the deadline is near.
+Q0245. Offer a critique of this flow chart diagram
+
+Q0246. What's wrong with this flow chart? How would you fix it?
+
+Q0247. What's wrong with this flow chart? How would you fix it?
+
+Q0248. What criticism would you offer if the diagram below were my first stab at a flow chart for an organizational process? How would you fix it?
+
+Q0249. Translate each of the flow charts below into everyday English.[[collapsible show="+ Show A" hide="- Hide A"]]**A.**
+
+[[collapsible show="+ Show B" hide="- Hide B"]]**B.**
+
+[[collapsible show="+ Show C" hide="- Hide C"]]**C.**
+
+[[collapsible show="+ Show D" hide="- Hide D"]]**D.**
+
+Q0250. What's wrong with this flow chart? How would you fix it?
+
+Q0250. What's wrong with this flow chart? How would you fix it?
+
+Q0252. Consider this network in which green agents are cooperators and violet are defectors and the cost of cooperating is 2 while the benefit of being cooperated with is 5. Where is the equilibrium is people's behavior changes based on their network experiences?
+
+Q0253. Consider this network in which green agents are cooperators and violet are defectors and the cost of cooperating is 2 while the benefit of being cooperated with is 5. Where is the equilibrium is people's behavior changes based on their network experiences?
+
+Q0254. Just based on reasoning, explain the relation among relatedness, cost of cooperation, and benefit of cooperation in kin selection as a mechanism for achieving cooperation in the face of prisoner's dilemma scenarios.
+Q0255. Work through the section on direct reciprocity in Nowak and Sigmund, "How Populations Cohere."[!--[[iframe http://vserver1.cscs.lsa.umich.edu/~spage/ONLINECOURSE/NowakSigmund07.pdf#page=2 width="100%" height="600px"]]--]
+Q0256. Consider the collective action model described in Lecture 17.4: Collective Action and Common Pool Resource Problems where 
+x
+j
+ is the cost to me to "pitch in" and do my part in some collective effort. Each member of the collective reaps benefits from the contributions of those who decide to pitch in. In particular, they receive some fraction 
+
+e
+t
+a
+ of all the contributions. Their net benefit is thus, this amount minus the effort they contribute. In other words,
+P
+a
+y
+o
+f
+f
+j
+=
+−
+x
+j
++
+
+e
+t
+a
+s
+u
+m
+x
+i
+Suppose you are in a class of 21 students and everyone is expected to prepare for class in a manner that costs 1 unit of life. In the class itself, things go much better when people are prepared and we estimate that the benefit a student derives from the class is equal to 0.2 units of life for each person who comes prepared.(a) What is your net payoff if you do the reading half the class rest of the class comes prepared too?(b) What is the benefit to a shirker under the same conditions?(c) How many people do you need to think are going to do the reading to make it worth it to do the reading?
+Q0257. (a) Explain the equations for common pool resource problems as discussed in Lecture 17.4: "Collective Action and Common Pool Resource Problems":
+x
+j
+ : amount consumed by person j
+X
+ : total consumedAmount available next period: 
+C
+T
++
+1
+=
+(
+C
+T
+−
+X
+)
+2
+(b) Propose values of these variables that would result in a steady state equilibrium value of the resource.
+Q0258. Insofar as particulars matter, what's the difference between cows, lobsters, and whether you live up stream or downstream?
+Q0259. What are the 5+2 means of achieving cooperation in the face of structural arrangements that "mandate" non-cooperation in human relationships?
+Q0260. Explain how "group selection" can give rise to cooperative behavior in human society.
+Q0261. Explain these acronyms: **DMS, EPSG, CRS**[[module CSS]].hover { color: green; text-decoration: none;}.hover:hover { text-decoration: none; border-bottom: none;}.hover span { display: none;}.hover:hover span { position: absolute; display: inline; margin: 15px -20px; height: auto; width: 500px; background: #FFF; border: 2px solid #34B; color: #000; padding: 1em;}.hover:hover span span { position: relative; margin: auto; height: auto; width: auto; border: none; padding: 0;}[[/module]]
+Q0262. Explain the difference between equal interval, quantile, natural break, and standard deviation as classification methods If your data looked like this, and you have 5 class intervals, what would they be if you used each method?
+
+Q0263. Explain/illustrate the idea of 1+1=3.
+Q0264. What is a datum?
+Q0265. Identify graphical elements of a map: border, legend, scalebar, north arrow, author, date, projection, coordinates, data source, data date, title, body of map
+Q0266. What is interpolation and how do heat maps work?
+Q0267. What is a csvt file and why is it useful?
+Q0268. Projections: explain the terms cylindrical, conical, azimuthal, conformal, equal-area in conjunction with map projections and coordinate systems
+Q0269. Explain longitude, latitude, parallels, meridians
+Q0270. Describe and give examples of different types of maps: topographic, thematic, schematic, choropleth, isopleth, political, mental, Digital Elevation Model (DEM), political, physical, topographic, cadastral, climate, road, nautical charts, bathymetric chart, aeronautical chart
+Q0271. With reference to cartography, explain what we mean by scale, resolution, simplification/abstraction, representation, point, line, area, volume
+Q0272. Explain/illustrate what these geoprocessing operations do: clip, intersection, union, difference, buffer, convex hull, symmetric difference.
+Q0273. What kind of map is this:
+
+Q0274. Fill in the names of the "districts" in Oakland.
+
+Q0275. What do the four digit numbers on this map of the Laurel District most likely represent?
+
+Q0276. Go to OpenStreetMap.org and edit a building structure in the neighborhood around Mills.
+Q0277. Explain these acronyms: **CSV, UTM, JPEG** [[module CSS]].hover { color: green; text-decoration: none;}.hover:hover { text-decoration: none; border-bottom: none;}.hover span { display: none;}.hover:hover span { position: absolute; display: inline; margin: 15px -20px; height: auto; width: 500px; background: #FFF; border: 2px solid #34B; color: #000; padding: 1em;}.hover:hover span span { position: relative; margin: auto; height: auto; width: auto; border: none; padding: 0;}[[/module]]
+Q0278. Explain these acronyms: **PNG, TIF, geoTIF** [[module CSS]].hover { color: green; text-decoration: none;}.hover:hover { text-decoration: none; border-bottom: none;}.hover span { display: none;}.hover:hover span { position: absolute; display: inline; margin: 15px -20px; height: auto; width: 500px; background: #FFF; border: 2px solid #34B; color: #000; padding: 1em;}.hover:hover span span { position: relative; margin: auto; height: auto; width: auto; border: none; padding: 0;}[[/module]]
+Q0279. Explain these acronyms: **SQL, WMS, WGS84** [[module CSS]].hover { color: green; text-decoration: none;}.hover:hover { text-decoration: none; border-bottom: none;}.hover span { display: none;}.hover:hover span { position: absolute; display: inline; margin: 15px -20px; height: auto; width: 500px; background: #FFF; border: 2px solid #34B; color: #000; padding: 1em;}.hover:hover span span { position: relative; margin: auto; height: auto; width: auto; border: none; padding: 0;}[[/module]]
+Q0280. Explain these acronyms: NAD83, NAD27, OSGB [[module CSS]].hover { color: green; text-decoration: none;}.hover:hover { text-decoration: none; border-bottom: none;}.hover span { display: none;}.hover:hover span { position: absolute; display: inline; margin: 15px -20px; height: auto; width: 500px; background: #FFF; border: 2px solid #34B; color: #000; padding: 1em;}.hover:hover span span { position: relative; margin: auto; height: auto; width: auto; border: none; padding: 0;}[[/module]]
+Q0281. Explain these acronyms: **AAG, ABAG, BART** [[module CSS]].hover { color: green; text-decoration: none;}.hover:hover { text-decoration: none; border-bottom: none;}.hover span { display: none;}.hover:hover span { position: absolute; display: inline; margin: 15px -20px; height: auto; width: 500px; background: #FFF; border: 2px solid #34B; color: #000; padding: 1em;}.hover:hover span span { position: relative; margin: auto; height: auto; width: auto; border: none; padding: 0;}[[/module]]
+Q0282. Explain these acronyms: **USGS, NOAA, NASA** [[module CSS]].hover { color: green; text-decoration: none;}.hover:hover { text-decoration: none; border-bottom: none;}.hover span { display: none;}.hover:hover span { position: absolute; display: inline; margin: 15px -20px; height: auto; width: 500px; background: #FFF; border: 2px solid #34B; color: #000; padding: 1em;}.hover:hover span span { position: relative; margin: auto; height: auto; width: auto; border: none; padding: 0;}[[/module]]
+Q0282. Explain these acronyms: **BG, CT, XML, CRAP** [[module CSS]].hover { color: green; text-decoration: none;}.hover:hover { text-decoration: none; border-bottom: none;}.hover span { display: none;}.hover:hover span { position: absolute; display: inline; margin: 15px -20px; height: auto; width: 500px; background: #FFF; border: 2px solid #34B; color: #000; padding: 1em;}.hover:hover span span { position: relative; margin: auto; height: auto; width: auto; border: none; padding: 0;}[[/module]]
+Q0284. What are "map tiles"? Where do we encounter them? How do they work?
+Q0285. Name a few suppliers of map tiles.
+Q0286. When using Leaflet to create a webmap, we use code like this:[[code]]var cloudmade = L.tileLayer('http://{s}.tile.cloudmade.com/{key}/{styleId}/256/{z}/{x}/{y}.png', { attribution: 'Map data © 2011 OpenStreetMap contributors, Imagery © 2011 CloudMade', key: 'BC9A493B41014CAABB98F0471D759707', styleId: 22677 })[[/code]]to create the "attribution" on the map. What does this refer to? Why do we need to do it?
+Q0287. Download [[file q:0287/exam2013.zip|this zip file]], open the QGIS workspace inside, produce a map that looks like this:
+
+and post it to a wiki page.[[module CSS]].hover { color: green; text-decoration: none;}.hover:hover { text-decoration: none; border-bottom: none;}.hover span { display: none;}.hover:hover span { position: absolute; display: inline; margin: 15px -20px; height: auto; width: 500px; background: #FFF; border: 2px solid #34B; color: #000; padding: 1em;}.hover:hover span span { position: relative; margin: auto; height: auto; width: auto; border: none; padding: 0;}[[/module]]
+Q0288. How would you estimate the number of people who live within 500 meters of MacArthur Blvd in Oakland?
+Q0289. What map is this and what is it "famous" for?
+
+Q0290. What kind of map is this and what is it used for?
+
+Q0290. What kind of map is this and what is it used for?
+
+Q0291. What do we call this kind of map?
+
+Q0292. Name these California counties.
+
+Q0293. Identify the counties in the greater Bay Area.
+
+Q0294. Identify the counties in this band across northern California
+
+Q0295. Locate these prominent California geographic features:
+
+
+Cascade Mountains
+Coastal Mountains
+Colorado River
+Kalamath Mountains
+Mojave Desert
+Sacramento River
+Sacramento Valley
+San Joaquin Valley
+San Joaquin River
+Sierra Nevada Mountains
+Q0296. (1) Read this thematic map. (2) Offer a critique of its graphic design.[[collapsible show="+ Show Image" hide="- Hide Image"]]
+
+Q0297. With reference to the figures below, describe what the California State Plane System is.
+
+
+
+Q0298. Explain what's going on in this apparently distorted map
+
+Q0299. What is the California CRS zone for Oakland and the Bay Area? What units is it in? What datum is it based on?
+Q0300. You have been hired as a consultant to estimate the effects of a new criminal offender registry law that prohibits individuals on the registry from living within 1000 meters of a school. You are asked to
+Make a map showing all areas that are off-limits to registered offenders
+Calculate about how much of the city's rental market is off-limits to registered offenders based on this law.
+You have
+a point layer with school locations
+a street layer
+a census blockgroup layer with information on number of rental units (or at least renter occupied units as of the last census)
+Q0301. Explain what we mean by "taxi-cab distance."
+Q0302. What is the significance of this map? What does it show? Who made it? When was it made?
+
+Q0303. Show, in QGIS, how to select features individually and by radius, rectangle, etc.
+Q0304. Open and explain attribute table. What are rows, what are columns? What do the controls along the bottom do? How do you sort rows? Change column width? Show only selected records? Select one or two rows and then reverse the selection.
+Q0305. Open properties dialog for a vector layer and explain briefly what the Styles, Labels, Fields, Metadata, and Joins tabs are for.
+Q0306. Create custom labels based on two fields for a polygon layer.
+Q0307. Find a color scheme using ColorBrewer and implement it on a polygon layer in QGIS.
+Q0308. Take a basic thematic map of Oakland, set up a print composer, and add graticule and customize annotations.
+Q0309. Demonstrate that you know you way around the Print Composer.
+Q0310. Show you know your way around the Georeferencer plugin in QGIS.
+Q0311. Show that you know your way around how QGIS lets you create a new vector layer of polygons, points, or lines.
+Q0312. Join a csv data file to a vector shape file.
+Q0313. Create a point layer by importing a CSV file containing geographic coordinates.
+Q0315. Identify and describe. What does it show? Who made it? When was it made?
+
+Q0316. What is Tissot's Indicatrix and what is it used for?
+Q0317. Match the name with the projection.
+South Polar Azimuthal | Mercator | Albers Equal Area Conic | Mollweide | Lambert Conformal Conic | North Polar Azimuthal
+
+
+
+
+
+
+
+
+
+
+
+
+Q0318. What does the indicatrix on this Fuller projection or "Dymaxion" map tell you about this projection (which projects the globe onto an icosohedron and then unfolds the solid figure)?
+
+Q0319. What does the indicatrix tell us about the Mollweide projection? Specifically, what do the red and black "12 o'clock" and "3 o'clock" lines mean?
+
+Q0320. Explain this diagram:
+
+Q0321. : Our consulting firm, NGOsRus, has developed a new organizational assay protocol to help characterize the financial health of community organizations. We have tested the instrument on many organizations whose financial well-being has been determined by other, much more expensive means. Here's what we know:
+Healthy organizations pass the test 80% of the time but fail it 20% of the time. Unhealthy organizations fail the test 88% of the time but pass 12% of the time.
+How likely is it that an organization that passes the test is, in fact, in good state financially?
+Q0322. Say what's wrong with these flow charts and redraw them correctly.
+
+
+
+
+
+
+Q0323. What flow chart concept does this diagram illustrate? Explain what it means and how we use it. Draw the series of flow charts implied by this diagram.
+
+Q0324. You are the board chairperson of a small non-profit and you are hiring new executive director. It has come down to two candidates, one rather plain vanilla and, frankly, a bit boring, but rock solid, and the other quite exciting and edgy. After all the interviews and due diligence, you and your board estimate that that with the boring candidate there is a 94% likelihood that she'll be OK, a 5% chance that she'll be amazing, and a 1% chance that she'll be a disaster. You estimate the "value" of OK to be 25, the value of amazing to be 100 and the value of disaster to be -100.(A) What is the expected value of hiring the boring candidate?The board estimates that there is a 60% chance that the edgy candidate is amazing and a 40% chance she will be a disaster. (B) What is the expected value of hiring the edgy candidate? Other things being equal, what is the best decision here?A consultant friend of your tells you about a personality test that you can administer to job candidates that helps distinguish between those likely to be amazing and those likely to be a disaster. (C) With the above assumptions, how much would it be worth to have this test to use on your edgy candidate (the test would tell you for sure whether this particular edgy person is the amazing or the disaster type)?But suppose it's not a perfect test, but it's pretty good. It turns out that with candidates who really are amazing it gets it right about 75% of the time. With those who are actually disasters waiting to happen, it gets that right 90% of the time.(D) If the test were administered to our edgy candidate and she passed, how likely is it that she'd be amazing? And if she failed, how likely she was actually a disaster?(E) How much would we be willing to pay for the imperfect test?[[file q:0324/Q324.xlsx|Excel Worksheet Here]]
+Q0325. Have a look at the paper shown below about immunization in Uganda. Look especially at the causal loop diagrams on pages 102(146) and 103(147). Explain what is going on in each of the labeled/shaded loops. In some cases, there might be a sign missing. Based on your reading of the diagrams, supply these and explain.
++++ R1:
++++ B1:
++++ B2:
+
+
+[[collapsible show="+ Show research paper" hide="- Hide research paper"]][[iframe http://www.sihealthpolicy.org/wp-content/uploads/2013/06/System-dynamics-approach-to-immunization-healthcare-issues-in-developing-countries.pdf width="800" height="800"]]
+Q0326. (A) Consider this plot of P_{n+1} vs. P_{n}. Without worrying about what sort of system it might be, show that you understand how the chart works by describing the behavior of this system if it starts at time i at P_{i}=30. How about 70?
+
+(B) If this is a model of attendance at, say, a protest rally with the axes representing percentage of the population, and P_{n} is how many showed up last week (a number everyone knows) and P_{n+1} is how many that means we can expect this week (based on the distribution of individual thresholds - how many people need to be going for me to decide to go), how would you interpret the gaps A and B on the chart?(C) Think about the "standing ovation model." What features does it add to the basic model described here.
+Q0327. Our agency provides three types of client service: A, B, and C. And we have 3 kinds of staff: X, Y, and Z. Each type A service requires 3 hours of an\timesstaff member's time and 1 hour of a Y. Type B requires 2 X, 1 Y, and 3 Z hours. And type C requires 1 X, 3 Y, and 2 Z.Currently we have 2 X, 1 Y and 1 Z on staff. We pay X's $25 per hour, Ys get $30 and Zs get $40. Assume everyone works a 35 hour week. At 35 hours per week our labor costs are 4200.Revenue from type A service is $100, B is $200, and C is $300.Regulations require that we serve at least 5 of each client type each week and that we serve at total of at least 21 clients each week.What client mix will allow us to maximize revenue?[[file q:0327/Q327.xlsx |Excel Worksheet here.]]
+Q0328. Have a look at this recent release from Bureau of Labor Statistics (BLS). The data separates those without a job into unemployed but "in the labor force" and "marginally attached to the labor force" and a subset of these called "discouraged" - the former would like to work but have not looked in the last four weeks and so are not counted as unemployed. The latter are not actively looking for work having given up on the idea that its possible to find. These groups are **not** included in the denominator when the unemployment rate is calculated. The simple version of the unemployment rate is, then,
+U
+R
+=
+
+r
+a
+c
+U
+n
+e
+m
+p
+l
+o
+y
+e
+d
+E
+m
+p
+l
+o
+y
+e
+d
++
+U
+n
+e
+m
+p
+l
+o
+y
+e
+d
+Some recent op-eds have counseled caution about optimism that the overall unemployment rate has been going down because it might reflect growth in the number of people no longer looking for work. We'll think about that with a Markov model. We'll simplify the states a worker can be in:
+employed (E)
+short term unemployed - 14 weeks or less (US)
+long term unemployed - over 14 weeks (LS)
+Marginally attached to the labor force - no longer looking for a job (MALF)
+Let's construct a simplified Markov model of unemployment based on transition rates shown here:
+
+If the unemployment rate is calculated as the ratio of those who are short term unemployed (US) plus those who are long term unemployed (UL) to the total labor force (E + US + UL), how would things evolve over the next twelve months if the starting numbers are these:
+
+What will the unemployment rate be? Even if it is agreed that getting unemployment to near 6% is a policy goal, are there reasons the results might not be a cause for celebration?Create a chart showing changes over the next 12 months. Suggestion: plot total employment (E) on secondary axis since it's such a large number. In the alternative, put it on a separate chart.[[file q:0328/final-exam-2013-markov.xlsx|Excel worksheet here]]
+Q0329. Create for yourself a one page cheat-sheet/course summary illustration that captures what you have learned/want to take away from the course. Be prepared to show it at oral exam and explain it to instructor as if he were a fellow student who has not taken this course. This can take any form at all within the constraints of being no more than one sheet of paper. Just for fun, here are some examples from other courses: [[[soc116:course-summary|Social Theory]]], [[[soc128:course-summary|GIS]]], [[[soc112:whole-course-diagram-gallery|Social Control]]]. Focus, of course, on content, not artistic flair.
+Q0330. **Equilibrium** came up many times in this course. Briefly catalog several and describe the concept and its importance. Be sure you can address (1) whether it is a normative concept (2) stable vs. unstable (3) different examples.
+Q0331. Studying for an exam could raise a student's grade by a whole letter grade. But it turns out to not be a sure thing. Suppose research has shown that six hours of studying has a 60% chance of increasing your grade by one letter grade, a 25% chance of having no effect, and a 15% chance of actually lowering it by one letter grade (perhaps due to increased anxiety and not enough sleep).Calculate the expected value of the investment of 6 hours of study time in terms of "letter grades per hour."
+Q0332. Your client asks you to design a simple research project that will tell us how long a tube of toothpaste should last. It turns out there is a standard amount of toothpaste that is considered "one use" but that real people are all over the map in terms of the amount they use. We need the answer by the end of the week.
+Q0333. Consider each of the actions listed in the left column of this table. Thinking like Max Weber, in the other columns of each row, give a short explanation of how the action could be oriented in each of four ways (instrumentally rational, value rational, affectual, traditional). In some cases, you might conclude that it is simply too far fetched for an action to be subject to a particular orientation; these can be noted with an "X."
+Action	Instrumentally Rational _
+//zweckrational//||~ Value Rational _//wertrational//||~ Affectual||~ Traditional||
+Greetings
+Investing
+Picking a major
+Helping an elderly person
+Clipping coupons
+Setting the table
+Exercising
+Praying
+Observing holy days
+Doing a class assignment
+Going to college
+Respecting one's elders
+Q0334. Describe, with examples, the policy implications of a theory that has individuals and their shared meanings as the main source of social order.
+Q0335. Consider Marx on the production of consciousness. How important does the kind of work seem to be as over against the kinds interaction among people who do the same kind of work for Marx? Compare, perhaps, Uber drivers and fast food workers. Would Marx expect less or a different kind of shared consciousness among the one or the other?
+Q0336. What does [[[soc116:notes-r007-fleck-genesis|Ludwick Fleck]]] mean by a "thought collective"?
+Q0337. In "Genesis and Development of a Scientific Fact" Ludwik Fleck starts out with the bold statement that "cognition is the most socially-conditioned activity...." Why is this a bold statement? What conventional assumption is he contradicting at the outset?
+Q0338. "As an entity @@[@@a thought collective@@]@@ is even more stable and consistent than the so-called individual, who always consists of contradictory drives" (57.8). Explain what Fleck means.
+Q0339. Ludwik Fleck wrote: "what actually thinks within a person is not the individual himself but his social community" (Hechter & Horne 59.5). Explain what Fleck's theory of thought collectives is all about by explaining what this means.
+Q0340. Explain sociological wholism (vs. methodological reductionism) and sociological realism (vs. nominalism)
+Q0341. Explain what George Herbert Mead means when he describes "self consciousness" as becoming aware of oneself as an object for others. How is it that this is what gives rise to the "social self"?
+Q0342. With which theorists do we associate this diagram? Explain what it means in the context of their work.
+
+Q0343. Dov Cohen and Joe Vandello report on several lab experiments in the article on cultures of violence. One experiment involved "annoying" subjects who thought they were doing an experiment on "art therapy." Describe the design of this experiment, its findings, and their relevance to the theoretical ideas explored in Cohen and Vandello's article.
+Q0344. Cohen and Vandello offer a number of supporting findings in their work on culture of honor violence in the American south. Explain what's going on in each of these four summary tables and how this fits in with their analysis.
+
+
+
+
+
+
+
+
+Q0345. Explicate and explain this selection from Cohen and Vandello's "Meanings of Violence":
+As Reed has suggested, Southerners "actually don't //see// much of the violence around them, don't register it as 'lawlessness,' because it //isn't// 'lawless.' It is lawful violence in the sociological if not the legal sense: more-or-less predictable, more-or-less expected, (in consequence) more or less taken for granted. It's effectively invisible-something like wallpaper." (Reed 1981)
+Q0346. Cohen and Vandello describe a world that may not be politically or morally attractive to you. And yet we read it in a section of the course where we are saying that collective beliefs can be a source of coordination and social order. How does this article illustrate the theoretical points being made by Marx, Durkheim, Mead, and Fleck, indeed of the entire section of the course, that shared meanings can produce order?
+Q0347. George Herbert Mead writes of "taking the attitude of the other" as a necessary part of social life.
+"...the complex co-operative processes ...[and activities and institutional functionings of] organized human society are also possible only in so far as every individual involved in them ...[or belonging to that society] can take the general attitudes of all other such individuals ...[with reference to these processes and activities and institutional functionings, and to the organized social whole of experiential relations and interactions thereby constituted - ] and can direct his own behavior accordingly" (61.5).
+Give an example of a social situation that bears this out, describing the various participants and how they can "take the attitude of the others" and what would happen if they got it wrong, or in situations where people do this less well or less completely.
+Q0348. At 63.2 (in Hechter and Horne reader) Mead says there are two stages in the development of the social self. First the organization of particular attitudes of particular others toward oneself. Second is characterized by "an organization of the social attitudes of the generalized other or the social group...." Although we usually interpret this in terms of the development of a social self in children, we can use it to describe our joining of any new group or social environment. Explain what this means using an example of an individual's socialization into some concrete scene of your own conjuring.
+Q0349. Language is the paramount example of a SOCIAL phenomenon - the "code system" of language exists in our collective, shared consciousness and anyone who wishes to communicate has to participate in this. Use language and the acquisition and use of language to explain Mead's idea of taking the role of the other, the generalized other, etc.
+Q0350. Some people summarize Durkheim's "theory of religion" by saying that he discovered that "god is society." Explain the logic of this.
+Q0351. Define cooperation and give five examples where you have seen it (or its absence) recently.
+Q0352. Explain what Hedstrom ("Dissecting the Social") meant when he said "differences in some social states or events are considered explained if the decomposition eliminates them" (13.8)?
+Q0353. In "Dissecting the Social," Hedstrom suggests that "a statistical analysis is a test of an explanation, not the explanation itself" (13.9). Explain this distinction.
+Q0354. In "Dissecting the Social," what does Hedstrom mean by "realism" (14.9)? How is does this compare to Durkheim's dictum to "treat social facts as things"?
+Q0355. Explain what Marx means by "It is not consciousness that determines life, but life that determines consciousness" (47.7).
+Q0356. Demonstrate your understanding of the George Herbert Mead excerpt and its connection to ideas about how the nature of the social individual is a "source" of social order by explaining this diagram. Use examples to illustrate your ideas.
+
+Q0357. Demonstrate your understanding of the Durkheim excerpt and its connection to ideas about how the nature of the social individual is a "source" of social order by explaining this diagram. Use examples to illustrate your ideas.
+
+Q0358. Demonstrate your understanding of the Ludwik Fleck excerpt and its connection to ideas about how the nature of the social individual is a "source" of social order by explaining this diagram. Use examples to illustrate your ideas.
+
+Q0360. What is the relevance of the diagram below to the Cohen and Vandello excerpt?
+
+Q0361. In the public goods game described by Fehr and Gintis, explain why we impose a cost on the punishER for each punishment issued. What does willingness to impose a punishment despite a cost suggest about the actor who does so?
+Q0362. The theorists whose work was included in the section on individuals and social order each suggest mechanisms for how shared meaning happens through actual social interaction. Describe how each thinker is saying that the picture below is NOT how it happens - that is, we don't just magically have a bunch of social/cultural content in our heads; it gets there through a process, there's a mechanism that we can describe.If it's later in the course, relate this to life in groups - how is this social content connected to ideas on internalization and socialization of group members?
+
+Q0363. Demonstrate your understanding of Weber's typology of social action in the context of this course by explaining this diagram.
+
+Q0364. Thinking back to the Kanazawa article on evolutionary biology, use this diagram to talk about at least six **different** ideas from this course.
+
+Q0365. A storyboard is a technique for graphically organizing the telling of a story. Think about how you would explain **Marx's theory of consciousness** as a theory of how the human individual is a vehicle for the generation of social order. Imagine how you would represent the theory visually and how you would explain it textually.
+
+Q0366. A storyboard is a technique for graphically organizing the telling of a story. Think about how you would explain **Mead's theory of the social self** as a theory of how the human individual is a vehicle for the generation of social order. Imagine how you would represent the theory visually and how you would explain it textually.
+
+Q0367. A storyboard is a technique for graphically organizing the telling of a story. Think about how you would explain Weber's typology of social action as it relates to our concerns with the generation of social order. Imagine how you would represent the theory visually and how you would explain it textually.
+
+Q0368. A storyboard is a technique for graphically organizing the telling of a story. Think about how you would explain Durkheim's theory of collective representations (shared meaning) as a theory of how the human individual is a vehicle for the generation of social order. Imagine how you would represent the theory visually and how you would explain it textually.
+
+Q0369. A storyboard is a technique for graphically organizing the telling of a story. Think about how you would explain Fleck's theory of thought communities as a theory of how the human individual is a vehicle for the generation of social order. Imagine how you would represent the theory visually and how you would explain it textually.
+
+Q0370. A storyboard is a technique for graphically organizing the telling of a story. Think about how you would explain Cohen and Vandello's work on violence and cultures of honor as an illustration of theories of how the human individual is a vehicle for the generation of social order. Imagine how you would represent the theory visually and how you would explain it textually.
+
+Q0371. A storyboard is a technique for graphically organizing the telling of a story. Think about how you would explain Kanazawa's description of evolutionary biology and its connection to our thinking about the basis for social order. Imagine how you would represent the theory visually and how you would explain it textually.
+
+Q0372. Explain the difference between cooperation and coordination as we are using them in this course. Give examples to support your explanation.
+Q0373. Explain what we mean by the phrase "necessary but not sufficient" AND how this applies to the idea that a common language and shared meaning are necessary for social order.
+Q0374. "Social order triumphs over the state of nature by coercion...." Attribute and explain.
+Q0375. Hobbes and Engels both give us a vision of the state. Hechter and Horne suggest that "Instead of a world made up of //equal individuals,// Engels's starting point is a society made up of //unequal classes.//" Show what you know about Hobbes and Engels but explaining this statement.
+Q0376. In the context of Engels, what is a class? What are the main classes under feudalism? Capitalism?
+Q0377. Explain, in your own words, the concept of "sociological clones" (H&H 84).
+Q0378. "From an economic point of view, coercion is simply too expensive to be the sole basis of social order" (Hechter and Horne, 85). Explain what this is getting at. How does it lead us to Weber's concept of legitimate domination.
+Q0379. "Marx and Engels suggest that the disadvantaged are duped by the institutions and ideology of the ruling class" (Hechter and Horne, 85). Elaborate.
+Q0380. Compare patrimonialism, bureaucracy, and charismatic authority in terms of the efficiency of maintaining order and ensuring loyalty among a leader's staff.
+Q0381. Convert penultimate paragraph of Hechter & Horne's introduction into a table that summarizes the theories in this section. Start with their suggestion that each theory has some group dominating others and each has different process leading to this and different consequences deriving from it.
+"Each of the readings in this section argues.... from generation to generation."
+Q0382. "A central idea in the readings in this section is that government matters" (87). Extend this idea to say that "organizations matter" in an argument about why some hierarchy is needed if we are to cooperate in groups of more than a few to get things done.
+Q0383. Define the following words/phrases as used by Hobbesfelicity (89.3)laudable actions (90.5)redound ... to their posterity (90.6)thraldome (90.7)hope of requitall (90.8)secret machination (92.2)Prudence (92.3)diffidence (92.6)cattell (93.5)dommage (93.5)Cardinall (94.8)//Jus// and //Lex// (95.7)Covenants (97.7)
+Q0384. Hobbes suggests that in a state of "warre" "there is no place for Industry...no culture...no Navigation...no commodious Building...no Knowledge...." (93.9). Explain how this can be translated as "none of the benefits of cooperation."
+Q0385. Explain the following words, terms, phrases found in Engels' "The Origin of the State" excerpt.gentile constitution (99.3)://plebs// (99.4):mark constitution (99.5)bondsmen (101.2)joint-stock company (101.5)universal suffrage (102.1)Bonapartism (101.3)proletariat (101.3)Prussian Junkers (101.4)
+Q0386. "...the state arose from the need to keep class antagonisms in check...." Attribute and explain.
+Q0388. Explain what Weber means by legal authority.
+Q0389. Explain what Weber means by traditional authority.
+Q0390. Explain what Weber means by charismatic authority.
+Q0391. Weber describes "monocratic bureaucracy" as an ideal type. What is an ideal type? Describe the five characteristics of an ideal typical bureaucracy.
+Q0392. Weber suggests that bureaucratic domination is marked by "the dominance of a spirit of formalistic impersonality" (111.45). Explain.
+Q0393. What does Weber mean by "social levelling"? (111)
+Q0394. What does Weber mean by "the routinization of charisma"? (118ff)
+Q0395. Explain the following terms or phrases in the context of Paul Willis' //Learning to Labour.//"an aimless air of insubordination" (124.4)'ear'oles (124.9)"universal taboo...yielding incriminating information...to those with formal power" (129.3)"grassing" (129.4)
+Q0396. Discuss the role of the 'ear'oles in the oppositional ideology of the "lads." Why and in what ways are they important in the lads' concept of self?
+Q0397. Describe the "resistance culture" of the lads at school.
+Q0398. According to Willis, what is the "main theme of shopfloor culture"? Explain and give examples.
+Q0399. Identify and elaborate on three ways in which the shopfloor culture described by Willis parallels the counter-school culture he talks about.(for final exam) Bring the phenomena Willis describes into conversation with material from the "groups" section of the course. What mechanisms described in that section might illuminate the lads' oppositional culture or shop floor culture?
+Q0400. Willis' //Learning to Labour// is often cited as an example of the social science concept of the "reproduction of social class." Explain what that phrase means to you after reading the excerpt from Willis' book.
+Q0401. What does Weber mean by legitimacy?
+Q0402. Engels suggests that throughout history the state has been "for the ruling class." Identify the three historical periods he talks about and characterize how this plays out in each.
+Q0403. In the excerpt from "The Origin of the State," Engels discusses the role of universal suffrage in the contemporary state. What role does he see the proletariat playing initially in this context? What trajectory does he suggest as the history unfolds?
+Q0404. Give a summary of the developmental story Engels tells in "The Origin of the State." Be sure your answer makes connections to the course and to our discussion of hierarchy as a source of order.
+Q0405. Weber says (103.5) that "rule over a considerable number of persons requires a staff...." If you read carefully you will see that the types of "authority" he is talking about refer to the leader's capacity to control and direct the staff as much as to the leader's capacity to dominate "the led." Discuss Weber's types of legitimate domination as forms of maintaining organizational integrity.
+Q0406. Attribute and explicate: "...every genuine form of domination implies a minimum of voluntary compliance, that is, an interest in compliance."
+Q0407. Weber's definition, please:powerlegitimacyauthority
+Q0408. Show what you know about Willis' lads' world by doing a compare and contrast with a contemporary phenomenon like "gutter punk."
+Q0409. Is punk rock anti-hierarchical? Or is there a Willis-ian way in which it reproduces the hierarchy it loathes? Does this dynamic track with Weber's notion of "voluntary submission"?
+
+Q0410. Show what you know about Schelling's "micromotives macrobehavior" models by explaining this diagram.
+
+Q0411. What is Axelerod's fundamental question in "The Evolution of Cooperation"? It has four parts.
+Q0412. Explain the basic idea of the prisoner's dilemma.
+Q0412. Explain the basic idea of the prisoner's dilemma.
+Q0414. Explain why the study of the "emergence of cooperation" might be especially relevant in international relations. How does this observation suggest a fundamental limit to the Hobbesian model?
+Q0415. Explain what we mean by "norm of reciprocity" and how it is relevant to the course.
+Q0416. Explain what we mean by distinguishing a one-shot PD from an iterated PD and why this is important.
+Q0417. In the context of game theory/prisoner's dilemma, what does "words are cheap" mean?
+Q0418. Context and explication, please: "if the future is important, there is no one best strategy."
+If the discount parameter, w, is sufficiently high, there is no best strategy independent of the strategy used by the other player.
+Q0419. What does Hayek mean by "teleological shorthand"?
+The use of “purposive" in this sense as a sort of ‘teleological shorthand’, as it has been called by biologists, is unobjectionable so long as we do not imply an awareness of purpose on the part of the elements, but mean merely that the elements have acquired regularities of conduct conducive to the maintenance of the order — presumably because those who did act in certain ways had within the resulting order a better chance of survival than those who did not." (143.9)
+Q0420. Explain why Paul Willis' "Learning to Labour" was a reading in the hierarchy section of this course.
+Q0422. What do we mean saying that Axelrod is trying to discover the conditions in which cooperation can emerge?
+Q0423. The article "[[[soc116:notes-r019-zimmer-ants|From Ants to People, An Instinct to Swarm]]]" suggests that humans might not (yet) be like ants because we have not had enough time to adapt to living in groups (195.5). What does this mean? Demonstrate what you learned from this article (and from this section of the course) by talking about how humans are and are not like ants and what might be involved in an evolution toward being more like ants.
+Q0424. Fill in the blank boxes in this summary diagram for how hierarchy can generate social order. Note that the diagram is purely schematic - you might decide there are more or fewer boxes in different cases or the arrows might not go directly to coordination first, etc.
+
+Q0425. What research questions did the "live and let live" phenomenon from WWI raise for Robert Axelrod?
+Q0426. Weber's definition, please:traditional authorityrational legal authoritycharismatic authority
+Q0427. Show what you know by attributing and explaining this diagram:
+
+Q0428. Attribute and explicate.
+Fate is regarded as a substitute for the parental agency. If a man is unfortunate it means that he is no longer loved by this highest power; and, threatened by such a loss of love, he once more bows to the parental representative in his super-ego -- a representative whom, in his days of good fortune, he was ready to neglect. This becomes especially clear where looked Fate is looked upon in the strictly religious sense of being nothing else than an expression of the Divine Will. The people of Israel had believed themselves to be the favorite child of God, and when the great. Father caused misfortune after misfortune to rain down upon this people of his, they were never shaken in their belief in his relationship to them or questioned his power or righteousness. Instead, they produced the prophets, who held up their sinfulness before them; and out of their sense of guilt they created the over-strict commandments of their priestly religion. It is remarkable how differently a primitive man behaves. If he has met with a misfortune, he does not throw the blame on himself but on his fetish, which has obviously not done its duty, and he gives it a thrashing instead of punishing himself.
+Q0429. Briefly explain Freud's theory of where guilt comes from.
+Q0430. At 239.4 Durkheim writes, "As a matter of fact, at every moment of history there is a dim perception, in the moral consciousness of societies, of the respective value of different social services @@[@@he means jobs, occupations, etc. not social work@@]@@, the relative reward due to each, and the consequent degree of comfort appropriate on the average to workers in each occupation." Translate this into everyday English.
+Q0431. Discuss the relationship between "desires" and "means," ambitions and expectations, contentment and aspiration that characterize the NON-anomic equilibrium that society can provide.
+Q0432. At 240.5 Durkheim talks about social classification (by which he means the way people are sorted into different roles/occupations/classes in society) and about what the basis of these are (and how we accept them or take them for granted - note that this is what Goffman was talking about too in "The Arrangement Between the Sexes.") Why should (or how can) people be content with their lot in life when they are aware that the lots people have are vastly unequal?
+Q0433. Discuss how one might be "content" with one's inequality in a society where:
+status is based on heredity
+a program is in place to give everyone an equal start (imagine whatever's needed for this)
+a strictly equal opportunity meritocratic society
+a society with every imaginable balancing of privilege
+Q0434. On p241 Durkheim talks about the anomy (disruption) caused by economic disaster (a person losing everything, say, or sudden drop in a set of people's economic circumstances as when a local industry closes and everyone loses jobs) OR when sudden wealth comes (again, to an individual or to a community or group). Explain what Durkheim sees happening and how it's the same process in both situations.
+Q0435. Discuss: Durkheim talks about how society gets us to "accept our lot"; Marx and Engels talk about false consciousness and ideology (we buy into our oppression) and religion as "opiate of the masses"; Weber gave us the notion of legitimate authority. Points of similarity and difference?
+Q0436. At 242.5 Durkheim writes "Poverty protects against suicide because it is a restraint in itself." What does he mean?
+Q0437. On p 243 we read "this liberation of desires has been made worse by the very development of industry and the almost infinite extension of the market." Consult the text (including the text before this passage) and say something about what Durkheim's take on globalization of markets and products might be.
+Q0438. Consult the text at 243.9ff : "Reality seems valueless by comparison with the dreams of fevered imaginations; reality is therefore abandoned, but so is possibility abandoned when it in turn becomes reality. A thirst arises for novelties...." Use Durkheim to say something about advertising - for products, for body images, etc.
+Q0439. Freud in "Civilization and Its Discontents" gives us a theory of how conscience arises and functions. In the selection on anomic suicide Durkheim gives an account of conscience as controlling our otherwise potentially infinite (and unsatisfiable) desires. Compare and contrast.
+Q0440. Define:regimen (239.6)erethism (242)equanimity (242)apotheosis (243.6)sacrilege (243.6)(purely) utilitarian (regulation) (243.7)liberal professions (244.8)
+Q0441. Explain the scientific logic behind Durkheim's suggestion that the three propositions on suicide varying with integration in religious, domestic, and political society lead to the suggestion that social integration is the property behind the variation in suicide rates.
+Q0442. Explain what Durkheim is talking about when he suggests that egoism is the opposite of social.
+Q0443. Define:supra-physical (234.5)raison d'être (234.7)(instinct) acquits (itself) (234.8)(collective) asthenia (236.2)
+Q0444. Tocqueville writes that "Americans combat individualism with free institutions" (246). Explain what he means.
+Q0445. What is the mechanism behind Tocqueville's endorsement of involvement in local politics as a way of building "the social" into citizens?
+Q0446. Walk us through Tocqueville's contrast of aristocratic society where citizens are bound to, say, their local noble, and democratic society where citizens are independent. He wants to say that the latter can't get anything done unless they know how to organize and associate.
+Q0447. What is Tocqueville's argument that associations help to stabilize democratic regimes?
+Q0448. Why is the Tocqueville selection in the "groups as a source of social order" section of the text?
+Q0449. What does Hechter mean by "the extensiveness of corporate obligations"?
+Q0450. Centola, et al. describe a process whereby people collectively "produce" something that is contrary to their individual beliefs/interests/preferences. Thomas Schelling, similarly, described a process whereby socially irrational results emerged from individually rational action. Identify points of similarity and difference, using it as an opportunity to show what you know about the two thinkers' ideas as well as your ability to compare markets and groups as generators of social order.
+Q0451. If the phenomenon described by Centola et al. is common, what are the implications for Schelling's critical mass and tipping models?
+Q0452. Develop a summary diagram for the entire course. Some examples of the genre from a social control class in solutions.
+Q0453.
+[[[q:0337|Q337]]]. In "Genesis and Development of a Scientific Fact" Ludwik Fleck starts out with the bold statement that "cognition is the most socially-conditioned activity…." Why is this a bold statement? What conventional assumption is he contradicting at the outset?
+[[[q:0338|Q338]]]. "As an entity [a thought collective] is even more stable and consistent than the so-called individual, who always consists of contradictory drives" (57.8). Explain what Fleck means.
+[[[q:0339|Q339]]]. Ludwik Fleck wrote: "what actually thinks within a person is not the individual himself but his social community" (Hechter & Horne 59.5). Explain wha
+Q0454. Consider the essay you wrote for [[warm-up assignment at the start of this course on a film or book in which social order "disappeared."]] How would you re-write it in a manner that would show off some of what you learned in this course?
+Q0455. Think about the articles by Fehr & Gintis and Centola et al. Show what you take away from these articles by talking about how norms can support cooperation and social order and how they can support an order that might be high on coordination but low on the benefits of cooperation.
+Q0456. Provide a high level comparison of shared meaning, hierarchy, markets, and groups as sources of social organization understood as coordination and cooperation.
+Q0457. The overall logic of the final section of the course was that groups can promote social order through internalization of norms and provision of incentives. Explain how each of these work and what the difference is using at least one thinker to illustrate each.
+Q0458. If you are doing a thesis this year or have a general topic in mind for one in the future, pick two theorists, each from a different section of the course, and show what you have learned about their ideas by "applying" them to your research topic.
+Q0459. What, to your mind, was the best article of the course - the one you really understood or that really clicked for you or that you've taken to explaining to friends and family it's so awesome. Describe it in a manner that shows the depth of your understanding.
+Q0460. Modify this as you like so it refers to a trip project you might plan with family or friends. We are proposing an inexpensive family trip from Charleston, South Carolina, to Des Moines, Iowa, to visit relatives during December school holidays. The seasonal trip we dream of taking from Charleston to Des Moines is the “program.” Basic assumptions about our trip “program” are:
+We want to visit relatives between 12/10/00 and 1/5/01 while the children are out of school.
+We will fly from South Carolina to Iowa because it takes less time than driving and because frequent flier (FF) miles are available.
+Using frequent flier miles will reduce travel costs.
+*We have to determine the factors influencing our trip, including necessary resources, such as, the number of family members, scheduled vacation time, the number of frequent flier miles we have, round trip air reservations for each family member, and transportation to and from our home to the airport. The activities necessary to make this happen are the creation of our own family holiday schedule, securing our Iowa relative’s schedule, garnering air line information and reservations and planning for transportation to and from the airport.
+Q0461. Consider the task of building a logic model for a setting up an "academic excellence center" on campus. Brainstorm about resources, activities, outputs, and outcomes. For each category, give examples of too much detail, not enough detail, and just the right amount of detail for a straightforward logic model.
+Q0463. (1) Write the equation for value, FV, of principal, PV, saved at interest rate R for N years (compounded annually).(2) Suppose you know the future value in problem one and want to determine the present value. Solve the equation you wrote above for PV.(3) Suppose I have a project that will deliver A dollars in one year, B dollars the second year and C dollars in the third year under a prevailing interest/discount rate of R. Write the equation for the present value of this project.
+Q0464. (a) Suppose a friend makes the following offer: "I am willing to give you $10 right now, 25$ in 3 years or $200 in ten years." Describe the logic you might use to see which of these is the best deal. Calculate the present value of each opportunity and use the results to sketch a simple decision tree. Assume a discount rate of 5%(b)If you have the choice between paying a cash price right now or spreading the payments out over 12 months with no interest, which would you choose and why?
+Q0465. A used car costs 10,000. A comparable new car costs 20,000. Owners of new cars can expect to pay nothing per year in maintenance for ten years. Owners of used cars pay $1000 per year in maintenance. How do the costs compare over ten years? Assume a 7% discount rate.
+Q0466. A state agency is considering a childcare subsidy that would facilitate single parents attainment of college degrees. The benefit would cost $10k per recipient per year for four years. The expectation is that individuals with a college degree will earn more than individuals without a college degree. This means that they generate more revenue in the form of income tax. They are also less likely to require government assistance of various kinds -- call this amount **A**. Assume current rules limit us to a ten year time horizon. Assume the average salary difference between non-college grads and college grads is **D** (but get the real info here) and that the marginal tax rate can be found here. Assume a 5% discount rate. For the purposes of this problem, we will ignore inflation.
+Q0467. (a) Provide an example that illustrates how the IRR criteria can give wrong answer. (b) Provide an example that illustrates how payback period criterion can give the wrong answer. (c) Describe how risk, safety and hedonism might enter into the calculations in discounting problems.
+Q0468. Describe how to set up the following problem. There are many inefficient and dirty older cars still in use. Future generations are harmed by the wasted fuel and added pollution these cars represent. A proposal is in the works to pay people a bonus to trade them in. How should we think about this? In your preliminary thinking, ignore any economic stimulus effects. You can bring that in later if you wish.
+Q0469. This is one of a series of problems ([[[q:0470|470]]], [[[q:0471|471]]], [[[q:0472|472]]], [[[q:0473|473]]], [[[q:0474|474]]], [[[q:0475|475]]], [[[q:0476|476]]], [[[q:0477|477]]], [[[q:0478|478]]]) relating to the same fictional case: The community of Ourville which is considering some options for creating parks to enhance the quality of life of local residents. The amounts are expressed in simple numbers – e.g., $100 – which you can assume to be referring to realistic amounts – e.g., hundreds of thousands.(a) As a part of its considerations about the park project, Ourville needs to think about the opportunity costs associated with each tract of land being considered for the park. What is an opportunity cost? You are nominated to explain (BRIEFLY) in terms the public will understand what we mean by opportunity cost:(b) While discussing the value of the park options to residents the term "willingness to pay" comes up. Explain (BRIEFLY) to the public what this means.
+Q0470. This is one of a series of problems ([[[q:0469|469]]], [[[q:0471|471]]], [[[q:0472|472]]], [[[q:0473|473]]], [[[q:0474|474]]], [[[q:0475|475]]], [[[q:0476|476]]], [[[q:0477|477]]], [[[q:0478|478]]]) relating to the same fictional case: The community of Ourville which is considering some options for creating parks to enhance the quality of life of local residents. The amounts are expressed in simple numbers – e.g., $100 – which you can assume to be referring to realistic amounts – e.g., hundreds of thousands.One part of the staff report talks about discounting. A resident asks "where do discount rates come from?" Your (BRIEF) answer:
+Q0471. This is one of a series of problems ([[[q:0469|469]]], [[[q:0470|470]]], [[[q:0472|472]]], [[[q:0473|473]]], [[[q:0474|474]]], [[[q:0475|475]]], [[[q:0476|476]]], [[[q:0477|477]]], [[[q:0478|478]]]) relating to the same fictional case: The community of Ourville which is considering some options for creating parks to enhance the quality of life of local residents. The amounts are expressed in simple numbers – e.g., $100 – which you can assume to be referring to realistic amounts – e.g., hundreds of thousands. In your reports you mention Pareto and Kaldor-Hicks criteria. Your supervisor says you can't just refer to these – you need to explain (BRIEFLY) what they mean in everyday terms:
+Q0472. This is one of a series of problems ([[[q:0469|469]]], [[[q:0470|470]]], [[[q:0471|471]]], [[[q:0473|473]]], [[[q:0474|474]]], [[[q:0475|475]]], [[[q:0476|476]]], [[[q:0477|477]]], [[[q:0478|478]]]) relating to the same fictional case: The community of Ourville which is considering some options for creating parks to enhance the quality of life of local residents. The amounts are expressed in simple numbers – e.g., $100 – which you can assume to be referring to realistic amounts – e.g., hundreds of thousands.One option on the table for the community of Ourville is to build a park on the west side of town. Should we spend $100 to build a new park? Studies have determined that the park will provide $132 of benefits to the community's residents. What do you recommend and why?
+Q0473. This is one of a series of problems ([[[q:0469|469]]], [[[q:0470|470]]], [[[q:0471|471]]], [[[q:0472|472]]], [[[q:0474|474]]], [[[q:0475|475]]], [[[q:0476|476]]], [[[q:0477|477]]], [[[q:0478|478]]]) relating to the same fictional case: The community of Ourville which is considering some options for creating parks to enhance the quality of life of local residents. The amounts are expressed in simple numbers – e.g., $100 – which you can assume to be referring to realistic amounts – e.g., hundreds of thousands.Two options are on the table for the community of Ourville. Either option will cost $100. Option A -- the West Park – provides $80 of benefits (total) to families who live close to the west park location and $52 (total) to families who live farther away on the east side of town. Option B – the East Park – provides $40 to the first group of families and $110 to the second group. What do you recommend and why?
+
+Q0474. This is one of a series of problems ([[[q:0469|469]]], [[[q:0470|470]]], [[[q:0471|471]]], [[[q:0472|472]]], [[[q:0473|473]]], [[[q:0475|475]]], [[[q:0476|476]]], [[[q:0477|477]]], [[[q:0478|478]]]) relating to the same fictional case: The community of Ourville which is considering some options for creating parks to enhance the quality of life of local residents. The amounts are expressed in simple numbers – e.g., $100 – which you can assume to be referring to realistic amounts – e.g., hundreds of thousands.The mayor of Ourville wants a more detailed analysis on option A. Apparently, the park could range in size from the very small to the very large. Budget concerns are not an issue for now. Examine the information below. What do you recommend and why? For example: What type of problem is this? What is the fundamental rule? How big should the park be?
+
+Q0475. This is one of a series of problems ([[[q:0469|469]]], [[[q:0470|470]]], [[[q:0471|471]]], [[[q:0472|472]]], [[[q:0473|473]]], [[[q:0474|474]]], [[[q:0476|476]]], [[[q:0477|477]]], [[[q:0478|478]]]) relating to the same fictional case: The community of Ourville which is considering some options for creating parks to enhance the quality of life of local residents. The amounts are expressed in simple numbers – e.g., $100 – which you can assume to be referring to realistic amounts – e.g., hundreds of thousands.Activists in Ourville force the city not to think of this as an either/or proposition. Experts are consulted and the following cost benefit information is obtained. Council allocates $200 for the parks project. How do you recommend they proceed and why? What kind of problem is this? How big should each park be?
+
+Q0476. This is one of a series of problems ([[[q:0469|469]]], [[[q:0470|470]]], [[[q:0471|471]]], [[[q:0472|472]]], [[[q:0473|473]]], [[[q:0474|474]]], [[[q:0475|475]]], [[[q:0477|477]]], [[[q:0478|478]]]) relating to the same fictional case: The community of Ourville which is considering some options for creating parks to enhance the quality of life of local residents. The amounts are expressed in simple numbers – e.g., $100 – which you can assume to be referring to realistic amounts – e.g., hundreds of thousands.The Ourville Alliance, a neighborhood group whose members include several MPPs, likes decision trees. And they think the benefits of the different park options are not certain. In fact, they think that Option A has a 75% chance of a net benefit of 60 and a 25% chance of being a bust and having a net benefit of only 20. By comparison, Option B has a 90% chance of having a net benefit of 50 and a 10% chance of a net benefit of only 10. Sketch in details, labels, etc. on this decision tree as necessary. What do you recommend and why?
+
+Q0477. This is one of a series of problems ([[[q:0469|469]]], [[[q:0470|470]]], [[[q:0471|471]]], [[[q:0472|472]]], [[[q:0473|473]]], [[[q:0474|474]]], [[[q:0475|475]]], [[[q:0476|476]]], [[[q:0478|478]]]) relating to the same fictional case: The community of Ourville which is considering some options for creating parks to enhance the quality of life of local residents. The amounts are expressed in simple numbers – e.g., $100 – which you can assume to be referring to realistic amounts – e.g., hundreds of thousands.Earlier in the process, two options were on the table for the community of Ourville. One proposal was for a pocket park that will cost only $10 and is projected to have $50 benefit -- a benefit to cost ratio of 5 to 1. The other proposal is a more elaborate park that will cost $50 and have a benefit of $100 -- a benefit to cost ratio of 2 to 1. The town budget could afford either project – either one pocket park or one larger park, but not both. What would you recommend and why?
+Q0478. This is one of a series of problems ([[[q:0469|469]]], [[[q:0470|470]]], [[[q:0471|471]]], [[[q:0472|472]]], [[[q:0473|473]]], [[[q:0474|474]]], [[[q:0475|475]]], [[[q:0476|476]]], [[[q:0477|477]]]) relating to the same fictional case: The community of Ourville which is considering some options for creating parks to enhance the quality of life of local residents. The amounts are expressed in simple numbers – e.g., $100 – which you can assume to be referring to realistic amounts – e.g., hundreds of thousands.In comparing options for the park projects in Ourville, staff have noted that equipment choices will have an impact on maintenance costs down the line. Two swing sets, in particular, are being considered. One is very expensive up front, but has a very favorable maintenance outlook. The other is less expensive, but might need repairs and even to be replaced during the expected lifetime of the sturdier set. Data is below (based on a 7% discount rate). We assume annual community benefits from using the park to be 2000 (except in the year where the cheaper swing set would have to be replaced). The town budget could afford either project, but not both. What do you recommend and why? Explain to a public audience what is going on here.
+
+Q0479. Some old cars are being driven by people who take the attitude "if it ain't broke, don't fix it" and "sure, it might not be efficient or clean, but I can't afford to buy a new car." These cars use too much fuel and they pollute the air causing health problems in the population. Assume new cars are zero emission and so create zero health care costs. Each old car, on average, contributes to pollution and health care costs to the tune of $300 per year. We want to run a program to get 100 "junkers" off the road each year for the next three years by offering a $2000 rebate to people who swap a junker for a brand new zero emission vehicle. Working with a ten year time horizon and an initial discount rate of 3.5%, compute the NPV of the project. Then adjust the the subsidy to determine how large a subsidy we can give and still have the project worth doing. Then compute the IRR of the project at both the original amount and this new amount.
+Q0480. Convert the data recorded on the cards below into a cases by variables table.
+
+

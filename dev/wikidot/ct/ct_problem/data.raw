@@ -1,0 +1,521 @@
+const data = [
+
+{"title": "FIFO or LIFO",
+"content": problem-type: '0'
+question: "For each of the following, indicate whether the structure is basically FIFO or LIFO.\n\nPeople waiting for a bus\nDishes piled in your cabinet\nStuff you put in a rubbish bin\nCanned goods on a store shelf\nThings we recall according to the recency bias\nYour garments during Canadian winter\nThe ingredients in an ice cream sundae\nArtifacts in different strata during an archeological excavation\nPosts in a blog\n"
+solution: ": People waiting for a bus - FIFO : If we assume people politely queue up for the bus; the first person into the queue would be the first person able to board the bus.\n: Dishes piled in your cabinet - LIFO : If we assume that we pile clean dishes on top of unused dishes still in the cabinet then the last dish stacked will be the first dish used.\n: Stuff you put in a rubbish bin - LIFO : The first thing into the rubbish bin is on the bottom, the last thing is on top. So, if we take things out of the bin, we first take the last item discarded\n: Canned goods on a store shelf - LIFO : It's LIFO if we assume new items are added to the empty space at the front of the shelf. Of course, a good shopkeeper will \"rotate her stock\" putting the newer items at the back. Always check the sell-by dates.\n: Things we recall according to the recency bias - LIFO : The recency bias says we find it easier to recall information recently obtained. Thus, the order of our recall will be last info in, first info recalled.\n: Your garments during Canadian winter - LIFO : If we dress in layers, the first thing we take off is the last thing we put on.\n: The ingredients in an ice cream sundae - LIFO : The dessert is built from the bottom up, with the cherry on top. In general, we have to start eating from the top down. It might be more fun, though, to go right to the good stuff and try to eat it FIFO-style, even if that makes a mess\n: Artifacts in different strata during an archeological excavation - LIFO : The fundamental logic of excavation is that the more recently deposited material are on top.\n: Posts in a blog - LIFO : Most blogs are organized with the most recent post on top\n: Groceries unpacked in your kitchen - FIFO : As we go around the store shopping we place items one by one into our cart. At the checkout we remove them LIFO and put them on the checkout band. Then they are packed into our carry bags with the last selected item on the bottom. Thus, when we get home, we unpack the items FIFO - the first things we put into our cart are the first things out of the carry bag."
+source: djr1339
+feedback: ''
+references: ''"
+},
+{"title": "Basics Submitting a PDF We Can Markup",
+"content": problem-type: '3'
+question: 'Show us you can submit a pdf that we can see and markup'
+solution: ''
+source: djr1339
+feedback: ''
+references: ''"
+},
+{"title": "Basics Embedding a Google Drawing in Quiz Answer",
+"content": problem-type: '3'
+question: 'Show that you can embed a drawing from google docs.'
+solution: ''
+source: djr1339
+feedback: ''
+references: ''"
+},
+{"title": "Stepwise Refinement IKEA Cabinets",
+"content": problem-type: '0'
+question: "Consider the instructions below for how to install IKEA cabinets. Translate these instructions into the 3 levels of stepwise refinement show in the diagram on the right. For the third level of refinement you only need to do the boxes that are outlined. Steps for third level can be written within the one box as shown in the example.\n[[table style=\"width: 100%;\"]]\n[[row]]\n[[cell style=\"width: 50%\"]]\n\n[style=\"width: 50%\"]\n[[html]]\n<img src=\"https://docs.google.com/drawings/d/e/2PACX-1vRfnnJeIAd2RdGLrlZzovjnR4TuExhLGPDS8aNg0-CxBTq7R4G35tixqtql-QY2mda-vJ5UFyrRfGct/pub?w=516&amp;h=413\">\n[[/html]]\n[[=]]\n\nGoogle Drive\n\n[[/=]]\n[[/cell]]\n[[/row]]\n[[/table]]"
+solution: ''
+source: djr1339
+feedback: ''
+references: ''"
+},
+{"title": "Stepwise Refinement Wirth Article",
+"content": problem-type: '1'
+question: "Reread the next to last paragraph of Wirth's article.\_\n\n> Each refinement implies a number of design decisions based upon a set of design criteria. Among these criteria are efficiency, storage economy, clarity, and regularity of structure. Students must be taught to be conscious of the involved decisions and to critically examine and to reject solutions, sometimes even if they are correct as far as the result is concerned; they must learn to weigh the various aspects of design alternatives in the light of these criteria. In particular, they must be taught to revoke earlier decisions, and to back up, if necessary even to the top. Relatively short sample problems will often suffice to illustrate this important point; it is not necessary to construct an operating system for this purpose. \n\n Rewrite it as a note to a friend explaining what we are trying to learn in this course."
+solution: ''
+source: djr1339
+feedback: ''
+references: ''"
+},
+{"title": "Stepwise Refinement Evaluating Expressions",
+"content": problem-type: '0'
+question: "Show how you would evaluate the following expression using stepwise refinement:\n\nA and (B or not (C and D)) or not(A and (not B or C))"
+solution: ''
+source: djr1339
+feedback: ''
+references: ''"
+},
+{"title": "The Whole Course as expressed in Wirth 1971",
+"content": problem-type: '1'
+question: "Reread the opening paragraph of Wirth's article.\_\n\n\n> Programming is usually taught by examples. Experience shows that the success of a programming course critically depends on the choice of these examples. Unfortunately, they are too often selected with the prime intent to demonstrate what a computer can do. Instead, a main criterion for selection should be their suitability to exhibit certain widely applicable techniques. Furthermore, examples of programs are commonly presented as finished \"products\" followed by explanations of their purpose and their linguistic details. But active programming consists of the design of new programs, rather than contemplation of old programs. As a consequence of these teaching methods, the student obtains the impression that programming consists mainly of mastering a language (with all the peculiarities and intricacies so abundant in modern PL's) and relying on one's intuition to somehow transform ideas into finished programs. Clearly, programming courses should teach methods of design and construction, and the selected examples should be such that a gradual development can be nicely demonstrated. \n\nRewrite it as a note to a friend explaining what we are trying to learn in this course."
+solution: "Here's my attempt:\n\nCoding courses teach with examples and success depends on good examples. The usual approach is to choose examples that show what the computer can do rather than exhibiting how we approach solving problems. In particular, examples should help us to appreciate the \"thought moves\" we make when crafting solutions. The common practice of showing finished code runs counter to how we actually experience solving a problem. What we need is instruction about where to start and how to proceed, not explanations and descriptions of the destination. Conventional methods make it seem like programming is about learning syntax and deploying unarticulateable intuitions. What we want to do instead is illustrate the step by step, gradual construction of solutions."
+source: djr1339
+feedback: ''
+references: ''"
+},
+{"title": "Modularity in Wirth Article",
+"content": problem-type: '1'
+question: "Consider this bit from Wirth's article:\n[[code]]\nrepeat (statement sequence)\nuntil (boolean expression)\n[[/code]]\nIdentify three instances of \"modularity\" here, representing them visually."
+solution: "Something like this. The whole thing is the outer module and then it contains two modules inside. Why would we call \"boolean expression\" a module here? Maybe one wouldn't, but the point we are illustrating is that we are naming it generically and deferring its specification. In practice we might have a very complex Boolean expression that we could only generate by thinking modularly: (A and not B) OR not (not(not A and not B and not C))\n
+
+modularity-p0036.png
+"
+source: djr1339
+feedback: ''
+references: ''"
+},
+{"title": "Modularity in a Deck of Cards",
+"content": problem-type: '1'
+question: 'Thinking very loosely, what is "modular" about a deck of cards?'
+solution: "The deck is composed of four suits, each an identical set of card ranks with a different symbol. To describe a deck of cards you don't need 52 descriptions; you only need 13 card descriptions and 4 suit descriptions.\n\nNote that one could think of it as 4 suits of 13 cards OR 13 cards of 4 suits."
+source: djr1339
+feedback: ''
+references: ''"
+},
+{"title": "FlowchartCritique Filho Editing Wikipedia",
+"content": problem-type: '3'
+question: "Consider figure 1.1 in Filho below.\_ How would we draw it in \"standard\" form? (submit a graphic - you can find graphical elements in this google deck that you can copy to your own slide if you want to use that platform for drawing.\n
+
+flowchart-p0035-editing-wikipedia-a.png
+"
+solution: 'needs solution'
+source: djr1339
+feedback: ''
+references: ''"
+},
+{"title": "Flowchart Examples Wired Magazine",
+"content": problem-type: '1'
+question: "Take a look at some of the flowcharts that used to appear at the end of each issue of Wired Magazine.\_ They are, admittedly, more about graphic design than logical purity, but which of the following would be our strongest criticism of them qua flowcharts?\n
+
+flowchart-p0034-wiredflowcharts-a.png
+"
+solution: "++++++ Single entry, single exit for each logical unit not observed\nBiggest flaw in these things. The designers appear oblivious to the concept. And they probably are. The authors of these charts exhibit almost zero appreciation for the logical unit. There is no abstraction between levels of logic in most of these. Lots of early computer code (with the infamous GOTO command) looked like these. It was, in general, not a good thing.\nThe \"structured programming\" movement was a backlash against such messy logic.\n
+
+flowchart-p0034-wiredflowcharts-c.png
+\n++++++ No vertical alignment to help the eye see the logical flow.\nYes. This one is typical. We have a concession to visual logic with the start in the upper left hand corner but the eye can discern nothing of the overall logic of this process. All we can do is follow through the diagram like making our way through a maze. They can be forgiven since visual real estate in a magazine layout is precious, but it's a flaw we'd point out. Visually, these things are fun, but not easy to read. More importantly for our purposes, when flowcharts are laid out like this, mistake too easily hide. The whole point is to expose our logic in a visually explicit manner.\n
+
+flowchart-p0034-wiredflowcharts-b.png
+\n++++++ Most of the decisions are not binary (two valued, yes/no)\nAlthough they are not always worded as true/false or yes/no, and the exits from decision diamonds (and sometimes not diamonds) are often at odd angles, this is not a really common flaw in these charts.\n++++++ Too many colors\nWhile this may be true and might offend your design eye, the question of color is not really a part of how we are specifying a well-formed flow chart. Some of them are a bit overly colorful but that's more style than substance. We wouldn't use them in many professional contexts, but no offense against logic.\n++++++ Too many branches\nThis is not in and of itself a problem or violation of good flowchart practice. The humour in most of these flowcharts requires fine grained distinctions - a fine thing, but to represent them in rigorous flowchart language we would need a lot both horizontal and vertical space.\nThe \"structured programmingLinks to an external site.\" movement was a backlash against such messy logic."
+source: djr1339
+feedback: ''
+references: ''"
+},
+{"title": "Modularity Examples Grocery Store",
+"content": problem-type: '1'
+question: 'Think about the last time you were in a grocery store. How much modularity can you see there?'
+solution: 'Aisles and counters and cases and shelves and "departments." Packages of food. Boxes of packages. Etc. Etc.'
+source: djr1339
+feedback: ''
+references: ''"
+},
+{"title": "Flowchart Examples Bucher",
+"content": problem-type: '1'
+question: "The Bucher \"flowcharts\" in this Brainpickings blog post are not really flowcharts in our sense of the term. Explain.\n
+
+344questions7.jpg
+"
+solution: 'Most of them are just a series of questions and the answers to the questions do not actually direct you toward one path or another. In fact, the paths are "chosen" based on what the next question is. Really just sort of silly.'
+source: djr1339
+feedback: ''
+references: ''"
+},
+{"title": "FlowchartCritique",
+"content": problem-type: '0'
+question: "What's wrong with this flowchart? How would you fix it?\n
+
+flowchart-p0031-wrong-a.png
+"
+solution: ''
+source: djr1339
+feedback: ''
+references: ''"
+},
+{"title": "Flowchart2Text Maxims",
+"content": problem-type: '1'
+question: "Translate each of the flow charts below into everyday English.\n||flowchart-p0030-maxims-a.png||flowchart-p0030-maxims-b.png||flowchart-p0030-maxims-c.png||flowchart-p0030-maxims-d.png||"
+solution: ''
+source: djr1339
+feedback: ''
+references: ''"
+},
+{"title": "FlowchartCritique",
+"content": problem-type: '1'
+question: "What criticism would you offer if the diagram below were my FIRST attempt at a flow chart for an organizational process? How would you fix it? \n
+flowchart-p0029-wrong-a.png
+"
+solution: "
+
+flowchart-p0029-wrong-b.png
+\n# Even if there is nothing formally wrong here, it's way too complex for a first cut. Remember: defer detail. Something like this might make a better first two refinements:\n
+
+flowchart-p0029-wrong-c.png
+"
+source: djr1339
+feedback: ''
+references: ''"
+},
+{"title": "FlowchartCritique",
+"content": problem-type: '1'
+question: "What's wrong with this flowchart? How would you fix it?\n
+
+flowchart-p0028-wrong-a.png
+\n\na) B>C>D is a loop and the arrows should be going in the other direction\nb) Two arrows coming out of B suggest that it is a branch/decision node and so it should be a diamond\nc) The arrow from C to D should go to a circle between B and D.\nd) This is a flow chart for a multiple decision \"case\" statement\ne) There should be a decision node ABOVE B and C with one branch leading to each."
+solution: "
+
+flowchart-p0028-wrong-a.png
+\n
+
+flowchart-p0028-wrong-b.png
+\n# An action rectangle can have only one exit - the move to the next action in the sequence, but here we have a branching. Either B is actually a decision (diamond) or something else entirely is going on.\n
+
+flowchart-p0028-wrong-c.png
+\n\n\nSTOP+THINK: Why did we not put the D action inside the \"IF B\" structure?"
+source: djr1339
+feedback: ''
+references: ''"
+},
+{"title": "FlowchartCritique",
+"content": problem-type: '1'
+question: "What's wrong with this flowchart? How would you fix it?\n
+
+flowchart-p0027-wrong-a.png
+"
+solution: ''
+source: djr1339
+feedback: ''
+references: ''"
+},
+{"title": "FlowchartCritique",
+"content": problem-type: '1'
+question: "What's wrong with this flowchart?\n
+
+flowchart-p0026-wrong-a.png
+\n"
+solution: "# We cannot have three branches coming out of a decision\n# There is never a branch coming out of bottom of decision diamond\n# Try to \"read\" the logic here: how would you put into English what we see here?\n
+
+flowchart-p0026-wrong-b.png
+"
+source: djr1339
+feedback: ''
+references: ''"
+},
+{"title": "Text2Flowchart Grantwriting2",
+"content": problem-type: '3'
+question: "This question extends a previous problem. Assume you've learned the following things during your professional training. Represent this information as a three level stepwise refinement. _\n> # Preparing to write a grant consists of identifying a need and putting together a logic model that shows what new inputs are needed to generate desired outcomes\n> # Finding a funder requires identifying a list of funders, looking up the kinds of projects they are funding, and finding matches for your project\n> # Writing a grant involves (1) preparing to write the grant; (2) finding template appropriate to particular funders; (3) producing drafts and reviewing with staff\n> # Draft and review protocols vary, but one you like is to produce a draft, post it on Google docs for the team to comment on, send a prodding email to team members every few days until it looks like there are no more comments on that draft, make revisions and repeat this process until the deadline is near.\n"
+solution: "First we draw out the zeroth order version of the process:\n
+
+flowchart-p0025-grant-writing-a.png
+\nBut do we really have four steps here? If we stop and think, we see that what is listed as step four is actually a refinement of part of step 3. So, let's understand it as PREP > FIND TEMPLATE > DRAFTING PROCESS, where the last is itself a further black box.\nNext we expand each of the first three black boxes. The first is a straightforward two-step process.\n
+
+flowchart-p0025-grant-writing-b.png
+\nThe second is an \"until logic\" : keep looking for funders until you find a match:\n
+
+flowchart-p0025-grant-writing-c.png
+\nThe third blackbox is two steps and then another black box: \n
+
+flowchart-p0025-grant-writing-d.png
+\nThis last blackbox is itself multi-level. We circulate drafts and do revisions until the deadline, but the cycle of putting a draft out there for comments is also an \"until\" structure: we post the draft and prod people for feedback until it seems everyone has weighed in.\n\nThese are shown as \"nested\" until logics. The \"inside\" loop (1, in green) is posting a draft and prodding for feedback. This then gets repeated for each new revision of the proposal until the deadline arrives - the outer loop (2, in blue).\n
+
+flowchart-p0025-grant-writing-e.png
+\n"
+source: djr1339
+feedback: ''
+references: ''"
+},
+{"title": "Text2Flowchart Beach",
+"content": problem-type: '3'
+question: "If it is sunny, go to the beach. If it is not sunny go to the movies.\nIf you go to the beach, if you are by yourself, take an umbrella and a good book. If you are with friends, take a bottle of wine and some nice cheese.\nIf you go to the movies alone, buy a monster popcorn and sit right up front. If you go with friends, be more restrained with the snacks and sit midway back.\nHave a nice dinner afterwards."
+solution: ''
+source: djr1339
+feedback: ''
+references: ''"
+},
+{"title": "Text2Flowchart Grantwriting",
+"content": problem-type: '3'
+question: 'Write the grant. Find a funder. Submit the grant. Wait to see if it is funded. If it is funded, start the project. Otherwise go back to finding a funder.'
+solution: "1. Let's think first. This is mostly a simple sequence of actions. The exception is that toward the end we hit a contingency (does the grant get funded?); if it is we continue on, if it is not we start over. How might we describe the job? \"Write grants until you get one funded and then get on with the project.\n\n2. Thus, we might describe our job at this NGO like this: \"I just keep writing grants until one gets funded and then we get on with the work.\" A first version of this process might look like this:\n
+
+flowchart-p0023-grant-writing-a.png
+\n3. But we know that \"keep writing grants\" is actually a process that has more than one step. In fact, opening this black box reveals four steps:\n\n
+
+flowchart-p0023-grant-writing-b.png
+\n4. And so we can draw the next iteration flow chart thus:\n
+
+flowchart-p0023-grant-writing-c.png
+"
+source: djr1339
+feedback: ''
+references: ''"
+},
+{"title": "Text2Flowchart Treatment Protocol",
+"content": problem-type: '3'
+question: "Sketch flow chart that captures logic of the following process.\n\nOrganization consists of intake personnel, counselors, followup social workers, and clerical staff.\n\n#When a new client contacts the organization intake personnel determine which of four types of case it is by asking two questions. #If a client is returning having already been \"typed\" she is sent to the appropriate waiting room. Types 1 and 3 are referred to counselor A, type 2 to counselor B, type 4 to counselor C.\n#Client goes to waiting room until counselor is free. Sessions take 1 hour so the wait can be long. If more than one person waiting client is advised to go away and come back later.\n#In session, if the client is over 18 they get treatment protocol 1 otherwise they get treatment protocol 2."
+solution: "
+
+flowchart-p0022-treatment-a.png
+\n
+
+flowchart-p0022-treatment-b.png
+\n
+
+flowchart-p0022-treatment-c.png
+\n
+
+flowchart-p0022-treatment-d.png
+\n
+
+flowchart-p0022-treatment-e.png
+\n
+
+flowchart-p0022-treatment-f.png
+\n
+
+flowchart-p0022-treatment-g.png
+"
+source: djr1339
+feedback: ''
+references: ''"
+},
+{"title": "Text2Pseudocode Bank Balance",
+"content": problem-type: '0'
+question: "Convert the following statement to “pseudo-Excel” formulas (follow the example to see what we mean by that).\nExample. \"If it is Tuesday, this must be Belgium, otherwise it is France\" would become something like\n[[=]]\n= if(day=\"Tuesday\",\"Belgium\",\"France\")\n[[/=]]\n\nIf the calculated payment (CALC_PMT) is less than the alternative monthly minimum payment (ALT_MIN_PMT) then the payment is the alternative monthly payment otherwise it is the calculated payment.\n\n\n"
+solution: "If the calculated payment (CALC_PMT) is less than the alternative monthly minimum payment (ALT_MIN_PMT) then the payment is the alternative monthly payment otherwise it is the calculated payment.\n\n= if (CALC_PMT < ALT_MIN_PMT, ALT_MIN_PMT, CALC_PMT)"
+source: djr1339
+feedback: ''
+references: ''"
+},
+{"title": "Text2Flowchart Recycling",
+"content": problem-type: '3'
+question: "Sketch a flow chart to represent the following scenario. The Alameda County Waste Management Authority (ACWMA) has decided to spend some money on a public relations campaign to increase the level of composting (\"green bin\") recylcing. Data on hand says that current levels are 4 kg per household of four per week. The plan is to spend $10,000 on advertising each month until the level has gone over 6 kg per week for four weeks in a row.\nPrefatory concern – what does 4 kg / household of 4 / week mean? The amount of compost likely depends on the number of people in a household. We don't want to get the numbers wrong by failing to take this into account. So, in our data collection, we double the number for households of 2, halve it for households of 8, etc. Why not just express it as \"kg/person/week\"? That would work fine mathematically. Perhaps the PR folks had wanted to focus on households (and families) so as to induce a greater sense of collective responsibility."
+solution: "Version 1\nWe know current level is 4 kg/household/week\nUnit of time is month.\nSpend 10,000 on public awareness campaign\nMeasure amount of composting\nIf it has reached 6 kg / household / week halt the campaign, otherwise continue.\n\n
+
+flowchart-p0020-recycling-a.gif
+\n\nIf we assume PR and measurement and decision making are done by separate departments we might have something like this:\n\n
+
+flowchart-p0020-recycling-b.gif
+"
+source: djr1339
+feedback: ''
+references: ''"
+},
+{"title": "Text2Flowchart Classification",
+"content": problem-type: '3'
+question: 'Suppose our task is to sort clients into four categories promising, troubling, recalcitrant, hopeless on the basis of two tests which can be passed or failed. Draw the flowchart.'
+solution: "This is an example of a classic use of flow chart logic to describe a sorting process. Basically we are using two tests to create a 2x2 taxonomy (classification system). It might look like this:\n\n||~ Diagnosis||~ Test 1||~ Test 2||\n||Promising||= Pass||= Pass||\n||Troubling||= Pass||= Fail||\n||Recalcitrant||= Fail||= Pass||\n||Hopeless||= Fail||= Fail||\n\nOur logic is then:\n\nIf pass test 1, then if pass test test then \"promising\" otherwise \"troubling.\" On the other hand, if fail test 1 then if pass test 2 then \"recalcitrant\" otherwise \"hopeless.\"\n\n
+
+flowchart-p0019-classification.png
+"
+source: djr1339
+feedback: ''
+references: ''"
+},
+{"title": "Text2Flowchart Gardening",
+"content": problem-type: '3'
+question: 'If the weather is nice, plant a garden. Otherwise paint the office. For the garden, make a decision between flowers and vegetables. If you go for vegetables, buy compost, seeds, and stakes; till the soil, and hook up the irrigation. If it''s flowers this year, go to the garden store and if they have 4 inch plants buy enough for the plot and plant them. If they don''t then get flats of smaller plants and bring them home and let them get acclimated for a week and then plant them next week. To till the soil, if the ox is healthy, do it with the animal plow, otherwise get out the rototiller.'
+solution: ''
+source: djr1339
+feedback: ''
+references: ''"
+},
+{"title": "Text2Flowchart Market Failure",
+"content": problem-type: '3'
+question: 'Weimer & Vining (1989) characterize policy problems in terms of market failure and government failure. Any given problem, they suggest, can be placed in one of four categories: (1) market AND government failure; (2) government works (policy corrects for market failure); (3) market works; (4) government failure to correct for market failure. Their suggested strategy is to start by asking whether there is a market failure and then whether there is government failure. Using the two conditionals, "Is there evidence of market failure?" and "Is there evidence of government failure?" construct a flowchart that would permit you to classify any given situation into one of the four aforementioned categories.'
+solution: ''
+source: djr1339
+feedback: ''
+references: ''"
+},
+{"title": "Text2Flowchart Juvenile Facilty",
+"content": problem-type: '3'
+question: 'Use STEPWISE REFINEMENT TO evolve a flowchart for the following protocol. (a) Record youth name and address. Check in system to see if already there. If there, pull up record and verify information. If not, create new record and ask for information. When done, send record to orientation staff, give youth a number and instruct to wait until number is called. (b) Once stage three in the treatment regimen is completed, clients are not eligible for the next stage in treatment until they have had three consecutive clean weekly drug tests. If they have one failed test they are given a warning. Two failed tests in a row and they have to meet with a counselor. Three failed tests and they are out of the program.'
+solution: "This \"system\" sorts clients into three categories – either you are between steps 3 and 4 (working on drug tests), you are ready to do step 4, or you are out of the program. We need a black box that will sort clients into one of two categories: on to step four or out of program.\n\n
+
+flowchart-p0016-juvenile-protocol-a.gif
+\nThe main test for being out of the program is failing three tests. Otherwise you are still in until you pass three in a row. So, in English it might be \"while you haven't failed thrice, keep testing until you get three in a row clean.\"\n\n
+
+flowchart-p0016-juvenile-protocol-b.gif
+\nHow do we combine these? To get our heads around it we need to NOT think about most of the system and focus only on these two features. Let's try this and see if it represents the system logic we want:\n\n
+
+flowchart-p0016-juvenile-protocol-c.gif
+\nWhat does \"All the Rest\" have to accomplish? Drug tests. Count successes and failures. Warn on one failure, counseling on two. Reset success to zero after a failure. To think clearly about this, I want to remember that all I need to do is design logic that has a single entry point and a single exit point and that at the exit point we'll be ready to apply these tests about whether we are in the 3 passes in a row state, the 3 failures state, or the try again state.\n\nLet's write out the logic in English:\n\nTake a drug test.\nIf you pass, add one to the number of passed tests.\nIf you fail, set number of passed tests to zero (start over) and add one to the number of failed tests.\nIf you have one failed test, get a warning\nIf you have two failed tests, get counseling\nI have an urge to follow this up with the next two tests, but remember I've got my \"repeat while until\" logic outside this black box. Let's see what this might look like.\n\n
+
+flowchart-p0016-juvenile-protocol-d.gif
+\n"
+source: djr1339
+feedback: ''
+references: ''"
+},
+{"title": "Text2Flowchart Court Protocol",
+"content": problem-type: '3'
+question: "Is a picture worth 548 words? Convert the Rock County, Wisconsin \"Drug Court Flow Chart\" from text form to diagram form.\n\n# District Attorney and Defense Attorney present to Judge in assigned Criminal Court a completed Rock County Drug Court Contract and a copy of the defendant’s criminal history (either NCIC Report or CCAP Record of Convictions). \n# Criminal Court Judge determines the defendant may be eligible for Drug Court so the matter is continued for two (2) weeks before the same court. Judge orders defendant to attend an initial screening at the offices of the Rock County Community RECAP Program, 303 W. Court Street, Janesville, WI on the following Tuesday. \n# Court Attendant for the Criminal Court will then immediately photocopy the completed Drug Court Contract, the defendant’s criminal record (either NCIC or CCAP), and the criminal complaint in the present matter and place them in an envelope and put it in the mailbox of the Community RECAP Program that is located in the Courthouse mailroom. \n# The Court Attendant will daily FAX a list of the defendants referred the Community RECAP Program, providing the defendant’s name, date of birth, and case number. This will be FAXed daily to (608)743-1759 to provide that office with a list of the defendants they should expect the following Tuesday for the initial screening. \n# Upon completion of the initial screening the Community RECAP office will FAX to the Criminal Court a document indicating the completion of the initial screening and whether the defendant is qualified for the Drug Court. If the defendant is eligible, the Community RECAP office will provide the defendant with an appointment date (scheduled after his next scheduled return to the Criminal court) for completion of the intake process and to complete a full assessment of the defendants needs. The defendant will also be scheduled with an initial date for first appearance at Drug Court. This information will also be contained in the FAX sent to the Criminal court. \n# After the initial screening, the defendant returns to the Criminal Court. If the Community RECAP FAX (from #5 above) has been received by the court and it indicates that the defendant is eligible for the Drug Court, then the Criminal Court will take the plea to the original charge but will withhold a finding of guilt. The Court will then order the clerk to place the file in status “Deferred Pending”, continue bond and order the defendant to the Drug Court appearance indicated on that FAX. \n# The Court Attendant will then photocopy the following documents, place them in an envelope, and forward them to Judge John Roethe of the Drug Court as these documents will constitute the Drug Court file:\n # Criminal complaint, \n # Completed Drug Court Contract, \n # NCIC or CCAP criminal history of the defendant, \n # Community RECAP Program FAX indicating the completion of the initial screening and initial date for first appearance before the Drug Court. \n# The matter will not return to the Criminal Court until the defendant either successfully completes the program or is removed from the program. If the defendant successfully completed the program the court will implement the agreement outlined in the Drug Court Contract. If for any reason the defendant fails to complete the program the defendant’s original plea will be perfected the entry of a finding of guilt and the matter will proceed to sentencing on the original charge.\n"
+solution: '
+
+flowchart-p0015-court-protocol.gif
+'
+source: djr1339
+feedback: ''
+references: ''"
+},
+{"title": "Text2Flowchart",
+"content": problem-type: '3'
+question: "Sketch a flowchart for this bit of pseudocode.\n[[code]]\nIf A: \n then until B do C \n and then, do D if E; otherwise do F while G. \nOtherwise \n if H, \n then if I do J \n else do K. \nDo L\n[[/code]]"
+solution: "First thing we want to do is to untangle this badly written pseudocode. \n\n[[table]]\n[[row]]\n[[cell]]\n[[code]]\nIf A: \n then until B do C \n and then, do D if E; otherwise do F while G. \nOtherwise \n if H, \n then if I do J \n else do K. \nDo L\n[A: \n do C until B \n if E\n do D; \n else \n while G do F\n else \n if H, \n if I \n do J \n else\n do K. \ndo L\n[[/code]\n[[/cell]]\n[[/row]]\n[[/table]]\n\n\nIf A: until B do C and then do D if E otherwise do F while G. Otherwise if H, then if I do J else do K. Do L.\nIf A do X otherwise Y\n\n
+
+flowchart-p0014-stepwise-a.gif
+\n\nwhere X = until B do C and then do D if E otherwise do F while G.\nand Y = if H, then if I do J else do K. Do L.\n\n\n
+
+flowchart-p0014-stepwise-b.gif
+\n\nNext, we expand (refine) W and V — note that we insert some of the letters from the question and one more \"black box\" which we label T.\n\n\n
+
+flowchart-p0014-stepwise-c.gif
+\n\nAnd then U\n\n\n
+
+flowchart-p0014-stepwise-d.gif
+\n\n\nAnd finally, let's get inside the blackbox T\n\n\n
+
+flowchart-p0014-stepwise-e.gif
+\n\n\nAnd then it can all come together:\n\n\n
+
+flowchart-p0014-stepwise-f.gif
+\n\n[[table]]\n[[row]]\n\n[[cell]]\n[[code]]\nIf A: \n do C until B \n if E\n do D; \n else \n while G do F\n else \n if H, \n if I \n do J \n else\n do K. \ndo L\n[[/code]]\n[[/cell]]\n[[cell]]\n
+
+flowchart-p0014-stepwise-f.gif
+\n[[/cell]]\n[[/row]]\n[[/table]]"
+source: djr1339
+feedback: ''
+references: ''"
+},
+{"title": "Text2Flowchart Stepwise Refinement",
+"content": problem-type: '0'
+question: "Use stepwise refinement to evolve a flowchart for this set of instructions: \nDo A and then B. \nIf C, then while E do F and after that do G, otherwise do H. \nDo I."
+solution: "\"Do A and then B. If C, then while E do F and after that do G, otherwise do H. Do I.\"\n\nStart by looking at the syntax of the logic to make sure we understand it.\n\nStep 1: do A\nStep 2: do B\nStep 3: If C, then while E do F and after that do G, otherwise do H\nStep 4: do I\n\nDo a first draft that treats step three as a black box.\n
+
+flowchart-p0013-stepwise-a.jpg
+\nNext, starting from the outside and working in, we draw the flow chart for \"if C do something (the while stuff) otherwise do something else (H)\":\n\n
+
+flowchart-p0013-stepwise-b.jpg
+\nAnd now, let's leave the \"while loop\" as a black box and fill in a few more details. It's now \"if C do the while thing and then do G.\n\n
+
+flowchart-p0013-stepwise-c.jpg
+\nAnd finally, we'll insert the conditional diamond for the E of the while and a rectangle for the action F.\n\n
+
+flowchart-p0013-stepwise-d.jpg
+\nAnd then put it all together\n
+
+flowchart-p0013-stepwise-e.jpg
+"
+source: djr1339
+feedback: ''
+references: ''"
+},
+{"title": "Text2Flowchart Loops",
+"content": problem-type: '3'
+question: 'Sketch a flow chart that represents the following writing protocol: (1) Edit your essay until it is perfect. (2) While the essay still needs work, edit your essay.'
+solution: "(1) Edit your essay until it is perfect. (2) While the essay still needs work, edit your essay.\n
+
+flowchart-p0012-loops.gif
+"
+source: djr1339
+feedback: ''
+references: ''"
+},
+{"title": "Text2Flowchart Loops",
+"content": problem-type: '3'
+question: 'Draw a flow charts that represents "Do A until B" and "While B do A. Then do C".'
+solution: "\"Do A until B\" and \"While B do A. Then do C\".\n
+
+flowchart-p0011-loops.gif
+"
+source: djr1339
+feedback: ''
+references: ''"
+},
+{"title": "Text2Flowchart Party Life",
+"content": problem-type: '3'
+question: 'Sketch a flowchart that represents this bit of logic: If I have anything that is due tomorrow then if I am acing the class already and if I have some money I’ll go out drinking by myself (since all my friends will be busy), but if I don’t have any money I’ll stay home and watch reruns on cable. If, on the other hand, I’m not acing this class, I’ll stay home and study. If I don’t have anything due tomorrow, then if I have some money I’ll see if some friends are around and if so I’ll party with them. Otherwise, I’ll drink alone. If I don’ t have any money I’ll just stay home and watch reruns on cable.'
+solution: 'flowchart-p0010-party-life.gif'
+source: djr1339
+feedback: ''
+references: ''"
+},
+{"title": "Text2Flowchart Plane Ticket Strategy",
+"content": problem-type: '3'
+question: 'Sketch a flowchart that represents this bit of logic: “If you can get a direct flight for under $1500 take it unless it leaves from SFO before 9 am. Otherwise, see if anything is available on frequent flier miles no matter what the routing. If you can’t find anything, use Expedia to find the cheapest flight out of OAK.”'
+solution: 'flowchart-p0009-plane-ticket-strategy.gif'
+source: djr1339
+feedback: ''
+references: ''"
+},
+{"title": "Text2Flowchart Bank Balance",
+"content": problem-type: '3'
+question: 'Sketch a flowchart that represents this bit of logic: “if the balance is less than the minimum alternative payment then just pay the balance, otherwise, pay the minimum alternative payment.”'
+solution: "“if the balance is less than the minimum alternative payment then just pay the balance, otherwise, pay the minimum alternative payment.”\nflowchart-p0008-bank-balance.jpg"
+source: djr1339
+feedback: ''
+references: ''"
+},
+{"title": "Text2Flowchart Excel",
+"content": problem-type: '3'
+question: 'Sketch a flowchart that represents this bit of logic: “if cell E$3 is greater than cell G$12 then value is G$12; otherwise, value is G$12-E$3.”'
+solution: "“if cell E$3 is greater than cell G$12 then value is G$12; otherwise, value is G$12-E$3.”\n
+flowchart-p0007-excel.gif
+"
+source: djr1339
+feedback: ''
+references: ''"
+},
+{"title": "Text2Flowchart",
+"content": problem-type: '3'
+question: 'Consider this little bit of logic that describes a tourist''s thinking process (taken from the title of a 1970s movie): “if it’s Tuesday, this must be Belgium. Otherwise, I have no idea where we are.” Sketch a flowchart that represents this flow of thought.'
+solution: '
+
+flowchart-p0006-belgium.png
+'
+source: djr1339
+feedback: ''
+references: ''"
+},
+{"title": "Text2Flowchart",
+"content": problem-type: '3'
+question: 'Sketch a flowchart that represents this bit of logic: “if you are a woman then if you are over 40 you should have this test no matter what but if either parent had diabetes women should have the test no matter what. Men only need to take the test if they are overweight.”'
+solution: "This medical advice protocol has two top level parts: one for women and one for men.\n\nFor women, it says those over 40 should have the test. And it says no matter what your age, if either parent had diabetes you should have the test.\nFor men, it says only take the test if you are overweight.\n\nWe might be tempted to distraction by phrases like \"no matter what\" and \"only\" but a little bit of parsing and rephrasing helps to clarify.\n\nflowchart-p0005.gif\n"
+source: djr1339
+feedback: "If you have crossing lines in your flow chart something is wrong.\nYou can have more than one action box for a single action — here \"take the test\" — in order to keep the chart well ordered.\nRemember, single entry and single exit for each logical subunit."
+references: ''"
+},
+{"title": "Bad Flowchart",
+"content": problem-type: '0'
+question: "What criticism would you offer if the diagram below were my first stab at a flow chart for an organizational process? How would you fix it?\n\nNot simple enough\nSpaghetti!\nBranches out of decisions are not labeled\nNo labels on any of the figures. How can we know what is what?\nToo asymmetric.\n"
+solution: ''
+source: djr1339
+feedback: ''
+references: ''"
+},
+{"title": "Pseudocode for Flowchart",
+"content": problem-type: '2'
+question: "Write pseudocode for each of these flow charts.\n\n[[html]]\n<img src=\"https://docs.google.com/drawings/d/e/2PACX-1vRaPOB9x1nzGoKh5AkY22oikSApXVCTZwvf_d2pyvZaYOx8rk7pzOdSZPxrKji9S5Q_DW23wmZc6Qks/pub?w=910&amp;h=375\">\n[[/html]]"
+solution: "[[html]]\n<img src=\"https://docs.google.com/drawings/d/e/2PACX-1vRaPOB9x1nzGoKh5AkY22oikSApXVCTZwvf_d2pyvZaYOx8rk7pzOdSZPxrKji9S5Q_DW23wmZc6Qks/pub?w=910&amp;h=375\">\n[width=\"100%\"]\n[[row]]\n[[cell width=\"33%\"]]\n(a)\ndo A\nwhile B, do C\n[width=\"33%\"]\n(b) \ndo A\ndo C until not B\n[width=\"33%\"]\n(c)\ndo A\nif B do C, otherwise do D\n[[/cell]]\n[[/row]]\n[[/table]]\n"
+source: djr1339
+feedback: discussion
+references: 'see also'"
+},
+{"title": "Riley&Hunt 6.1",
+"content": problem-type: '0'
+question: "Which of the following flow charts depict a loop (repetition)?\n\n[[html]]\n<img src=\"https://docs.google.com/drawings/d/e/2PACX-1vRaPOB9x1nzGoKh5AkY22oikSApXVCTZwvf_d2pyvZaYOx8rk7pzOdSZPxrKji9S5Q_DW23wmZc6Qks/pub?w=910&amp;h=375\">\n\n[[/html]]\n\n"
+solution: "[[html]]\n<img src=\"https://docs.google.com/drawings/d/e/2PACX-1vRaPOB9x1nzGoKh5AkY22oikSApXVCTZwvf_d2pyvZaYOx8rk7pzOdSZPxrKji9S5Q_DW23wmZc6Qks/pub?w=910&amp;h=375\">\n[[/html]]"
+source: RileyHunt2014a
+feedback: "feedback\n"
+references: 'see also'"
+},
+{"title": "Redraw Riley&Hunt flow diagram in our style",
+"content": problem-type: '3'
+question: "Redraw the three flow charts in Riley & Hunt's problem 6-1 in the style we are using in this course. Paste your embed HTML based on a revision of this Google drawing.\n[[html]]\n<img src=\"https://docs.google.com/drawings/d/e/2PACX-1vR7By3LcPP7XP47Dz5T3Kauly-rWwqZEpI32u04HVc2BX7MSb_GExOyuJcgFklDhfkq_xhy-q9PwcZN/pub?w=480&amp;h=360\">\n[[/html]]\n"
+solution: "Here are the three flow charts redrawn:\n[[=]]\n[[html]]\n<img src=\"https://docs.google.com/drawings/d/e/2PACX-1vRaPOB9x1nzGoKh5AkY22oikSApXVCTZwvf_d2pyvZaYOx8rk7pzOdSZPxrKji9S5Q_DW23wmZc6Qks/pub?w=480&amp;h=360\">\n[[/html]]\nGoogle Drive\n[[/=]]\nRiley & Hunt use a variant they refer to as \"action diagrams\" (see p. 165) that does not distinguish between decision points (for which we use the diamond shape) and merge points (for which we use a circle). \n\nIn the first diagram we can infer a decision at B because the small grey diamond has two EXIT branches. We insert a circle (D) above it to collect the entry branch from A and the entry branch from C and add a module exit point, E, and a module entrance point, F.\n\nIn the second diagram we infer a decision at D because there are two exit branches. The diamond labeled B, though, is just a merge/collection point so we replace it with a circle. And then we add a module exit point, E, and a module entrance point, F.\n\nIn the third diagram B is a decision point - it has two exit branches - and E is a merge so we replace it with a circle.\n"
+source: RileyHunt2014a
+feedback: 'Although it might seem pedantic, sticking with the conventions we have described in this course (circles, rectangles, and diamonds; single entry and single exit from modules; standard true/false meaning for branches out of decision diamonds) promotes visual/logical resonance and encourages slow and deliberate algorithmic analysis and description.'
+references: 'See also common sense 101'"
+},
+];

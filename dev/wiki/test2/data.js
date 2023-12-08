@@ -1,0 +1,1 @@
+function getNotesFromDataJs() { return [{"title":"FIrst Note","text":"### TRY \n1. ME\n2. OUT","tags":["a","b","c"]},{"title":"FIrst Note","text":"RHia ia  K di kdiaf","tags":["a","b","c"]},{"title":"markdown teset","text":"sadfsdfdf","tags":["f"]}]; }

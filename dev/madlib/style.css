@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    max-width: 1000px;
+}
+
+#madlibTemplate {
+    font-family: serif;
+    width: 80%;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.inline-input {
+    display: inline-block;
+    margin: 0 5px;
+    vertical-align: middle;
+}
+
+.inline-input input {
+    display: block;
+    margin-bottom: 2px;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 2px;
+    font-family: 'Shadows Into Light', cursive;
+    text-align: center;
+}
+
+/* Style to fade out the default hint text */
+.inline-input input::placeholder {
+    color: #999;
+}
+
+.inline-input label {
+    display: none; /* Hide labels as they are now placeholders */
+}
+
+
+
+#formSection input, #formSection label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#formSection label {
+    font-size: small;
+    font-family: sans-serif;
+}
+
+#banner {
+    font-size: medium;
+    font-family: serif;
+    max-width: 750px;
+    margin: auto; /* Centers the div */
+}
+
+#headline {
+    font-size: large;
+    font-family: serif;
+    max-width: 750px;
+    margin: auto; /* Centers the div */
+}
+
+#result {
+
+    font-size: medium;
+    font-family: serif;
+    max-width: 750px;
+    margin: auto; /* Centers the div */
+    column-count: 2; /* Creates two columns */
+    column-gap: 20px; /* Sets the gap between columns */
+    padding: 10px;
+}
+
+#resultSection {
+    display: none; /* initally it's hidden */
+    background-color: #f0ebe5; /* Muted newspaper-like color */
+    color: #333; /* Dark color for text to ensure readability */
+    margin: auto; /* Centers the div */
+    max-width: 750px;
+}

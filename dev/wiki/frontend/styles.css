@@ -1,0 +1,39 @@
+.note {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  .note h4 {
+    margin: 0;
+  }
+  .note p {
+    margin: 5px 0;
+  }
+  .tag {
+      cursor: pointer;
+      background-color: #f0f0f0;
+      padding: 6px;
+      margin: 1px;
+      border-radius: 4px;
+      font-size: 0.75em;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+  .existing-tag {
+      color: blue;
+      font-size: 0.75em;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+.context-menu {
+    display:none; 
+    position: absolute; 
+    font-size: 0.8em; 
+    font-family: sans-serif; 
+    padding: 2px; 
+    border: 1px solid #ccc; 
+    background-color: #fff;
+}
+.tag-hover-context-menu {
+    list-style: none; 
+    margin: 0; 
+    padding: 2px;
+}

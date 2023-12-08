@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/easymde/dist/easymde.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked@4.3.0/lib/marked.umd.min.js"></script>
+    <script src="https://unpkg.com/easymde/dist/easymde.min.js"></script>
+
+    <title>Note/Essay Wiki</title>
+</head>
+
+<body>
+    <div id="note-form">
+        <form id="new-note-form">
+            <input type="text" id="note-title" placeholder="Note Title" />
+            <br>
+            <textarea id="note-text" rows="4" cols="50" placeholder="Write your note here..."></textarea>
+            <br>
+            <div id="tags-section">
+                <div id="existing-tags">
+                    <!-- Existing tags will be displayed here -->
+                </div>
+                <input type="text" id="new-tags" placeholder="Add new tags, comma separated" />
+            </div>
+            
+            <button type="submit">Add Note</button>
+        </form>
+    </div>
+    <div id="tag-selection-container">
+        <!-- Tag selection interface will be built here -->
+    </div>
+    
+    <button onclick="downloadData()">Download Notes</button>
+
+    <div id="notes-list">
+        <!-- List to display notes -->
+    </div>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

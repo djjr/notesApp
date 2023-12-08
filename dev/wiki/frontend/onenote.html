@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add a New Note</title>
+<link rel="stylesheet" href="https://unpkg.com/easymde/dist/easymde.min.css">
+<script src="https://cdn.jsdelivr.net/npm/marked@4.3.0/lib/marked.umd.min.js"></script>
+<script src="https://unpkg.com/easymde/dist/easymde.min.js"></script>
+<style>
+    .note {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 10px 0;
+    }
+    .note h4 {
+      margin: 0;
+    }
+    .note p {
+      margin: 5px 0;
+    }
+    .tag {
+        cursor: pointer;
+        background-color: #f0f0f0;
+        padding: 6px;
+        margin: 2px;
+        border-radius: 4px;
+        }
+    .existing-tag {
+        color: blue;
+        font-size: 0.9em;
+    }
+
+  </style>
+</head>
+<body>
+    <div id="custom-context-menu" style="display:none; position: absolute; font-size: 0.8em; font-family: sans-serif; padding: 2px; border: 1px solid #ccc; background-color: #fff;">
+        <ul style="list-style: none; margin: 0; padding: 2px;">
+          <li id="show-notes">Show all notes with this tag</li>
+          <li id="show-videos">Show all videos with this tag</li>
+          <li id="remove-tag">Remove this tag from this note</li>
+        </ul>
+      </div>
+      
+<div id="noteContainer"></div>
+
+
+<script>
+
+    const contextMenu = document.getElementById('custom-context-menu');
+
+    contextMenu.addEventListener('mouseleave', () => {
+    contextMenu.style.display = 'none';
+    });
+
+    function createTagElement(tag, noteId) {
+        const tagElement = document.createElement('span');
+        tagElement.className = 'tag';
+        tagElement.textContent = tag.name;
+        tagElement.addEventListener('click', () => addTagToNote(noteId, tag._id));
+        return tagElement;
+        }
+
+    async function addTagToNote(noteId, tagId) {
+        try {
+            const response = await fetch(`http://localhost:3000/notes/${noteId}/tags/${tagId}`, {
+            method: 'POST'
+            });
+            const message = await response.text();
+            console.log(message);
+            if(response.ok) {
+            showAllNotes(); // Refresh the list of notes to show the updated tags
+            }
+        } catch (error) {
+            console.error('Error adding tag to note:', error);
+        }
+    }
+
+    function removeTagFromDisplay(noteId, tagId) {
+        const tagElement = document.querySelector(`#note-${noteId}-tag-${tagId}`);
+        if (tagElement) {
+            tagElement.remove();
+        }
+    }
+
+    function handleDeleteClick(noteDiv, noteId) {
+        fetch(`http://localhost:3000/notes/${noteId}`, {
+            method: 'DELETE',
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log('DELETED', data);
+
+                // Remove the noteDiv from the DOM
+                //noteDiv.remove();
+                noteDiv.innerHTML = 'ALL GONE';
+            })
+            .catch(error => console.error('Error:', error));
+    }
+
+    function getNoteIdFromUrl() {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get('noteId');
+        }
+
+    function displaySingleNote(note, allTags) {
+
+        // Get the container to display notes
+        const container = document.getElementById('noteContainer');
+        container.innerHTML = ''; // Clear any existing notes
+        
+        // Create a div to hold each note
+        const noteDiv = document.createElement('div');
+        noteDiv.className = 'note';
+          
+        // Create and append elements for the title, content, and tags
+        const title = document.createElement('h4');
+        title.textContent = note.title;
+        noteDiv.appendChild(title);
+  
+        const content = document.createElement('p');
+        //content.textContent = note.content;
+
+        // Convert markdown text to HTML using marked
+        content.innerHTML = marked.parse(note.content ? note.content : "nothing found");
+
+        // LIST notes are treated differently
+        const regex = /[[LIST]]/i;
+        if(regex.test(content.innerHTML))  {
+            content.innerHTML += `<br>LIST tags=${note.tags.map(tag => tag.name).join(",")}<br>`;
+
+            fetch(`http://localhost:3000/tags/names2ids?tagArray=${note.tags.map(tag => tag.name).join(",")}`)
+                .then(response => response.json())
+                .then(tagIds => {
+                    // Do something with tagIds (array of tag IDs)
+                    fetch(`http://localhost:3000/notes?tagIds=${tagIds.join(",")}`)
+                        .then(response => response.json())
+                        .then(notes => {
+                            // Do something with the notes
+                            console.log(notes.length);
+                            for (const note of notes) {
+                                console.log(note.title);
+                                content.innerHTML += note.title + '<br>';
+                            }
+                        })
+                        .catch(error => {
+                            console.error('Error fetching notes:', error);
+                        });
+                    })
+                .catch(error => {
+                    console.error('Error fetching tag IDs:', error);
+                });            
+            }
+
+        noteDiv.appendChild(content);
+  
+        // Create right-clickable tags for this note
+        const tags = document.createElement('p');
+        tags.className = 'existing-tag';    
+        console.log(note)
+        console.log("TAGS ARE ", note.tags, `${note.tags.map(tag => tag.name)}`)      
+        tags.textContent = 'Tags: ';
+            note.tags.forEach((tag, index, arr) => {
+                const tagSpan = document.createElement('span');
+
+                tagSpan.textContent = tag.name;
+                tagSpan.setAttribute('data-note-id', note._id);
+                tagSpan.setAttribute('data-tag-id', tag._id);
+                tagSpan.id = `note-${note._id}-tag-${tag._id}`; // Setting a unique ID
+
+                tagSpan.addEventListener('contextmenu', (e) => {
+                    e.preventDefault();
+                    const contextMenu = document.getElementById('custom-context-menu');
+
+                    // Set the text content dynamically to include the tag name
+                    contextMenu.querySelector('#show-notes').textContent = `Show all notes tagged ${tag.name}`;
+                    contextMenu.querySelector('#show-videos').textContent = `Show all videos tagged ${tag.name}`;
+                    contextMenu.querySelector('#remove-tag').textContent = `Remove tag: ${tag.name}`;
+
+                    contextMenu.style.top = `${e.pageY}px`;
+                    contextMenu.style.left = `${e.pageX}px`;
+                    contextMenu.style.display = 'block';
+
+                    // Inside the context menu event listener
+                    contextMenu.querySelector('#show-notes').onclick = () => {
+                        fetch(`http://localhost:3000/notes?tagIds=${tag._id}`) // Sending tag ID as query parameter
+                            .then(response => response.json())
+                            .then(data => {
+                            // Display the notes in the frontend
+                            displayNotes(data, allTags, elementID);  
+                            })
+                            .catch(error => console.error('Error:', error));
+                    };
+
+                    contextMenu.querySelector('#show-videos').onclick = () => alert(`Show videos with tag: ${tag.name}`);
+
+                    contextMenu.querySelector('#remove-tag').onclick = () => {
+                        fetch(`http://localhost:3000/notes/${note._id}/tags/${tag._id}`, {
+                            method: 'DELETE',
+                        })
+                            .then(response => response.json())
+                            .then(data => {
+                            // On success, remove the tag from the display
+                            removeTagFromDisplay(note._id, tag._id);
+                            })
+                            .catch(error => console.error('Error:', error));
+                        };
+
+                });
+                tags.appendChild(tagSpan);
+
+                // Commas between tags
+                if (index  < arr.length - 1) {
+                    tags.appendChild(document.createTextNode(', '));
+                }
+            });
+        noteDiv.appendChild(tags);
+
+        // Note is taggable using all existing tags
+        const allTagsElement = document.createElement('p');
+        allTagsElement.textContent = 'All Tags: ';
+        allTags.map(tag => createTagElement(tag, note._id)).forEach(tagElement => allTagsElement.appendChild(tagElement));
+        noteDiv.appendChild(allTagsElement);
+
+
+        //Put buttons for note maintenance here
+
+        const editButton = document.createElement('button');
+        editButton.textContent = "Edit this note";
+        editButton.addEventListener('click', () => {
+            alert(`Editing note ${note._id}`);
+            });
+
+        const deleteButton = document.createElement('button');
+        deleteButton.textContent = "Delete this note";
+        deleteButton.addEventListener('click', () => handleDeleteClick(noteDiv, note._id), false);
+
+        // Append the buttons to the noteDiv
+        noteDiv.appendChild(editButton);
+        noteDiv.appendChild(deleteButton);
+
+  
+        // Append the note div to the container
+        container.appendChild(noteDiv);
+        
+    }
+
+    async function getAllTags() {
+        try {
+            // Make a GET request to fetch all tags
+            const tagResponse = await fetch('http://localhost:3000/tags'); // Adjust the URL to your tags endpoint
+            const allTags = await tagResponse.json();
+            return allTags;            
+
+      } catch (error) {
+        console.error('Error fetching tags:', error);
+      }
+    }
+    async function fetchAndDisplayNote() {
+            try {
+                const noteId = getNoteIdFromUrl();
+                if (!noteId) {
+                    console.error('No noteId provided in the URL.');
+                    return;
+                }
+                
+                const response = await fetch(`http://localhost:3000/notes/${noteId}`);
+                const note = await response.json();
+
+                const allTags = await getAllTags(); // Assuming getAllTags is a function that fetches all tags from the server
+                
+                displaySingleNote(note, allTags);
+
+            } catch (error) {
+                console.error('Error fetching note:', error);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            fetchAndDisplayNote();
+        });
+
+  </script>
+</body>
+</html>

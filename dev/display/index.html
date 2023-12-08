@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip Card Showcase</title>
+    <style>
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .card {
+            width: 150px;
+            height: 150px;
+            perspective: 1000px;
+            margin: 10px;
+        }
+
+        .card-front, .card-back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            border: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card-front {
+            background-color: #fff;
+        }
+
+        .card-back {
+            background-color: #f1f1f1;
+            transform: rotateY(180deg);
+        }
+
+        .flipped .card-front {
+            transform: rotateY(180deg);
+        }
+
+        .flipped .card-back {
+            transform: rotateY(0deg);
+        }
+
+        .expanded {
+            position: fixed;
+            width: 90%;
+            height: 90%;
+            z-index: 10;
+            top: 5%;
+            left: 5%;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+
+        .card-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card" data-url="../video-portfolio/index.html?set=coursetrailers">
+            <div class="card-front">
+                <img src="../../images/cardFront01.png" class="card-image" title="Trailers, posters, and descriptions of some courses I've taught.">
+            </div>
+            <div class="card-back">
+                <!-- iframe will be loaded here on flip -->
+            </div>
+        </div>
+        <div class="card" data-url="https://innoeduvation.org/danryan/subpages/popup">
+            <div class="card-front">
+                <img src="../../images/popupCurriculum01.png" class="card-image" title="Overview of &quot;popup&quot; curriculum I developed at USC.">
+            </div>
+            <div class="card-back">
+                <!-- iframe will be loaded here on flip -->
+            </div>
+        </div>
+        <div class="card" data-url="https://innoeduvation.org/danryan/misc/truchet_tiles">
+            <div class="card-front">
+                <img src="../../images/cardFront03.png" class="card-image" title="Very simple tiling trick that suggests some profound relationship between sequence and structure (think Alpha-Fold)">
+            </div>
+            <div class="card-back">
+                <!-- iframe will be loaded here on flip -->
+            </div>
+        </div>
+        <div class="card" data-url="../video-portfolio/index.html?set=computationalreasoning">
+            <div class="card-front">
+                <img src="../../images/DALLE-videosIcon01.png" class="card-image" title="Selection of videos I've created for courses and programs and fun.">
+            </div>
+            <div class="card-back">
+                <!-- iframe will be loaded here on flip -->
+            </div>
+        </div>
+        
+        <div class="card" data-url="https://chat.openai.com/share/6d360c64-7e46-4ce1-b199-ba24a5f28c70">
+            <div class="card-front">
+                <img src="../../images/DIDMGuideGPTicon.png" class="card-image" title="Future home of some pedagogical GPTs I'm working on.">
+            </div>
+            <div class="card-back">
+                <!-- iframe will be loaded here on flip -->
+            </div>
+        </div>        
+        <div class="card" data-url="../../depts/books/index.html">
+            <div class="card-front">
+                <img src="../../images/booksIcon.png" class="card-image" title="You can learn a lot about a person by looking at their bookshelves.">
+            </div>
+            <div class="card-back">
+                <!-- iframe will be loaded here on flip -->
+            </div>
+        </div>        
+        <div class="card" data-url="../../depts/zotero/index.html">
+            <div class="card-front">
+                <img src="../../images/zoteroIcon.png" class="card-image" title="Bibliography of works I've used in teaching, research, and consulting.">
+            </div>
+            <div class="card-back">
+                <!-- iframe will be loaded here on flip -->
+            </div>
+        </div>        
+        <div class="card" data-url="../../depts/activelearning/index.html">
+            <div class="card-front">
+                <img src="../../images/activeLearningIcon.png" class="card-image" title="Taxonomy of active learning techniques with references/examples/guides.">
+            </div>
+            <div class="card-back">
+                <!-- iframe will be loaded here on flip -->
+            </div>
+        </div>
+        <div class="card" data-url="../../dev/wikidot/q/display2.html">
+            <div class="card-front">
+                <img src="../../images/problemBankIcon.png" class="card-image" title="Question bank database - work in progress.">
+            </div>
+            <div class="card-back">
+                <!-- iframe will be loaded here on flip -->
+            </div>
+        </div>
+        
+        <div class="card" data-url="https://slides.com/djjr/deck-515206/fullscreen?token=h8mTMlsd">
+            <div class="card-front">
+                <img src="../../images/CTlogo-no-text-512x512.png" class="card-image" title="Computational thinking book as graphic novel.">
+            </div>
+            <div class="card-back">
+                <!-- iframe will be loaded here on flip -->
+            </div>
+        </div>
+        <div class="card" data-url="https://innoeduvation.org/danryan/dev/madlib/">
+            <div class="card-front">
+                <img src="../../images/sane-cons-logo.png" class="card-image" title="sane cons, our mad libs style worksheet generator.">
+            </div>
+            <div class="card-back">
+                <!-- iframe will be loaded here on flip -->
+            </div>
+        </div>
+        <!-- More cards can be added similarly -->
+    </div>
+
+    <script>
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('click', function() {
+                flipAndExpand(this);
+            });
+        });
+
+        function flipAndExpand(card) {
+            if (!card.classList.contains('expanded')) {
+                card.classList.add('flipped', 'expanded');
+                let iframeUrl = card.getAttribute('data-url');
+                card.getElementsByClassName('card-back')[0].innerHTML = `<iframe src="${iframeUrl}" width="100%" height="100%"></iframe><div class="close-btn" onclick="shrinkAndFlipBack(event, this.parentNode.parentNode)">CLOSE</div>`;
+            }
+        }
+
+        function shrinkAndFlipBack(event, card) {
+            event.stopPropagation(); // Prevents the click from bubbling up to the card element
+            card.classList.remove('expanded', 'flipped');
+            card.getElementsByClassName('card-back')[0].innerHTML = '';
+        }
+    </script>
+</body>
+</html>

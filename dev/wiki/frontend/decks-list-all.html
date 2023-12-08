@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Deck List</title>
+    <script src="config.js"></script>    <style>
+        #container {
+            display: flex;
+        }
+        #deckList {
+            width: 50%;
+        }
+        #deckViewer {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h3>Miscellaneous Slide Decks</h3>
+    <div id="container">
+        <div id="deckList">
+            <!-- List of decks will go here -->
+        </div>
+        <div id="deckViewer">
+            <!-- iframe for displaying selected deck will go here -->
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', async function() {
+            try {
+                const response = await fetch(`${API_BASE_URL}/decks`);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const decks = await response.json();
+
+                const listElement = document.getElementById('deckList');
+                decks.forEach(deck => {
+                    const listItem = document.createElement('li');
+                    const link = document.createElement('a');
+                    link.href = '#'; // Prevent default link behavior
+                    link.textContent = `${deck.title} (${deck.year})`;
+                    
+                    link.addEventListener('click', function(event) {
+                        event.preventDefault();
+                        displayDeck(deck);
+                    });
+
+                    listItem.appendChild(link);
+                    listElement.appendChild(listItem);
+                });
+            } catch (error) {
+                console.error('Error fetching decks:', error);
+            }
+        });
+
+        function displayDeck(deck) {
+            const viewer = document.getElementById('deckViewer');
+            viewer.innerHTML = ''; // Clear previous content
+
+            let iframeSrc;
+            if (deck.platform === 'slides.com') {
+                iframeSrc = `${deck.URL}/embed?style=light&share=hidden&shared_notes=hidden`;
+            } else if (deck.platform === 'google slides') {
+                iframeSrc = deck.URL.replace('/pub', '/embed') + '&rm=minimal';
+            }
+
+            const iframe = document.createElement('iframe');
+            iframe.src = iframeSrc;
+            iframe.width = '576';
+            iframe.height = '420';
+            iframe.frameBorder = '0';
+            iframe.allowFullscreen = true;
+
+            viewer.appendChild(iframe);
+        }
+    </script>
+</body>
+</html>

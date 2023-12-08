@@ -1,0 +1,170 @@
+<html>
+    <head>
+        <style>
+        .r270 { height: 50; width:50;
+                -webkit-transform:rotate(270deg);
+                -moz-transform: rotate(270deg);
+                -ms-transform: rotate(270deg);
+                -o-transform: rotate(270deg);
+                transform: rotate(270deg);
+               }
+        .r180 {  height: 50; width:50;
+                -webkit-transform:rotate(180deg);
+                -moz-transform: rotate(180deg);
+                -ms-transform: rotate(180deg);
+                -o-transform: rotate(180deg);
+                transform: rotate(180deg);
+               }
+        .r90  {  height: 50; width:50;
+                -webkit-transform:rotate(90deg);
+                -moz-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                -o-transform: rotate(90deg);
+                transform: rotate(90deg);
+               }
+            .r0 {height: 50; width:50;}
+                   </style>
+        <script>
+            'use strict';
+            function draw(dir) {
+                if (dir == null) {
+                    var direction = Math.floor(4*Math.random())}
+                    else {direction = dir}
+                
+                var direction_classes = ['r0', 'r90', 'r180', 'r270']
+                
+                var x = document.getElementById('mydiv')
+                var y = document.createElement('IMG')
+                y.src = 'tile.png'
+                y.setAttribute('class',direction_classes[direction])
+                //y.setAttribute('name','tiles')
+                //x.appendChild(y)
+                x.appendChild(y)
+               
+                
+                //innerHTML = '<image src="tile.png" class="r0"></image><image src="tile.png" class="r90"></image>'
+            }
+            // function tile () {
+            //     var plan = document.getElementById('pattern').value
+            //     if (plan == null) {plan = '0123000032321320'}
+            //     for (var i=0; i < plan.length; i++) {
+            //         draw(plan[i])
+            //     }
+            //     //console.log('Tile All Done')
+            // }
+            function clearBody() {
+                //var e = document.querySelector("div");
+                var e = document.getElementById("mydiv");
+                var child = e.lastElementChild;
+                while (child) { 
+                    e.removeChild(child); 
+                    child = e.lastElementChild; 
+                    } 
+            }
+
+            function tile() {
+                var plan = document.getElementById('pattern').value;
+                if (plan == null) {
+                    plan = '0123';
+                }
+                
+                // Calculate the dimensions of the unit tile and screen
+                var tileSize = 153; // Change this to match your tile size in pixels
+                var screenWidth = window.innerWidth * window.devicePixelRatio;
+                var screenHeight = window.innerHeight * window.devicePixelRatio;
+                
+                // Calculate the number of rows and columns to fill the screen
+                var numRows = Math.ceil(screenHeight / tileSize);
+                var numCols = Math.ceil(screenWidth / tileSize);
+
+                console.log(screenHeight, screenWidth, numRows, numCols);
+                
+                // Repeat the pattern to fill the screen
+                for (var row = 0; row < numRows; row++) {
+                    for (var col = 0; col < numCols; col++) {
+                        var index = (row * numCols + col) % plan.length;
+                        draw(plan[index]);
+                    }
+                }
+            }
+
+            function printPattern() {
+                var plan = document.getElementById('pattern').value;
+                if (plan == null) {
+                    plan = '0123';
+                }
+
+                // Define the printable area dimensions (in inches) with 1-inch margins
+                var printableWidth = 7.5; // 8.5 - 1 (left margin) - 0.5 (right margin)
+                var printableHeight = 10; // 11 - 1 (top margin) - 1 (bottom margin)
+
+                // Convert the unit tile size (in pixels) to inches
+                var tileSizeInPixels = 51; // Change this to match your tile size in pixels
+                var tileSizeInInches = tileSizeInPixels / 96; // Assuming 96 DPI
+
+                // Calculate the number of rows and columns to fill the printable area
+                var numRows = Math.floor(printableHeight / tileSizeInInches);
+                var numCols = Math.floor(printableWidth / tileSizeInInches);
+
+                // Create a new HTML page with just the pattern
+                var patternHTML = '<html><head><style>';
+
+                // Add CSS styles for the rotated tiles
+                patternHTML += '.r0 { height: ' + tileSizeInPixels + 'px; width: ' + tileSizeInPixels + 'px; }\n';
+                patternHTML += '.r90 { height: ' + tileSizeInPixels + 'px; width: ' + tileSizeInPixels + 'px; transform: rotate(90deg); }\n';
+                patternHTML += '.r180 { height: ' + tileSizeInPixels + 'px; width: ' + tileSizeInPixels + 'px; transform: rotate(180deg); }\n';
+                patternHTML += '.r270 { height: ' + tileSizeInPixels + 'px; width: ' + tileSizeInPixels + 'px; transform: rotate(270deg); }\n';
+
+                patternHTML += '</style></head><body>';
+
+                // Repeat the pattern to fill the printable area
+                for (var row = 0; row < numRows; row++) {
+                    for (var col = 0; col < numCols; col++) {
+                        var index = (row * numCols + col) % plan.length;
+                        patternHTML += '<img src="tile.png" class="r' + plan[index] * 90 + '">';
+                    }
+                }
+
+                patternHTML += '</body></html>';
+
+                // Open a new window or modal dialog for printing
+                var printWindow = window.open('', '_blank');
+                printWindow.document.open();
+                printWindow.document.write(patternHTML);
+                printWindow.document.close();
+
+                // Print the new window or modal dialog
+                printWindow.print();
+                printWindow.close();
+            }
+
+
+
+
+
+
+        </script>
+    </head>
+    <body>
+        <h2><a href="https://en.wikipedia.org/wiki/Truchet_tiles">Truchet Tiling</a></h2>
+        Input [0123]+: <input type="text" id="pattern" value="0123" size="80">
+        <button type="button" onclick="tile()">Make Tiles</button>
+        <button type="button" onclick="clearBody()">Clear Tiles</button>
+        <button type="button" onclick="printPattern()">Print Pattern</button>
+        <div id='mydiv'></div>
+        <hr>
+        <!--<image src="tile.png" class="r0"></image>
+        <image src="tile.png" class="r90"></image>
+        <image src="tile.png" class="r270"></image>
+        <image src="tile.png" class="r270"></image><br>
+        <image src="tile.png" class="r90"></image>
+        <image src="tile.png" class="r0"></image>
+        
+        <image src="tile.png" class="r180"></image>
+        <image src="tile.png" class="r270"></image><br>
+        <image src="tile.png" class="r90"></image>
+        <image src="tile.png" class="r90"></image>
+        <image src="tile.png" class="r180"></image>
+        <image src="tile.png" class="r270"></image><br>-->
+    </body>
+</html>

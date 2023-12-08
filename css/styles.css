@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.card-container {
+    position: relative;
+    width: 90vw;  /* Set to 90% of viewport width */
+    height: 80vh; /* Set to 90% of viewport height */
+}
+
+.overlay {
+    position: absolute;
+    height: 25px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    cursor: pointer; /* Indicate to users that it's clickable */
+}
+
+.card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    transition: 0.3s all;
+    transform-origin: bottom left;
+}
+
+.card iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    overflow: auto; /* Enables scrolling if content is bigger than iframe */
+}
+
+.title {
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    position: absolute;  /* Make title position absolute */
+    top: 0;              /* Position it at the top */
+    left: 10px;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.8);  /* A bit transparent for a nice effect */
+}
+
+[data-card="A"] { z-index: 5; transform: translate(0px, 0px); }
+[data-card="B"] { z-index: 4; transform: translate(10px, -30px); }
+[data-card="C"] { z-index: 3; transform: translate(20px, -60px); }
+[data-card="D"] { z-index: 2; transform: translate(30px, -90px); }
+[data-card="E"] { z-index: 1; transform: translate(40px, -120px); }

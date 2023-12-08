@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  .custom-context-menu {
+    position: absolute;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    z-index: 1000;
+    display: none;
+  }
+  .custom-context-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .custom-context-menu li {
+    padding: 8px 12px;
+  }
+  .custom-context-menu li:hover {
+    background-color: #f0f0f0;
+  }
+</style>
+<title>Custom Context Menu</title>
+</head>
+<body>
+
+<div id="tag" style="border: 1px solid black; padding: 10px; display: inline-block;">Right Click Me</div>
+
+<div id="customContextMenu" class="custom-context-menu">
+  <ul>
+    <li onclick="handleContextMenuClick('add')">Add Tag to Note</li>
+    <li onclick="handleContextMenuClick('remove')">Remove Tag from Note</li>
+    <li onclick="handleContextMenuClick('findPages')">Find Pages with This Tag</li>
+    <li onclick="handleContextMenuClick('findVideos')">Find Videos with This Tag</li>
+  </ul>
+</div>
+
+<script>
+function handleContextMenuClick(action) {
+  switch(action) {
+    case 'add':
+      console.log('Add Tag to Note');
+      break;
+    case 'remove':
+      console.log('Remove Tag from Note');
+      break;
+    case 'findPages':
+      console.log('Find Pages with This Tag');
+      break;
+    case 'findVideos':
+      console.log('Find Videos with This Tag');
+      break;
+  }
+  document.getElementById('customContextMenu').style.display = 'none';
+}
+
+document.getElementById('tag').addEventListener('contextmenu', function(e) {
+  e.preventDefault(); // Prevent the default context menu from showing up
+
+  // Get the custom context menu element
+  const contextMenu = document.getElementById('customContextMenu');
+
+  // Set the position of the context menu and show it
+  contextMenu.style.left = `${e.pageX}px`;
+  contextMenu.style.top = `${e.pageY}px`;
+  contextMenu.style.display = 'block';
+});
+
+// Close the custom context menu when clicking elsewhere
+window.addEventListener('click', function() {
+  document.getElementById('customContextMenu').style.display = 'none';
+});
+</script>
+
+</body>
+</html>

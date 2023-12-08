@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Data Extractor</title>
+    <style>
+        #output {
+            white-space: pre-wrap;
+            /* CSS3 */
+            white-space: -moz-pre-wrap;
+            /* Firefox */
+            white-space: -pre-wrap;
+            /* Opera <7 */
+            white-space: -o-pre-wrap;
+            /* Opera 7 */
+            word-wrap: break-word;
+            /* Internet Explorer 5.5+ */
+        }
+    </style>
+    <script>
+        // Array of sources
+        const sources = [
+            'https://djjr-courses.wikidot.com/major21:alternative-course-schedule-views',
+            'https://djjr-courses.wikidot.com/major21:assess',
+            'https://djjr-courses.wikidot.com/major21:assess-quant',
+            'https://djjr-courses.wikidot.com/major21:benchmarking-the-curriculum',
+            'https://djjr-courses.wikidot.com/major21:better-meetings-initiative',
+            'https://djjr-courses.wikidot.com/major21:bigger-better-data',
+            'https://djjr-courses.wikidot.com/major21:bottomup-program-fte-deployment',
+            'https://djjr-courses.wikidot.com/major21:building-enrollment-data-set',
+            'https://djjr-courses.wikidot.com/major21:charter-college',
+            'https://djjr-courses.wikidot.com/major21:comments-20151015-retreat',
+            'https://djjr-courses.wikidot.com/major21:course-flights',
+            'https://djjr-courses.wikidot.com/major21:minute-guerrilla-modules',
+            'https://djjr-courses.wikidot.com/major21:course-schedule-as-menu',
+            'https://djjr-courses.wikidot.com/major21:course-schedule-policy-variables',
+            'https://djjr-courses.wikidot.com/major21:course-schedule-status-quo',
+            'https://djjr-courses.wikidot.com/major21:dashboard-course-schedule',
+            'https://djjr-courses.wikidot.com/major21:dashboard-room-utilization',
+            'https://djjr-courses.wikidot.com/major21:dashboard-sequences-in-the-major',
+            'https://djjr-courses.wikidot.com/major21:deploying-faculty-time',
+            'https://djjr-courses.wikidot.com/major21:design-thinking-and-higher-education',
+            'https://djjr-courses.wikidot.com/major21:teaching-and-learning-system',
+            'https://djjr-courses.wikidot.com/major21:watermark-draftxyvv',
+            'https://djjr-courses.wikidot.com/major21:edtech-for-pedagogical-productivity',
+            'https://djjr-courses.wikidot.com/major21:educational-resource-budgeting',
+            'https://djjr-courses.wikidot.com/major21:education-innovation-lab',
+            'https://djjr-courses.wikidot.com/major21:enhance-the-humans',
+            'https://djjr-courses.wikidot.com/major21:expanding-offerings-via-teacher-as-lead-student',
+            'https://djjr-courses.wikidot.com/major21:gallery',
+            'https://djjr-courses.wikidot.com/major21:generic-list-page',
+            'https://djjr-courses.wikidot.com/major21:manifesto',
+            'https://djjr-courses.wikidot.com/major21:go-sat-optional',
+            'https://djjr-courses.wikidot.com/major21:html5formtest',
+            'https://djjr-courses.wikidot.com/major21:ideas',
+
+            'https://djjr-courses.wikidot.com/major21:information-ecology',
+            'https://djjr-courses.wikidot.com/major21:innovate-on-the-old-german-vordiplom',
+            'https://djjr-courses.wikidot.com/major21:innovation',
+            'https://djjr-courses.wikidot.com/major21:innovation-and-the-liberal-arts',
+            'https://djjr-courses.wikidot.com/major21:innovative-majors-minors-etc',
+            'https://djjr-courses.wikidot.com/major21:institutional-dashboard',
+            'https://djjr-courses.wikidot.com/major21:institutionalization-of-college-majors',
+            'https://djjr-courses.wikidot.com/major21:invest-to-reduce-faculty-workload',
+            'https://djjr-courses.wikidot.com/major21:learning-from-startups',
+
+
+            'https://djjr-courses.wikidot.com/major21:map-nice',
+            'https://djjr-courses.wikidot.com/major21:measuring-learning',
+
+            'https://djjr-courses.wikidot.com/major21:enrollment-and-instructional-fte',
+            'https://djjr-courses.wikidot.com/major21:minute-intercampus-team-teaching',
+            'https://djjr-courses.wikidot.com/major21:move-toward-modules',
+            'https://djjr-courses.wikidot.com/major21:organizing-the-organization',
+            'https://djjr-courses.wikidot.com/major21:pedagogical-productivity-in-age-of-moocs',
+            'https://djjr-courses.wikidot.com/major21:preparing-for-free-community-college',
+            'https://djjr-courses.wikidot.com/major21:prepopulate-data-forms',
+            'https://djjr-courses.wikidot.com/major21:price-points-and-reality',
+            'https://djjr-courses.wikidot.com/major21:proposal-for-a-modular-block-schedule',
+            'https://djjr-courses.wikidot.com/major21:references-and-resources',
+            'https://djjr-courses.wikidot.com/major21:course-schedule-nice01',
+            'https://djjr-courses.wikidot.com/major21:re-vision-the-course-schedule',
+            'https://djjr-courses.wikidot.com/major21:rules-and-such',
+            'https://djjr-courses.wikidot.com/major21:shatter-the-semester',
+            'https://djjr-courses.wikidot.com/major21:syllabi-schedules-assessment',
+            'https://djjr-courses.wikidot.com/major21:syllabus-maker',
+            'https://djjr-courses.wikidot.com/major21:tech-up-for-productivity',
+            'https://djjr-courses.wikidot.com/major21:tell-instructors-about-student-schedules',
+            'https://djjr-courses.wikidot.com/major21:test',
+            'https://djjr-courses.wikidot.com/major21:initiative01',
+            'https://djjr-courses.wikidot.com/major21:the-advisors-toolbox',
+            'https://djjr-courses.wikidot.com/major21:the-a-r-e-curricular-innovation-process',
+            'https://djjr-courses.wikidot.com/major21:the-learning-contract',
+            'https://djjr-courses.wikidot.com/major21:the-shadow-course-schedule',
+            'https://djjr-courses.wikidot.com/major21:tweak-teaching-load',
+            'https://djjr-courses.wikidot.com/major21:merit-aid-students-faculty-research',
+            'https://djjr-courses.wikidot.com/major21:web-consistency',
+            'https://djjr-courses.wikidot.com/major21:what-does-a-module-look-like',
+            'https://djjr-courses.wikidot.com/major21:email-thought-experiments',
+            'https://djjr-courses.wikidot.com/major21:what-s-wrong-with-the-status-quo-course-schedule',
+            'https://djjr-courses.wikidot.com/major21:course-schedule',
+            'https://djjr-courses.wikidot.com/major21:where-are-we',
+            'https://djjr-courses.wikidot.com/major21:who-can-afford-us',
+            'https://djjr-courses.wikidot.com/major21:why-not-choose-first-schedule-later',
+            'https://djjr-courses.wikidot.com/major21:windows-and-scrolls',
+            'https://djjr-courses.wikidot.com/major21:work-flow-proposal-for-reform',
+            'https://djjr-courses.wikidot.com/major21:working-hours-and-the-21st-century-college',
+            'https://djjr-courses.wikidot.com/major21:year-to-year-scheduling'
+        ];
+
+        async function fetchData() {
+            const results = [];
+
+            for (const url of sources) {
+                const proxyUrl = 'http://localhost:3000/proxy?url=' + encodeURIComponent(url);
+
+                try {
+                    const response = await fetch(proxyUrl);
+                    const text = await response.text();
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(text, 'text/html');
+
+                    const title = doc.querySelector('.page-title')?.textContent.trim() || 'No title found';
+                    const content = doc.querySelector('#page-content')?.innerHTML.trim() || 'No content found';
+                    const tagsDiv = doc.querySelector('.page-tags');
+                    let tags = [];
+                    if (tagsDiv) {
+                        tags = Array.from(tagsDiv.querySelectorAll('a')).map(tag => tag.textContent.trim());
+                    }
+
+                    results.push({ title, content, tags });
+                } catch (error) {
+                    console.error('Error fetching data for URL:', url, error);
+                }
+            }
+
+            // Display the results
+            document.getElementById('output').textContent = JSON.stringify(results, null, 2);
+        }
+
+        // Automatically fetch data when the page loads
+        window.onload = fetchData;
+    </script>
+</head>
+
+<body>
+    <h1>Data Extractor</h1>
+    <input type="text" id="urlInput" placeholder="Enter URL here">
+    <button onclick="fetchData()">Extract Data</button>
+    <pre id="output" class="output"></pre>
+</body>
+
+</html>
